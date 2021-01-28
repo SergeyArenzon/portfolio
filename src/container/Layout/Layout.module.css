@@ -1,0 +1,48 @@
+
+
+.Layout {
+    height: 200vh;
+    background: blue;
+    z-index: 5;
+}
+
+.Layout .Picture {
+    background: url('../../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+
+}
+.Layout .Picture::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.37);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.Layout .Picture div {
+    font-size: 20px;
+    height: 150px;
+    width:300px;
+    top: 50%;
+    text-align: left;
+    position: relative ;
+    transform: translateY(-50%);
+    padding: 0 50px;
+}
+
+
+.Layout nav {
+    position: fixed;
+    background: rgba(48, 48, 48, 0.247);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    display: inline-block;
+    z-index: 5;
+}
