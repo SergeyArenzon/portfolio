@@ -7,7 +7,7 @@
 }
 
 .Layout .Picture {
-    background: url('../../assets/images/background.jpg');
+    background: url('../../assets/images/1.jpg');
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
@@ -52,16 +52,35 @@
     z-index: 10;
     font-size: 4rem;
     font-weight: bold;
-    height: 150px;
-    width:600px;
+    /* height: 150px; */
+    width:700px;
     top: 10%;
     text-align: left;
     position: relative ;
     /* transform: translateY(-50%); */
     padding: 0 50px;
-
+    font-family: 'Assistant';
+    text-shadow: 2px 2px 2px #000000a6;
 }
 
+
+
 .Layout .Picture .TypeSec {
-    color: #0044ff;
+    color: #2d54bd;
+    text-shadow: 2px 2px  white;
+   
+}
+.Layout .Picture .TypeSec Typewriter__cursor {
+    color: red;
+}
+
+@media(max-width: 1270px) {
+    .Layout .Picture {
+        background: url('../../assets/images/1.jpg');
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    
+    }
 }

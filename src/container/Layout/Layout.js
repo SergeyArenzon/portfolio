@@ -21,9 +21,9 @@ export default function Layout() {
                     className={classes.TypeSec}
                     options={{
                         strings: [
-                            "FULLSTACK Developer",
-                            "FRONTEND Developer",
-                            "BACKEND Developer",
+                            "FULLSTACK Developer.",
+                            "FRONTEND Developer.",
+                            "BACKEND Developer.",
                         ],
                         autoStart: true,
                         loop: true,
@@ -40,7 +40,7 @@ export default function Layout() {
                 strings: ["Hi my name is Sergey Arenzon and I'm a"],
                 autoStart: true,
                 loop: false,
-                pauseFor: 10000000,
+                pauseFor: 1000000000000000000,
                 delay: 40,
             }}
         />
