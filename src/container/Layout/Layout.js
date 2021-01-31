@@ -17,22 +17,34 @@ export default function Layout() {
     if (showText) {
         text = (
             <div className={classes.TypeSec}>
-                 <Typewriter className={classes.TypeSec}
-                options={{
-                    strings: [
-                        "FULLSTACK Developer",
-                        "FRONTEND Developer",
-                        "BACKEND Developer",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    delay: 20,
-                }}
-            />
+                <Typewriter
+                    className={classes.TypeSec}
+                    options={{
+                        strings: [
+                            "FULLSTACK Developer",
+                            "FRONTEND Developer",
+                            "BACKEND Developer",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        delay: 20,
+                    }}
+                />
             </div>
-           
         );
     }
+
+    const staticText = (
+        <Typewriter
+            options={{
+                strings: ["Hi my name is Sergey Arenzon and I'm a"],
+                autoStart: true,
+                loop: false,
+                pauseFor: 10000000,
+                delay: 40,
+            }}
+        />
+    );
     return (
         <div className={classes.Layout}>
             <nav>
@@ -40,19 +52,9 @@ export default function Layout() {
             </nav>
             <div className={classes.Picture}>
                 <div className={classes.TypingText}>
-                    <Typewriter
-                        options={{
-                            strings: [
-                                "Hi my name is Sergey Arenzon and I'm a"
-                            ],
-                            autoStart: true,
-                            loop: false,
-                            pauseFor: 10000000,
-                            delay: 40
-                        }}
-                    />
-                    {text} 
-                </div>
+                    {staticText}
+                    {text}
+                    </div>
             </div>
         </div>
     );
