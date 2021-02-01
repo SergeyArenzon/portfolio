@@ -2,8 +2,7 @@ import React from "react";
 import classes from "./Layout.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
-import video from "../../assets/video/background.mp4";
-import Video from '../../components/Video/Video';
+import Video from '../../components/Background/Background';
 
 
 // =========================
