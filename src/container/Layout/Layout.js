@@ -12,7 +12,7 @@ export default function Layout() {
         <div className={classes.Layout}>
             <Navbar />
             <Picture />
-            <div className={classes.c}></div>
+            <div className={classes.c}>test div</div>
         </div>
     );
 }
