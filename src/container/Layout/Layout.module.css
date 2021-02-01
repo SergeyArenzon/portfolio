@@ -1,7 +1,7 @@
 
 
 .Layout {
-    /* height: 200vh; */
+    height: 200vh;
     background: transparent;
     z-index: 5;
 }
@@ -36,16 +36,6 @@
 } */
 
 
-.Layout nav {
-    position: fixed;
-    background: rgba(48, 48, 48, 0.247);
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 5vh;
-    display: inline-block;
-    z-index: 5;
-}
 .Layout .Picture .TypingText {
     color: white;
     font-size: 2rem;

@@ -3,6 +3,7 @@ import classes from "./Layout.module.css";
 import Typical from "react-typical";
 import Logo from "../../components/Logo/Logo";
 import Typewriter from "typewriter-effect";
+import Navbar from '../../components/Navbar/Navbar';
 
 export default function Layout() {
     const [showText, setShowText] = useState(false);
@@ -47,9 +48,11 @@ export default function Layout() {
     );
     return (
         <div className={classes.Layout}>
-            <nav>
+            {/* <nav>
                 <Logo />
-            </nav>
+            </nav> */}
+
+            <Navbar/>
             <div className={classes.Picture}>
                 <div className={classes.TypingText}>
                     {staticText}
