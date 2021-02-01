@@ -8,12 +8,20 @@ import Navbar from '../../components/Navbar/Navbar';
 export default function Layout() {
     const [showText, setShowText] = useState(false);
 
+
+    //  Delaying the seconde typing effect
     useEffect(() => {
         setTimeout(function () {
             setShowText(true);
         }, 2000);
     }, []);
 
+    //  ======================
+    //  Typing effect controls
+    //  ======================
+
+
+    // Delayed typing effect
     let text = null;
     if (showText) {
         text = (
@@ -35,6 +43,8 @@ export default function Layout() {
         );
     }
 
+
+    // First kicked typing effect
     const staticText = (
         <Typewriter
             options={{
@@ -46,12 +56,11 @@ export default function Layout() {
             }}
         />
     );
+
+
+    
     return (
         <div className={classes.Layout}>
-            {/* <nav>
-                <Logo />
-            </nav> */}
-
             <Navbar/>
             <div className={classes.Picture}>
                 <div className={classes.TypingText}>
