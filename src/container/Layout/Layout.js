@@ -5,6 +5,11 @@ import Logo from "../../components/Logo/Logo";
 import Typewriter from "typewriter-effect";
 import Navbar from '../../components/Navbar/Navbar';
 
+// =========================
+// Main scrolling background
+// =========================
+
+
 export default function Layout() {
     const [showText, setShowText] = useState(false);
 
@@ -58,7 +63,7 @@ export default function Layout() {
     );
 
 
-    
+
     return (
         <div className={classes.Layout}>
             <Navbar/>
