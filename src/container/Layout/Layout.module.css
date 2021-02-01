@@ -3,20 +3,24 @@
 .Layout {
     height: 200vh;
     /* background: transparent; */
-    z-index: 5;
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vh 100vw;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../../assets/images/decoration.jpg");
+    /* z-index: 5; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: 100vh 100vw; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-image: url("../../assets/images/decoration.jpg"); */
+    
 
 }
-
-
-
+.Layout video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 .c{
     height: 200px;
