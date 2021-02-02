@@ -1,0 +1,11 @@
+.AboutMe {
+    height: 35vw;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.452);
+    max-width: 100%;
+    margin-top: 200px;
+    position: relative;
+    margin: 150px auto;
+    color: white;
+    border-radius: 10px;
+}

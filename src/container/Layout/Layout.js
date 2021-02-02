@@ -3,6 +3,7 @@ import classes from "./Layout.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
 import Video from '../../components/Background/Background';
+import AboutMe from '../../components/AboutMe/AboutMe';
 
 
 // =========================
@@ -16,7 +17,8 @@ export default function Layout() {
             <Video/>
             <Navbar />
             <Picture />
-            <div className={classes.c}>test div</div>
+            <AboutMe/>
+            <div className={classes.c}>tessdfsdfsfdst div</div>
         </div>
     );
 }
