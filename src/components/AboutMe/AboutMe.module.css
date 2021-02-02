@@ -1,11 +1,40 @@
 .AboutMe {
     height: 35vw;
     width: 50vw;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.541);
     max-width: 100%;
     margin-top: 200px;
     position: relative;
     margin: 150px auto;
     color: white;
     border-radius: 10px;
+    box-shadow: 0px 0px 30px black;
+}
+
+
+.AboutMe .Profile {
+    background: url('../../assets/images/profile.jpg');
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-size: cover;
+    border: 2px solid white;
+    position: relative;
+    top: -50px;
+    left: -50px;
+}
+
+.AboutMe h1 {
+    position: absolute;
+    top:-60px;
+    margin: 0;
+    padding: 0;
+    font-size: 75px;
+    left: 130px;
+    font-weight: bold;
+    text-shadow: 0 0 30px black;
+
 }
