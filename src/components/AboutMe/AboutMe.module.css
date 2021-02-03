@@ -25,6 +25,16 @@
     top: -50px;
     left: -50px;
     box-shadow: 0 0 30px black;
+    transition: all 0.2s linear;
+
+}
+.AboutMe .Profile:hover{
+    height: 160px;
+    width: 160px;
+    top: -55px;
+    left: -55px;
+    transition: all 0.2s linear;
+
 }
 
 .AboutMe h1 {
@@ -33,9 +43,11 @@
     margin: 0;
     padding: 0;
     font-size: 75px;
-    left: 130px;
+    left: 50%;
     font-weight: bold;
     text-shadow: 0 0 30px black;
+    transform: translateX(-50%);
+    width: 100%;
 }
 .AboutMe h1 label {
     color: #2d54bd;
