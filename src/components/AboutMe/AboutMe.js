@@ -6,7 +6,7 @@ export default function AboutMe() {
         <div className={classes.AboutMe}>
             <div className={classes.Profile}></div>
             <h1>ABOUT <label>ME</label></h1>
-            <div>lorema asf sdf gfdfgslma ;sdfk;a lsds;gi js;dlgm</div>
+            <p>lorema asf sdf gfdfgslma ;sdfk;a lsds;gi js;dlgm</p>
         </div>
     )
 }

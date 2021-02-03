@@ -21,7 +21,7 @@
     border-radius: 100%;
     background-size: cover;
     border: 2px solid white;
-    position: relative;
+    position: absolute;
     top: -50px;
     left: -50px;
     box-shadow: 0 0 30px black;
@@ -38,7 +38,7 @@
 }
 
 .AboutMe h1 {
-    position: absolute;
+    position: relative;
     top: -60px;
     margin: 0;
     padding: 0;
@@ -52,4 +52,9 @@
 .AboutMe h1 label {
     color: #2d54bd;
     font-weight: bolder;
+}
+
+
+.AboutMe p {
+    padding-top: 200px;
 }
