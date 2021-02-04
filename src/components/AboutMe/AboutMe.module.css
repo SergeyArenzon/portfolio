@@ -9,7 +9,10 @@
     color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 30px black;
+    top: 0;
 }
+
+
 
 .AboutMe .Profile {
     background: url("../../assets/images/profile.jpg");
@@ -26,15 +29,13 @@
     left: -50px;
     box-shadow: 0 0 30px black;
     transition: all 0.2s linear;
-
 }
-.AboutMe .Profile:hover{
+.AboutMe .Profile:hover {
     height: 160px;
     width: 160px;
     top: -55px;
     left: -55px;
     transition: all 0.2s linear;
-
 }
 
 .AboutMe h1 {
@@ -53,7 +54,6 @@
     color: #2d54bd;
     font-weight: bolder;
 }
-
 
 .AboutMe p {
     padding-top: 200px;

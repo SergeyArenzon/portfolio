@@ -1,5 +1,4 @@
-
-.Navbar  {
+.Navbar {
     position: fixed;
     background: rgba(48, 48, 48, 0.247);
     top: 0;
@@ -9,10 +8,9 @@
     display: inline-block;
     z-index: 10;
     transition: background 1s linear;
-
 }
 
-.Red { 
-    background: red;
+.Red {
+    background: #396dfa;
     transition: background 1s linear;
 }
