@@ -8,4 +8,11 @@
     height: 5vh;
     display: inline-block;
     z-index: 10;
+    transition: background 1s linear;
+
+}
+
+.Red { 
+    background: red;
+    transition: background 1s linear;
 }

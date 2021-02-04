@@ -51,11 +51,11 @@ export default function Picture() {
         />
     );
     return (
-        <div className={classes.Picture}>
+        <header className={classes.Picture}>
             <div className={classes.TypingText}>
                 {staticText}
                 {text}
             </div>
-        </div>
+        </header>
     );
 }
