@@ -38,8 +38,16 @@
     color: #2d54bd;
     text-shadow: 2px 2px white;
 }
-.Picture .TypeSec Typewriter__cursor {
-    color: red;
+
+
+@media (max-width: 1270px) {
+    .Picture {
+        background: url("../../assets/images/1.jpg");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 @media (max-width: 1270px) {
@@ -49,5 +57,19 @@
         height: 100vh;
         background-size: cover;
         background-position: center;
+    }
+}
+@media (max-width: 553px) {
+    .Picture {
+        background: url("../../assets/images/1.jpg");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-position: -420px;
+    }
+    .Picture .TypingText {
+        padding-top: 200px;
+        font-size: 2rem;
+        width: 350px;
     }
 }
