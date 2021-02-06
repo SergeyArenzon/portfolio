@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: right;
     position: relative;
+    overflow-x: hidden;
 }
 
 .Picture::after {

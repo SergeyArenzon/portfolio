@@ -2,31 +2,33 @@
     height: 200vh;
 }
 
-
 .Div {
-    height: 3000px;
-    width: 20vw;
+    height: 300px;
+    width: 300px;
     background: red;
     position: relative;
-    left: -20vw;
-    transition: left 1s linear;
-
+    transform: translateX(-1000px);
+    margin-bottom: 100px;
 }
 
 .Swipe {
-    animation: swipe-in 3s linear;
-    left: calc(50% - 10vw);
+    animation: swipe-in 1s linear; 
+    left: 50% ;
+    transform: translateX(-50%);
 }
 
-
 @keyframes swipe-in {
-    0% { 
-        left: -20vw;
+    0% {
+        transform: translateX(-1000px);
         opacity: 0;
     }
-    100%{
-    left: calc(50% - 10vw);
-    opacity: 1;
-
+    90% {
+        left: 50% ;
+        transform: translateX(5px);
+    }
+    100% {
+        left: 50% ;
+        transform: translateX(-50%);
+        opacity: 1;
     }
 }
