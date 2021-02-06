@@ -19,20 +19,17 @@ export default function Layout() {
 
     const [navColor, setNavColor] = useState(null);
     const [x, setX] = useState(null);
-    const [isInViewport, targetRef] = useIsInViewport();
+    const [scrollTop, setScrollTop] = useState(0);
 
-    // const pop = () => {
-    //     console.log(window.scrollY);
-    //     if (window.scrollY > 1200) {
-    //         setX(classes.Swipe);
-    //     }
+    const onScroll = () => {
+        const winScroll = document.documentElement.scrollTop; // scrolled vertically by px
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
 
-    //     if (window.scrollY > 927) {
-    //         setNavColor("red");
-    //     } else {
-    //         setNavColor(null);
-    //     }
-    // };
+        const scrolled = (winScroll / height) * 100;
+        setScrollTop(scrolled);
+    };
 
     const isMobile = () => {
         return window.innerWidth <= 800;
@@ -50,6 +47,7 @@ export default function Layout() {
 
         //  Mobile effect handler
         mobileHandler();
+        onScroll();
 
         if (!isMobile() && window.scrollY > 1200) {
             setX(classes.Swipe);
@@ -68,6 +66,14 @@ export default function Layout() {
         <div className={classes.Layout}>
             <Video />
             <Navbar color={navColor} />
+
+            <div className={classes.ProgressWrapper}>
+                <div
+                    className={classes.ProgressStyle}
+                    style={{ width: `${scrollTop}%` }}
+                ></div>
+            </div>
+
             <Picture />
             <AboutMe />
             <div className={classes.c}>tessdfsdfsfdst div</div>

@@ -9,12 +9,11 @@
     position: relative;
     transform: translateX(-1000px);
     margin-bottom: 100px;
-
 }
 
 .Swipe {
-    animation: swipe-in 1s linear; 
-    left: 50% ;
+    animation: swipe-in 1s linear;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -24,12 +23,31 @@
         opacity: 0;
     }
     90% {
-        left: 50% ;
+        left: 50%;
         transform: translateX(5px);
     }
     100% {
-        left: 50% ;
+        left: 50%;
         transform: translateX(-50%);
         opacity: 1;
     }
+}
+
+/* -------------- */
+.ProgressStyle {
+    height: 100%;
+    background-color: blue;
+    transition: width 0.1s linear;
+}
+.ProgressWrapper {
+    text-align: left;
+    background: transparent;
+    height: 8px;
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    transition: width 0.1s linear;
+
 }
