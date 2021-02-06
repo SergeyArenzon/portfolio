@@ -1,7 +1,7 @@
 .ProgressStyle {
     height: 100%;
     background-color: blue;
-    transition: width 0.1s linear;
+    transition: width 0.2s linear;
 }
 .ProgressWrapper {
     text-align: left;

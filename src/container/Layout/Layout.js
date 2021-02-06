@@ -4,7 +4,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
 import Video from "../../components/Background/Background";
 import AboutMe from "../../components/AboutMe/AboutMe";
-import useIsInViewport from "use-is-in-viewport";
 
 // =========================
 // Main scrolling background
@@ -12,16 +11,17 @@ import useIsInViewport from "use-is-in-viewport";
 
 export default function Layout() {
     useEffect(() => {
-        window.addEventListener("scroll", pop);
-
-        return () => window.removeEventListener("scroll", pop);
-    }, []);
+        window.addEventListener("scroll", onScroll);
+        console.log('useEffect');
+        return () => window.removeEventListener("scroll", onScroll);
+    },[]);
 
     const [navColor, setNavColor] = useState(null);
     const [x, setX] = useState(null);
     const [scrollTop, setScrollTop] = useState(0);
 
-    const onScroll = () => {
+    //  Gets the scrolled position for the navbar
+    const progressBarHandler = () => {
         const winScroll = document.documentElement.scrollTop; // scrolled vertically by px
         const height =
             document.documentElement.scrollHeight -
@@ -31,6 +31,7 @@ export default function Layout() {
         setScrollTop(scrolled);
     };
 
+    // Checks if user on mobile mode
     const isMobile = () => {
         return window.innerWidth <= 800;
     };
@@ -42,12 +43,14 @@ export default function Layout() {
         }
     };
 
-    const pop = () => {
+    const onScroll = () => {
         console.log(window.scrollY);
 
         //  Mobile effect handler
         mobileHandler();
-        onScroll();
+
+        // progreebar handler
+        progressBarHandler();
 
         if (!isMobile() && window.scrollY > 1200) {
             setX(classes.Swipe);
@@ -65,18 +68,9 @@ export default function Layout() {
     return (
         <div className={classes.Layout}>
             <Video />
-            <Navbar color={navColor} scrollTop={scrollTop}/>
-
-            {/* <div className={classes.ProgressWrapper}>
-                <div
-                    className={classes.ProgressStyle}
-                    style={{ width: `${scrollTop}%` }}
-                ></div>
-            </div> */}
-
+            <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
-            <div className={classes.c}>tessdfsdfsfdst div</div>
             <div className={[x, classes.Div].join(" ")}></div>
         </div>
     );
