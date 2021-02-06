@@ -34,7 +34,7 @@
 }
 
 /* -------------- */
-.ProgressStyle {
+/* .ProgressStyle {
     height: 100%;
     background-color: blue;
     transition: width 0.1s linear;
@@ -50,4 +50,4 @@
     width: 100%;
     transition: width 0.1s linear;
 
-}
+} */

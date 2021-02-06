@@ -65,14 +65,14 @@ export default function Layout() {
     return (
         <div className={classes.Layout}>
             <Video />
-            <Navbar color={navColor} />
+            <Navbar color={navColor} scrollTop={scrollTop}/>
 
-            <div className={classes.ProgressWrapper}>
+            {/* <div className={classes.ProgressWrapper}>
                 <div
                     className={classes.ProgressStyle}
                     style={{ width: `${scrollTop}%` }}
                 ></div>
-            </div>
+            </div> */}
 
             <Picture />
             <AboutMe />
