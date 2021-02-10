@@ -14,6 +14,7 @@ export default function Layout() {
         window.addEventListener("scroll", onScroll);
         console.log('useEffect');
         return () => window.removeEventListener("scroll", onScroll);
+        // eslint-disable-next-line
     },[]);
 
     const [navColor, setNavColor] = useState(null);
@@ -64,6 +65,10 @@ export default function Layout() {
 
         setNavColor(null);
     };
+
+
+
+
 
     return (
         <div className={classes.Layout}>

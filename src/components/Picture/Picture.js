@@ -53,8 +53,18 @@ export default function Picture() {
     return (
         <header className={classes.Picture}>
             <div className={classes.TypingText}>
+            <div className={classes.Circles}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
                 {staticText}
                 {text}
+            <div className={classes.Circles}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             </div>
         </header>
     );
