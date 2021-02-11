@@ -1,6 +1,6 @@
 .Navbar {
     position: fixed;
-    background: rgba(48, 48, 48, 0.247);
+    background: transparent;
     top: 0;
     left: 0;
     width: 100vw;
@@ -12,6 +12,6 @@
 }
 
 .Red {
-    background: #396dfa;
+    background: rgba(48, 48, 48, 0.904);
     transition: background 1s linear;
 }

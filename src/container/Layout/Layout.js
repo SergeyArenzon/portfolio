@@ -58,7 +58,7 @@ export default function Layout() {
             return;
         }
 
-        if (window.scrollY > 927 && window.scrollY < 1200) {
+        if (window.scrollY > 300 && window.scrollY < 1200) {
             setNavColor("red");
             return;
         }
