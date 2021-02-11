@@ -1,19 +1,17 @@
 .AboutMe {
     height: 35vw;
-    width: 95%;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     max-width: 100%;
     margin-top: 200px;
     position: relative;
     margin: 150px auto;
     color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0px 0px 30px black;
     top: 0;
     display: flex;
 }
-
-
 
 .AboutMe .Profile {
     background: url("../../assets/images/profile.jpg");
@@ -40,29 +38,26 @@
     transition: all 0.2s linear;
 } */
 
-.AboutMe h1 {
-    position: absolute;
-    top: -60px;
+/* .AboutMe h1 {
+    position: relative;
     margin: 0;
     padding: 0;
     font-size: 75px;
-    left: 50%;
     font-weight: bold;
     text-shadow: 0 0 30px black;
     transform: translateX(-50%);
-    width: 100%;
 }
 .AboutMe h1 label {
     color: #2d54bd;
     font-weight: bolder;
-}
+} */
 
 .AboutMe p {
     padding-top: 200px;
     color: black;
 }
 
-.AboutMe .LeftSide{
+.AboutMe .LeftSide {
     background-color: #2d54bd;
     height: 100%;
     width: 40%;
@@ -71,7 +66,29 @@
     align-items: center;
 }
 
-.AboutMe .RightSide{
+.AboutMe .RightSide {
     width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AboutMe .LeftSide h1 {
+    font-size: 75px;
+    text-shadow: 0 0 30px black;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+
+}
+.AboutMe .RightSide h1 {
+    font-size: 75px;
+    font-weight: 800;
+    text-shadow: 0 0 30px black;
+    color: #2d54bd;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+
 }
