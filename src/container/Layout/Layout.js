@@ -38,7 +38,7 @@ export default function Layout() {
     };
 
     const mobileHandler = () => {
-        if (isMobile() && window.scrollY > 600) {
+        if (isMobile() && window.scrollY > 100) {
             setX(classes.Swipe);
             return;
         }

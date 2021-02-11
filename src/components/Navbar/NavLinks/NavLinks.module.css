@@ -9,33 +9,26 @@
     font-weight: bold;
 }
 
-.NavLinks div div{
+.NavLinks div div {
     height: 5px;
     background: transparent;
+    transition: color 0.3s linear;
+}
+.NavLinks div:hover {
+    color: #2d54bd;
+    transition: color 0.2s linear;
 }
 
 .NavLinks div:hover div {
     background: #2d54bd;
     animation: border-grow 0.5s linear;
-
-
 }
-
-
-
 
 @keyframes border-grow {
     0% {
         width: 0;
-    /* float: right; */
-
-
-
     }
-    100%{
+    100% {
         width: 100%;
-    /* float: right; */
-
-
     }
 }
