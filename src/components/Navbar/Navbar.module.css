@@ -5,9 +5,10 @@
     left: 0;
     width: 100vw;
     height: 5vh;
-    display: inline-block;
+    display: flex;
     z-index: 10;
     transition: background 1s linear;
+    justify-content: space-between;
 }
 
 .Red {

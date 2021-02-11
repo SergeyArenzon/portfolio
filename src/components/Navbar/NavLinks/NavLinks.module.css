@@ -1,0 +1,41 @@
+.NavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: auto;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.NavLinks div div{
+    height: 5px;
+    background: transparent;
+}
+
+.NavLinks div:hover div {
+    background: #2d54bd;
+    animation: border-grow 0.5s linear;
+
+
+}
+
+
+
+
+@keyframes border-grow {
+    0% {
+        width: 0;
+    /* float: right; */
+
+
+
+    }
+    100%{
+        width: 100%;
+    /* float: right; */
+
+
+    }
+}
