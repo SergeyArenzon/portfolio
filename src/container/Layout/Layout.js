@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
 import Video from "../../components/Background/Background";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Waves from '../../components/Waves/Waves';
 
 // =========================
 // Main scrolling background
@@ -76,6 +77,7 @@ export default function Layout() {
             <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
+            <Waves/>
             <div className={[x, classes.Div].join(" ")}></div>
         </div>
     );
