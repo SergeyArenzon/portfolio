@@ -77,7 +77,6 @@ export default function Layout() {
             <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
-            <Waves/>
             <div className={[x, classes.Div].join(" ")}></div>
         </div>
     );

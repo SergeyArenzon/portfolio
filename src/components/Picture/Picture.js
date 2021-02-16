@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import classes from "./Picture.module.css";
+import Waves from '../Waves/Waves';
 
 export default function Picture() {
     const [showText, setShowText] = useState(false);
@@ -66,6 +67,7 @@ export default function Picture() {
                 <div></div>
             </div>
             </div>
+            <Waves/>
         </header>
     );
 }
