@@ -1,16 +1,15 @@
 .AboutMe {
-    height: 35vw;
+    height: 800px;
+    min-height: 600px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     max-width: 100%;
-    margin-top: 200px;
     position: relative;
-    margin: 150px auto;
     color: white;
-    /* border-radius: 10px; */
     box-shadow: 0px 0px 30px black;
     top: 0;
     display: flex;
+    align-items: center;
 }
 
 .AboutMe .Profile {
@@ -24,33 +23,9 @@
     background-size: cover;
     border: 2px solid white;
     position: relative;
-    /* top: -50px; */
-    /* left: -50px; */
     box-shadow: 0 0 30px black;
     transition: all 0.2s linear;
-    margin-top: 20px;
 }
-/* .AboutMe .Profile:hover {
-    height: 160px;
-    width: 160px;
-    top: -55px;
-    left: -55px;
-    transition: all 0.2s linear;
-} */
-
-/* .AboutMe h1 {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    font-size: 75px;
-    font-weight: bold;
-    text-shadow: 0 0 30px black;
-    transform: translateX(-50%);
-}
-.AboutMe h1 label {
-    color: #2d54bd;
-    font-weight: bolder;
-} */
 
 .AboutMe p {
     padding-top: 200px;
@@ -59,11 +34,13 @@
 
 .AboutMe .LeftSide {
     background-color: #2d54bd;
-    height: 100%;
+    height: 65%;
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 0 65px 0 0;
+    position: relative;
 }
 
 .AboutMe .RightSide {
@@ -75,20 +52,52 @@
 }
 .AboutMe .LeftSide h1 {
     font-size: 75px;
-    text-shadow: 0 0 30px black;
+    /* text-shadow: 0 0 30px black; */
     width: 100%;
     text-align: right;
     padding-right: 20px;
     text-transform: uppercase;
-
 }
 .AboutMe .RightSide h1 {
     font-size: 75px;
     font-weight: 800;
-    text-shadow: 0 0 30px black;
+    /* text-shadow: 0 0 30px black; */
     color: #2d54bd;
     width: 100%;
     text-align: left;
     padding-left: 20px;
+}
+.MeText {
+    position: absolute;
+    width: auto;
+    margin: 0;
+    right: -135px;
+    top: 0;
+    color: #2d54bd;
+    text-shadow: none;
+    font-weight: 900;
+}
+.AboutText {
+    position: relative;
+}
 
+.AboutMe .LeftSide .Tail {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: 0;
+    right: -80px;
+    background: #2d54bd;
+
+}
+
+.AboutMe .LeftSide .Tail div {
+    height: 110px;
+    width: 139px;
+    background: white;
+    position: relative;
+    top: -36px;
+    right: 7px;
+    border-radius: 100%;
+    transform: rotate(45deg);
 }
