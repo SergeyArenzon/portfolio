@@ -101,3 +101,15 @@
     border-radius: 100%;
     transform: rotate(45deg);
 }
+
+.AboutMe .LeftSide ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.AboutMe .LeftSide ul li i {
+    height: 30px;
+    width: 30px;
+    /* color: black; */
+}
