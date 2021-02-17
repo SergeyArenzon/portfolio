@@ -11,17 +11,17 @@ export default function AboutMe() {
                 <div className={classes.Profile}></div>
                 <ul>
                     <li>
-                        <i className="fab fa-linkedin fa-2x"></i>
+                        <i className="fab fa-linkedin-in fa-lg"></i>
                     </li>
 
                     <li>
-                        <i class="fab fa-github-square fa-2x"></i>
+                        <i className="fab fa-github fa-2x"></i>
                     </li>
                     <li>
-                    <i class="fas fa-envelope-square fa-2x"></i>
+                        <i className="fas fa-envelope fa-lg"></i>
                     </li>
                     <li>
-                    <i class="fab fa-facebook-square fa-2x"></i>
+                        <i className="fab fa-facebook fa-2x"></i>
                     </li>
                 </ul>
                 <div className={classes.Tail}>
