@@ -43,13 +43,13 @@
 }
 
 .Picture .TypingText .Circles {
-   
     display: flex;
-    display: row;
-    width: 0 auto;
-    width: 100%;
+    width: 50%;
     margin: 40px 0;
-
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    margin: auto;
 }
 .Picture .TypingText .Circles div {
     background: transparent;
@@ -57,16 +57,58 @@
     width: 10px;
     border-radius: 100%;
     border: 3px #2d53bd96 solid;
-
-    margin-left: 150px;
+    animation: animate-circle2 2s infinite;
 
 }
 
-.Picture .TypingText .Circles div:nth-child(2){
+.Picture .TypingText .Circles div:nth-child(2) {
     background-color: #2d53bd96;
     border: 3px transparent solid;
+    animation: animate-circle 2s infinite;
+    height: 0;
+    width: 0;
 }
 
+@keyframes animate-circle2 {
+    0% {
+        height: 20px;
+        width: 20px;
+        background-color:  #2d53bd96;
+
+    }
+    50% {
+        height: 10px;
+        width: 10px;
+        background-color:  transparent;
+
+    }
+    100% {
+        height: 20px;
+        width: 20px;
+        background-color:  #2d53bd96;
+
+    }
+}
+
+@keyframes animate-circle {
+    0% {
+        height: 10px;
+        width: 10px;
+        background-color:  transparent;
+
+    }
+    50% {
+        height: 20px;
+        width: 20px;
+        background-color:  #2d53bd96;
+    }
+    100% {
+        height: 10px;
+        width: 10px;
+        background-color:  transparent;
+
+    }
+}
 
 @media (max-width: 1270px) {
     .Picture {
