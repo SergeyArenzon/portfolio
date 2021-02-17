@@ -110,14 +110,29 @@
     width: 40%;
 }
 
-.AboutMe .LeftSide ul li i {
+
+
+.AboutMe .LeftSide ul li{
+    height: 32px;
+    width: 32px;
     border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.678);
+
+}
+
+.AboutMe .LeftSide ul li:hover{
+    box-shadow: none;
+
 }
 
 .AboutMe .LeftSide ul li:first-child,
 .AboutMe .LeftSide ul li:nth-child(3)  {
     height: 32px;
     width: 32px;
+    min-width: 32px;
+    min-height: 32px;
     background-color: white;
     border-radius: 100%;
     color: rgb(68, 68, 68);
@@ -134,6 +149,20 @@
     color: #2d54bd;
 }
 
-.AboutMe .LeftSide ul li:hover{
-    
+.AboutMe .LeftSide ul li:hover {
+    color: black;
+    transition: color 0.15s linear;
+}
+
+.AboutMe .LeftSide ul li:first-child:hover ,
+.AboutMe .LeftSide ul li:nth-child(3):hover  {
+    background-color: black;
+    transition: background-color 0.15s linear;
+
+}
+.AboutMe .LeftSide ul li a{
+    outline-style: none;
+}
+.AboutMe .LeftSide ul li a:visited{
+    color: inherit;
 }

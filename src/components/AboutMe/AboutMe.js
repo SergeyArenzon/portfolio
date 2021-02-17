@@ -11,17 +11,41 @@ export default function AboutMe() {
                 <div className={classes.Profile}></div>
                 <ul>
                     <li>
-                        <i className="fab fa-linkedin-in fa-lg"></i>
+                        <a
+                            href="https://www.linkedin.com/in/sergeyarenzon/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-linkedin-in fa-lg"></i>
+                        </a>
                     </li>
 
                     <li>
-                        <i className="fab fa-github fa-2x"></i>
+                        <a
+                            href="https://github.com/SergeyArenzon"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-github fa-2x"></i>
+                        </a>
                     </li>
                     <li>
-                        <i className="fas fa-envelope fa-lg"></i>
+                        <a
+                            href="mailto:arenzonsergey@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fas fa-envelope fa-lg"></i>
+                        </a>
                     </li>
                     <li>
-                        <i className="fab fa-facebook fa-2x"></i>
+                        <a
+                            href="https://www.facebook.com/ArenzonSergey/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-facebook fa-2x"></i>
+                        </a>
                     </li>
                 </ul>
                 <div className={classes.Tail}>
