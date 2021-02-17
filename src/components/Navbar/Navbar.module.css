@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 
-.Red {
-    background: rgba(48, 48, 48, 0.904);
+.Colorize {
+    background: #616161;
     transition: background 1s linear;
 }

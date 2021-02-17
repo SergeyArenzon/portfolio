@@ -8,8 +8,8 @@ import NavLinks from './NavLinks/NavLinks';
 export default function Navbar(props) {
     let color = null;
     if (props.color) {
-        if (props.color === "red") {
-            color = classes.Red;
+        if (props.color) {
+            color = classes.Colorize;
         } else {
             color = null;
         }

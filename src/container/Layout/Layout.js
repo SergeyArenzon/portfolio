@@ -18,7 +18,7 @@ export default function Layout() {
         // eslint-disable-next-line
     },[]);
 
-    const [navColor, setNavColor] = useState(null);
+    const [navColor, setNavColor] = useState(false);
     const [x, setX] = useState(null);
     const [scrollTop, setScrollTop] = useState(0);
 
@@ -59,8 +59,8 @@ export default function Layout() {
             return;
         }
 
-        if (window.scrollY > 300 && window.scrollY < 1200) {
-            setNavColor("red");
+        if (window.scrollY > 50 ) {
+            setNavColor(true);
             return;
         }
 
