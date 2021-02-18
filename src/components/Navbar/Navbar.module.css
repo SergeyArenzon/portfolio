@@ -6,12 +6,15 @@
     width: 100vw;
     height: 5vh;
     display: flex;
-    z-index: 10;
+    z-index: 35;
     transition: background 1s linear;
     justify-content: space-between;
 }
 
 .Colorize {
-    background: #616161;
-    transition: background 1s linear;
+    background: #7a7a7a;
+    transition: all 1s linear;
+    transition-property: box-shadow, background;
+    box-shadow: 0 4px 8px -2px #7a7a7a;
+
 }
