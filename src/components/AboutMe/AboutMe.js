@@ -53,7 +53,7 @@ export default function AboutMe() {
                 </div>
             </div>
             <div className={classes.RightSide}>
-                <p>lorema asf sdf gfdfgslma ;sdfk;a lsds;gi js;dlgm</p>
+                <div className={classes.Text}></div>
             </div>
         </div>
     );
