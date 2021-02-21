@@ -14,8 +14,8 @@
 
 .AboutMe .Profile {
     background: url("../../assets/images/profile.jpg");
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;
@@ -25,6 +25,7 @@
     position: relative;
     box-shadow: 0 0 30px black;
     transition: all 0.2s linear;
+    
 }
 
 .AboutMe p {
@@ -43,34 +44,6 @@
     position: relative;
 }
 
-.AboutMe .RightSide {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.AboutMe .RightSide h1 {
-    font-size: 75px;
-    font-weight: 800;
-    /* text-shadow: 0 0 30px black; */
-    color: #2d54bd;
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-}
-
-
-.AboutMe .RightSide .Text {
-    height: 400px;
-    width: 100px;
-    border: 4px #2d54bd solid;
-    margin: auto;
-    border-radius: 15px;
-    justify-content: end;
-}
-
-
 .AboutMe .LeftSide h1 {
     font-size: 75px;
     /* text-shadow: 0 0 30px black; */
@@ -79,22 +52,6 @@
     padding-right: 20px;
     text-transform: uppercase;
 }
-
-.MeText {
-    position: absolute;
-    width: auto;
-    margin: 0;
-    right: -135px;
-    top: 0;
-    color: #2d54bd;
-    text-shadow: none;
-    font-weight: 900;
-}
-.AboutText {
-    position: relative;
-    font-weight: 600;
-}
-
 .AboutMe .LeftSide .Tail {
     position: absolute;
     height: 80px;
@@ -176,4 +133,60 @@
 .AboutMe .LeftSide ul li a:visited {
     color: inherit;
 }
+.MeText {
+    position: absolute;
+    width: auto;
+    margin: 0;
+    right: -135px;
+    top: 0;
+    color: #2d54bd;
+    text-shadow: none;
+    font-weight: 900;
+}
+.AboutText {
+    position: relative;
+    font-weight: 600;
+}
 
+
+/* RIGHT SIDE */
+
+.AboutMe .RightSide {
+    width: 60%;
+    height: 65%;
+    position: relative;
+}
+.AboutMe .RightSide h1 {
+    font-size: 75px;
+    font-weight: 800;
+    color: #2d54bd;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.AboutMe .RightSide .Text {
+    height: 50%;
+    width: 80%;
+    position: absolute;
+    border: 4px #2d54bd solid;
+
+    border-radius: 15px;
+    border-end-start-radius: 80px;
+    bottom: 0;
+    right: 0;
+   
+}
+
+.AboutMe .RightSide .TextP {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    padding-top: 30px;
+    text-align: left;
+}
+
+.AboutMe .RightSide .TextP  i {
+    color: #2d54bd;
+}
