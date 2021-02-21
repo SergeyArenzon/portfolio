@@ -110,15 +110,6 @@
     }
 }
 
-@media (max-width: 1270px) {
-    .Picture {
-        background: url("../../assets/images/1.jpg");
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
-}
 
 @media (max-width: 1270px) {
     .Picture {
@@ -129,7 +120,7 @@
         background-position: center;
     }
 }
-@media (max-width: 553px) {
+@media (max-width: 693px) {
     .Picture {
         background: url("../../assets/images/1.jpg");
         background-repeat: no-repeat;
@@ -138,8 +129,13 @@
         background-position: -420px;
     }
     .Picture .TypingText {
-        padding-top: 200px;
-        font-size: 2rem;
+        /* padding-top: 200px; */
+        font-size: 2.3rem;
         width: 350px;
+    }
+}
+@media (max-width: 693px){
+    .Picture .TypeSec{
+        width: 400px;
     }
 }

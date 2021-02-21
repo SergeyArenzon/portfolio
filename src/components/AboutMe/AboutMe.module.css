@@ -25,7 +25,6 @@
     position: relative;
     box-shadow: 0 0 30px black;
     transition: all 0.2s linear;
-    
 }
 
 .AboutMe p {
@@ -148,7 +147,6 @@
     font-weight: 600;
 }
 
-
 /* RIGHT SIDE */
 
 .AboutMe .RightSide {
@@ -175,7 +173,6 @@
     border-end-start-radius: 80px;
     bottom: 0;
     right: 0;
-   
 }
 
 .AboutMe .RightSide .TextP {
@@ -185,8 +182,63 @@
     padding: 0;
     padding-top: 30px;
     text-align: left;
+    font-size: 1.5rem;
+    font-family: "BebasNeue";
+    line-height: 1.8rem;
 }
 
-.AboutMe .RightSide .TextP  i {
+.AboutMe .RightSide .TextP strong {
     color: #2d54bd;
+}
+
+.AboutMe .RightSide .TextP i {
+    color: #2d54bd;
+    animation: controller 1s infinite;
+}
+
+@keyframes controller {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* mobile */
+@media (max-width: 519px){
+    .AboutMe {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+    .AboutMe .LeftSide{
+        width: 100%;
+        height: auto;
+        /* display: inline-block; */
+        border-bottom-left-radius: 65px;
+    }
+    .AboutMe .LeftSide .AboutText{
+        width: auto;
+        text-align: left;
+        padding-right: 0;
+        display: flex;
+
+    }
+    .AboutMe .LeftSide .MeText{
+        color: rgb(134, 134, 134);
+        /* position: relative; */
+        /* left: 0; */
+        width: auto;
+        position: static;
+        text-align: center;
+        padding-left: 10px;
+
+    }
 }

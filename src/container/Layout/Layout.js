@@ -76,7 +76,7 @@ export default function Layout() {
             <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
-            <div className={[x, classes.Div].join(" ")}></div>
+            {/* <div className={[x, classes.Div].join(" ")}></div> */}
         </div>
     );
 }
