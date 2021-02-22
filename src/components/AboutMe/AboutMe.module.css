@@ -223,11 +223,15 @@
     .AboutMe .LeftSide{
         width: 95%;
         height: auto;
-        /* display: inline-block; */
         border-radius: 10px;
         border-bottom-left-radius: 90px;
         border-top-right-radius: 90px;
     }
+   
+    .AboutMe .LeftSide .Profile {
+        margin-bottom: 50px;
+    }
+
     .AboutMe .LeftSide .AboutText{
         width: auto;
         text-align: left;
@@ -235,21 +239,20 @@
         display: flex;
 
     }
+   
     .AboutMe .LeftSide .MeText{
         color: rgb(134, 134, 134);
-        /* position: relative; */
-        /* left: 0; */
         width: auto;
         position: static;
         text-align: center;
         padding-left: 10px;
 
     }
+
     .AboutMe .RightSide{
         width: 100vw;
         display: flex;
         justify-content: center;
-        /* padding: 0 15px 0 15px; */
     }
     .AboutMe .RightSide .TextP {
         width: 100vw;
