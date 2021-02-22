@@ -25,6 +25,7 @@
     position: relative;
     box-shadow: 0 0 30px black;
     transition: all 0.2s linear;
+    margin-bottom: 50px;
 }
 
 .AboutMe p {
@@ -34,7 +35,7 @@
 
 .AboutMe .LeftSide {
     background-color: #2d54bd;
-    height: 65%;
+    height: 600px;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -228,9 +229,7 @@
         border-top-right-radius: 90px;
     }
    
-    .AboutMe .LeftSide .Profile {
-        margin-bottom: 50px;
-    }
+    
 
     .AboutMe .LeftSide .AboutText{
         width: auto;
