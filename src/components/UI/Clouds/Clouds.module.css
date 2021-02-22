@@ -1,0 +1,10 @@
+.Clouds {
+    width: 100vw;
+    color: white;
+    display: block;
+    position: relative;
+    transform: rotate(180deg);
+    height: 100px;
+
+
+}
