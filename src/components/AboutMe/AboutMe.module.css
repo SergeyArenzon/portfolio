@@ -221,7 +221,7 @@
         
     }
     .AboutMe .LeftSide{
-        width: 100%;
+        width: 95%;
         height: auto;
         /* display: inline-block; */
         border-bottom-left-radius: 65px;
@@ -245,12 +245,14 @@
     }
     .AboutMe .RightSide{
         width: 100vw;
+        display: flex;
+        justify-content: center;
         /* padding: 0 15px 0 15px; */
     }
     .AboutMe .RightSide .TextP {
         width: 100vw;
         position: relative;
-        /* padding: 0 15px 0 15px; */
+        padding: 0 15px 0 15px;
         text-align: center;
     }
     .AboutMe .RightSide .Text {
