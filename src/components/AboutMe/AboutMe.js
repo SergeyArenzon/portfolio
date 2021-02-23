@@ -79,7 +79,7 @@ export default function AboutMe() {
                             GAMER <i className="fas fa-gamepad"></i>
                         </strong>
                     </p>
-                    <CvButton />
+                    <CvButton type="resume_link">RESUME</CvButton>
                 </div>
             </div>
             <Clouds />
