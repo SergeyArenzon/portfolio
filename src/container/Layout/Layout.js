@@ -18,7 +18,6 @@ export default function Layout() {
     },[]);
 
     const [navColor, setNavColor] = useState(false);
-    const [x, setX] = useState(null);
     const [scrollTop, setScrollTop] = useState(0);
 
     //  Gets the scrolled position for the navbar
@@ -39,36 +38,25 @@ export default function Layout() {
 
     const mobileHandler = () => {
         if (isMobile() && window.scrollY > 100) {
-            setX(classes.Swipe);
             return;
         }
     };
 
-    const onScroll = () => {
-        console.log(window.scrollY);
+    const onScroll = () =>{
 
-        //  Mobile effect handler
-        mobileHandler();
-
-        // progreebar handler
+        // progressbar handler
         progressBarHandler();
-
-        if (!isMobile() && window.scrollY > 1200) {
-            setX(classes.Swipe);
-            return;
-        }
 
         if (window.scrollY > 50 ) {
             setNavColor(true);
             return;
         }
-
         setNavColor(null);
     };
 
 
 
-
+    
 
     return (
         <div className={classes.Layout}>

@@ -24,8 +24,9 @@
     border: 2px solid white;
     position: relative;
     box-shadow: 0 0 30px black;
-    transition: all 0.2s linear;
+    transition: transform 0.3s linear;
     margin-bottom: 50px;
+
 }
 
 .AboutMe p {
@@ -190,7 +191,7 @@
     font-size: 1.5rem;
     font-family: "BebasNeue";
     line-height: 2.5rem;
-   
+
     /* margin: auto; */
     /* padding-top: 150px; */
 }
@@ -225,7 +226,7 @@
     .AboutMe {
         padding-top: 40px;
         flex-direction: column;
-        height: 1000px;
+        height: 1020px;
     }
     .AboutMe .LeftSide {
         width: 95%;
@@ -256,7 +257,7 @@
         justify-content: center;
     }
     .AboutMe .RightSide .TextP {
-        width: 100vw;
+        width: 85vw;
         position: relative;
         text-align: center;
     }
@@ -266,4 +267,14 @@
     .AboutMe .Tail {
         display: none;
     }
+     svg {
+        width: 1000px;
+    }
+
+}
+
+
+.HideLeft{
+    transform: translateX(-1000px);
+    /* transition: transform 7s linear; */
 }

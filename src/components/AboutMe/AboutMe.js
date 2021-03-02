@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./AboutMe.module.css";
 import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 
 export default function AboutMe() {
+    console.log(window.scrollY);
+
+    const [visible, setVisible] = useState(false);
+    
+
+
+    if(!visible && window.scrollY > 400){
+        setVisible(true);
+    }
+    else{
+        // setVisible(false);
+    }
+
+
+
     const socialIcons = (
         <ul>
             <li>
@@ -54,7 +69,7 @@ export default function AboutMe() {
                         About<h1 className={classes.MeText}>ME</h1>
                     </h1>
 
-                    <div className={classes.Profile}></div>
+                    <div className={[classes.Profile, visible ? null : classes.HideLeft].join(' ')}></div>
                     {socialIcons}
 
                     <div className={classes.Tail}>
