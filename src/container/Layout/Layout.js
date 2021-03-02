@@ -35,13 +35,6 @@ export default function Layout() {
     const isMobile = () => {
         return window.innerWidth <= 800;
     };
-
-    const mobileHandler = () => {
-        if (isMobile() && window.scrollY > 100) {
-            return;
-        }
-    };
-
     const onScroll = () =>{
 
         // progressbar handler
