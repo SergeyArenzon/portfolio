@@ -27,7 +27,6 @@
     transition: all 0.4s ease-out;
     transition-delay: 0.2s;
     margin-bottom: 50px;
-
 }
 
 .AboutMe p {
@@ -151,7 +150,6 @@
     font-weight: 600;
     transition: all 0.4s ease-out;
     transition-delay: 0.4s;
-    
 }
 
 /* RIGHT SIDE */
@@ -164,6 +162,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .AboutMe .RightSide h1 {
     font-size: 75px;
@@ -272,15 +271,36 @@
     .AboutMe .Tail {
         display: none;
     }
-     svg {
+    svg {
         width: 1000px;
     }
-
 }
 
-
-.HideLeft{
+.HideLeft {
     transform: translateX(-400px);
     opacity: 0;
-    /* transition: transform 7s linear; */
+}
+
+.HideRight {
+    transform: translateX(400px);
+    opacity: 0;
+}
+
+.Shake {
+    animation: shake 0.5s forwards;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-7deg);
+    }
+    70% {
+        transform: rotate(7deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }

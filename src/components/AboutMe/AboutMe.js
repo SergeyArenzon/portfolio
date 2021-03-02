@@ -10,7 +10,7 @@ export default function AboutMe() {
     
 
 
-    if(!visible && window.scrollY > 400){
+    if(!visible && window.scrollY > 600){
         setVisible(true);
     }
     else{
@@ -76,7 +76,7 @@ export default function AboutMe() {
                         <div></div>
                     </div>
                 </div>
-                <div className={classes.RightSide}>
+                <div className={[classes.RightSide, visible ? classes.Shake : null].join(' ')}>
                     <p className={classes.TextP}>
                         I'am BS.c graduate of{" "}
                         <strong>Computer Science & Mathematics</strong> and web
