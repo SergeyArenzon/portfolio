@@ -24,7 +24,8 @@
     border: 2px solid white;
     position: relative;
     box-shadow: 0 0 30px black;
-    transition: transform 0.3s linear;
+    transition: all 0.4s ease-out;
+    transition-delay: 0.2s;
     margin-bottom: 50px;
 
 }
@@ -80,6 +81,7 @@
     justify-content: space-between;
     padding: 0;
     width: 40%;
+    transition: all 0.4s ease-out;
 }
 
 .AboutMe .LeftSide ul li {
@@ -147,6 +149,9 @@
 .AboutText {
     position: relative;
     font-weight: 600;
+    transition: all 0.4s ease-out;
+    transition-delay: 0.4s;
+    
 }
 
 /* RIGHT SIDE */
@@ -275,6 +280,7 @@
 
 
 .HideLeft{
-    transform: translateX(-1000px);
+    transform: translateX(-400px);
+    opacity: 0;
     /* transition: transform 7s linear; */
 }

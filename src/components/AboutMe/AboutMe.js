@@ -20,7 +20,7 @@ export default function AboutMe() {
 
 
     const socialIcons = (
-        <ul>
+        <ul className={visible ? null : classes.HideLeft}>
             <li>
                 <a
                     href="https://www.linkedin.com/in/sergeyarenzon/"
@@ -65,7 +65,7 @@ export default function AboutMe() {
         <div>
             <div className={classes.AboutMe}>
                 <div className={classes.LeftSide}>
-                    <h1 className={classes.AboutText}>
+                    <h1 className={[classes.AboutText, visible ? null : classes.HideLeft].join(' ')}>
                         About<h1 className={classes.MeText}>ME</h1>
                     </h1>
 
