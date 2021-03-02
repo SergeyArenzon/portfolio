@@ -281,11 +281,6 @@
     opacity: 0;
 }
 
-.HideRight {
-    transform: translateX(400px);
-    opacity: 0;
-}
-
 .Shake {
     animation: shake 0.5s forwards;
 }

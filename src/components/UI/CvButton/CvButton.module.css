@@ -34,7 +34,7 @@
 }
 
 .btn:hover::before {
-    height: 180%;
+    height: 200%;
     z-index: -1;
 }
 

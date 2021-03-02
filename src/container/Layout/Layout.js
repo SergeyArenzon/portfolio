@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
 import Video from "../../components/Background/Background";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Projects from "../Projects/Projects";
 
 // =========================
 // Main scrolling background
@@ -12,10 +13,10 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 export default function Layout() {
     useEffect(() => {
         window.addEventListener("scroll", onScroll);
-        console.log('useEffect');
+        console.log("useEffect");
         return () => window.removeEventListener("scroll", onScroll);
         // eslint-disable-next-line
-    },[]);
+    }, []);
 
     const [navColor, setNavColor] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
@@ -35,21 +36,16 @@ export default function Layout() {
     const isMobile = () => {
         return window.innerWidth <= 800;
     };
-    const onScroll = () =>{
-
+    const onScroll = () => {
         // progressbar handler
         progressBarHandler();
 
-        if (window.scrollY > 50 ) {
+        if (window.scrollY > 50) {
             setNavColor(true);
             return;
         }
         setNavColor(null);
     };
-
-
-
-    
 
     return (
         <div className={classes.Layout}>
@@ -57,7 +53,7 @@ export default function Layout() {
             <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
-            {/* <div className={[x, classes.Div].join(" ")}></div> */}
+            <Projects />
         </div>
     );
 }
