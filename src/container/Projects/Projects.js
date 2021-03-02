@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <div className={classes.Projects}>
             <div className={classes.Title}>
-                <h1>PROJECTS</h1>
+                <h1><span>P</span>ROJECTS</h1>
                 <svg 
                     className={classes.Curve}
                     xmlns="http://www.w3.org/2000/svg"

@@ -2,26 +2,38 @@
     position: relative;
     height: 70vh;
     margin-top: 100px;
-
 }
 
-.Projects .Title{
+.Projects .Title {
     color: white;
     position: relative;
     height: 200px;
-} 
-
+}
+.Projects .Title h1 {
+    font-size: 4.5rem;
+    font-family: "BebasNeue";
+    letter-spacing: 10px;
+}
+.Projects .Title h1 span {
+    background: #2d54bd;
+    padding-left: 10px;
+    padding-right: -100px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 6px;
+}
 .Projects .ProjectsList {
     height: 300px;
     background: white;
 }
 
-.Curve{
+.Curve {
     fill: white;
     height: 100px;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-
 }
