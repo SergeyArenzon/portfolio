@@ -9,7 +9,16 @@
     z-index: 35;
     transition: background 1s linear;
     justify-content: space-between;
+
 }
+
+
+
+.Navbar .Hamburger {
+   display: none;
+}
+
+
 
 .Colorize {
     background: #7a7a7a;
@@ -17,4 +26,25 @@
     transition-property: box-shadow, background;
     box-shadow: 0 4px 8px -2px #7a7a7a;
 
+}
+
+
+
+@media (max-width: 500px){
+    .Navbar .Hamburger {
+        width: 40px;
+        height: 3px;
+        background: white;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+        display: inline-block;
+        right: 30px;
+    }
+    .Navbar .Hamburger:before, .Navbar .Hamburger:after {
+        content: "";
+        width: 40px;
+        height: 3px;
+        background: black;
+    }
 }

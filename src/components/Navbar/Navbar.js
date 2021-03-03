@@ -19,6 +19,7 @@ export default function Navbar(props) {
         <nav className={[classes.Navbar, color].join(" ")}>
             <Logo />
             <NavLinks/>
+            <div className={classes.Hamburger}></div>
             <ProgressBar scrollTop={props.scrollTop}/>
         </nav>
     );
