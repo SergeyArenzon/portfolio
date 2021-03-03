@@ -7,19 +7,20 @@
     color: white;
     cursor: pointer;
     font-weight: bold;
+    list-style-type: none;
 }
 
-.NavLinks div div {
+.NavLinks li div {
     height: 5px;
     background: transparent;
     transition: color 0.3s linear;
 }
-.NavLinks div:hover {
+.NavLinks li:hover {
     color: #2d54bd;
     transition: color 0.2s linear;
 }
 
-.NavLinks div:hover div {
+.NavLinks li:hover div {
     background: #2d54bd;
     animation: border-grow 0.5s linear;
 }

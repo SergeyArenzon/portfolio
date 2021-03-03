@@ -9,19 +9,19 @@ export default function NavLinks(props) {
     }
 
     return (
-        <div className={[classes.NavLinks, showNavLinks].join(" ")}>
-            <div>
+        <ul className={[classes.NavLinks, showNavLinks].join(" ")}>
+            <li>
                 HOME <div></div>
-            </div>
-            <div>
+            </li>
+            <li>
                 ABOUT <div></div>
-            </div>
-            <div>
+            </li>
+            <li>
                 PROJECTS<div></div>
-            </div>
-            <div>
+            </li>
+            <li>
                 CONTACT<div></div>
-            </div>
-        </div>
+            </li>
+        </ul>
     );
 }
