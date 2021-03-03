@@ -47,7 +47,7 @@
         transition: all 0.6s ease-out;
     }
     .DisplayNavLinks {
-        display: inline-flex;
+        /* display: inline-flex; */
         clip-path: circle(1100px at 120% -10%);
         -webkit-clip-path: circle(1100px at 120% -10%);
     }
