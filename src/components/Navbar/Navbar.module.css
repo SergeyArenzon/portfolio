@@ -9,28 +9,20 @@
     z-index: 35;
     transition: background 1s linear;
     justify-content: space-between;
-
 }
-
-
 
 .Navbar .Hamburger {
-   display: none;
+    display: none;
 }
-
-
 
 .Colorize {
     background: #7a7a7a;
     transition: all 1s linear;
     transition-property: box-shadow, background;
     box-shadow: 0 4px 8px -2px #7a7a7a;
-
 }
 
-
-
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .Navbar .Hamburger {
         width: 40px;
         height: 3px;
@@ -40,11 +32,23 @@
         position: relative;
         display: inline-block;
         right: 30px;
+        border-radius: 30px;
     }
-    .Navbar .Hamburger:before, .Navbar .Hamburger:after {
+    .Navbar .Hamburger:before,
+    .Navbar .Hamburger:after {
         content: "";
         width: 40px;
         height: 3px;
         background: black;
+        position: relative;
+        display: inline-block;
+        border-radius: 30px;
+        background: white;
+    }
+    .Navbar .Hamburger:before {
+        bottom: 20px;
+    }
+    .Navbar .Hamburger:after {
+        top: -23px;
     }
 }
