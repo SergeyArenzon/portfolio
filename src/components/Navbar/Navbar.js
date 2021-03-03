@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Logo from "../Logo/Logo";
 import classes from "./Navbar.module.css";
-import ProgressBar from '../ProgressBar/ProgressBar';
-import NavLinks from './NavLinks/NavLinks';
-
+import ProgressBar from "../ProgressBar/ProgressBar";
+import NavLinks from "./NavLinks/NavLinks";
 
 export default function Navbar(props) {
-
     const [hamburgerClicked, setHamburgerClicked] = useState(false);
 
     let color = null;
@@ -18,11 +16,15 @@ export default function Navbar(props) {
         }
     }
 
-
     // Hamburger click & full screen navlinks handler
     const hamburgerClickHandler = () => {
-        console.log(hamburgerClicked)
+        console.log(hamburgerClicked);
         setHamburgerClicked(!hamburgerClicked);
+    };
+
+    let hamburgerClick = null;
+    if (hamburgerClicked) {
+        hamburgerClick = classes.HamburgerClicked;
     }
 
     return (
@@ -30,11 +32,17 @@ export default function Navbar(props) {
             <Logo />
             <NavLinks showFullscreenLinks={hamburgerClicked} />
 
-            <div className={classes.HamburgerContainer} onClick={() => hamburgerClickHandler()}>
+            {/* Hamburger */}
+            <div
+                className={[classes.HamburgerContainer, hamburgerClick].join(
+                    " "
+                )}
+                onClick={() => hamburgerClickHandler()}
+            >
                 <div className={classes.Hamburger}></div>
             </div>
-            
-            <ProgressBar scrollTop={props.scrollTop}/>
+
+            <ProgressBar scrollTop={props.scrollTop} />
         </nav>
     );
 }

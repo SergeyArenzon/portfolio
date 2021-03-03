@@ -11,7 +11,8 @@
     justify-content: space-between;
 }
 
-.Navbar .Hamburger, .HamburgerContainer {
+.Navbar .Hamburger,
+.HamburgerContainer {
     display: none;
 }
 
@@ -23,37 +24,61 @@
 }
 
 @media (max-width: 500px) {
-    .HamburgerContainer{
-        width: 80px;
-        display: inline-block;
+    /* Close hamburger */
+    .HamburgerContainer {
+        width: 40px;
+        height: 30px;
+        display: flex;
+        position: relative;
         z-index: 100;
+        /* background: red; */
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 17px;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        transition: all .4s ease;
 
     }
     .Navbar .Hamburger {
-        width: 40px;
+        width: 90%;
         height: 3px;
-        background: white;
-        top: 50%;
-        transform: translateY(-50%);
+        background-color: white;
         position: relative;
-        display: inline-block;
-        border-radius: 30px;
+        display: flex; 
+        align-items: center;
+         justify-content: center;
+        border-radius: 25px;
     }
     .Navbar .Hamburger:before,
     .Navbar .Hamburger:after {
+        background: inherit;
+        position: absolute;
         content: "";
-        width: 40px;
+        width: 100%;
         height: 3px;
-        background: black;
-        position: relative;
-        display: inline-block;
-        border-radius: 30px;
-        background: white;
+        border-radius: 25px;
+
     }
     .Navbar .Hamburger:before {
-        bottom: 20px;
+        top: -7px;
+        /* background: black; */
     }
     .Navbar .Hamburger:after {
-        top: -23px;
+        top: 7px;
+        /* background: green; */
     }
+
+    .Navbar .HamburgerClicked{
+        transform: translateY(-50%) rotate(-225deg);
+    }
+    .Navbar .HamburgerClicked .Hamburger:before, .Navbar .HamburgerClicked .Hamburger:after {
+        top: 0;
+        transform:    rotate(90deg);
+        transition: all .4s ease;
+    }
+
+
 }
+
