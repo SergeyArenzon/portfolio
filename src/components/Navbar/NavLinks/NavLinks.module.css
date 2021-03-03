@@ -8,7 +8,6 @@
     cursor: pointer;
     font-weight: bold;
     list-style-type: none;
-
 }
 
 .NavLinks li div {
@@ -49,7 +48,30 @@
         transition: all 0.6s ease-out;
         padding: 0;
         margin: 0;
+        
     }
+    .NavLinks li {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    .Slide li {
+        transform: translateX(0);
+        transition: all 0.5s ease-out;
+        opacity: 1;
+    }
+
+    .Slide li:nth-child(2){
+        transition-delay: 0.2s;
+    }
+    .Slide li:nth-child(3){
+        transition-delay: 0.4s;
+    }
+    .Slide li:nth-child(4){
+        transition-delay: 0.6s;
+    }
+
+
     .DisplayNavLinks {
         /* display: inline-flex; */
         clip-path: circle(1100px at 120% -10%);

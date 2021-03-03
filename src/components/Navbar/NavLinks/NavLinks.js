@@ -3,13 +3,16 @@ import classes from "./NavLinks.module.css";
 
 export default function NavLinks(props) {
     let showNavLinks = null;
+    let slideLink = null;
 
     if (props.showFullscreenLinks) {
-        showNavLinks = classes.DisplayNavLinks;
+        showNavLinks = [classes.DisplayNavLinks];
+        slideLink = [classes.Slide];
+
     }
 
     return (
-        <ul className={[classes.NavLinks, showNavLinks].join(" ")}>
+        <ul className={[classes.NavLinks, showNavLinks, slideLink].join(" ")}>
             <li>
                 HOME <div></div>
             </li>
