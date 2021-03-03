@@ -33,7 +33,7 @@
     }
 }
 
-@media(max-width: 500px){
+@media (max-width: 500px) {
     .NavLinks {
         position: fixed;
         height: 100vh;
@@ -41,6 +41,14 @@
         background: #2d54bd;
         flex-direction: column;
         justify-content: space-evenly;
-        display: none;
+        /* display: none; */
+        clip-path: circle(100px at 120% -10%);
+        -webkit-clip-path: circle(100px at 120% -10%);
+        transition: all 0.6s ease-out;
+    }
+    .DisplayNavLinks {
+        display: inline-flex;
+        clip-path: circle(1100px at 120% -10%);
+        -webkit-clip-path: circle(1100px at 120% -10%);
     }
 }

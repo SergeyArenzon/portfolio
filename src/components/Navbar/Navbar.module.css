@@ -26,6 +26,7 @@
     .HamburgerContainer{
         width: 80px;
         display: inline-block;
+        z-index: 100;
 
     }
     .Navbar .Hamburger {
@@ -36,7 +37,6 @@
         transform: translateY(-50%);
         position: relative;
         display: inline-block;
-        /* right: 30px; */
         border-radius: 30px;
     }
     .Navbar .Hamburger:before,

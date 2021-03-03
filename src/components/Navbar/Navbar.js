@@ -28,9 +28,10 @@ export default function Navbar(props) {
     return (
         <nav className={[classes.Navbar, color].join(" ")}>
             <Logo />
-            <NavLinks/>
+            <NavLinks showFullscreenLinks={hamburgerClicked} />
+
             <div className={classes.HamburgerContainer} onClick={() => hamburgerClickHandler()}>
-                <div className={classes.Hamburger} ></div>
+                <div className={classes.Hamburger}></div>
             </div>
             
             <ProgressBar scrollTop={props.scrollTop}/>
