@@ -33,9 +33,9 @@ export default function Layout() {
     };
 
     // Checks if user on mobile mode
-    const isMobile = () => {
-        return window.innerWidth <= 800;
-    };
+    // const isMobile = () => {
+    //     return window.innerWidth <= 800;
+    // };
     const onScroll = () => {
         // progressbar handler
         progressBarHandler();
