@@ -55,6 +55,7 @@ export default function Layout() {
             <Picture />
             <AboutMe />
             <Projects />
+            xxgcfg
         </div>
     );
 }
