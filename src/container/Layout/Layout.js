@@ -46,7 +46,8 @@ export default function Layout() {
         }
         setNavColor(null);
     };
-
+ 
+    
     return (
         <div className={classes.Layout}>
             <Video />
