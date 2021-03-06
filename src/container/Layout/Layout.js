@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import classes from "./Layout.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
-import Video from "../../components/Background/Background";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
+import Background from "../../components/Background/Background";
 
 // =========================
 // Main scrolling background
@@ -39,6 +39,7 @@ export default function Layout() {
     const onScroll = () => {
         // progressbar handler
         progressBarHandler();
+        console.log(window.scrollY);
 
         if (window.scrollY > 50) {
             setNavColor(true);
@@ -46,16 +47,14 @@ export default function Layout() {
         }
         setNavColor(null);
     };
- 
-    
+
     return (
         <div className={classes.Layout}>
-            <Video />
+            <Background />
             <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
             <Projects />
-            xxgcfg
         </div>
     );
 }

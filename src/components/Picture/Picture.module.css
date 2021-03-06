@@ -114,7 +114,7 @@
 
 @media (max-width: 1270px) {
     .Picture {
-        background: url("../../assets/images/background.jpeg");
+        /* background: url("../../assets/images/background.jpeg"); */
         background-repeat: no-repeat;
         height: 100vh;
         background-size: cover;
@@ -123,7 +123,7 @@
 }
 @media (max-width: 693px) {
     .Picture {
-        background: url("../../assets/images/background.jpeg");
+        /* background: url("../../assets/images/background.jpeg"); */
         background-repeat: no-repeat;
         height: 100vh;
         background-size: cover;

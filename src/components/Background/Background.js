@@ -7,9 +7,12 @@ import classes from "./Background.module.css";
 // ================
 
 export default function Background() {
+    if(window.scrollY > 600){
+
+    }
     return (
         <video autoPlay loop muted className={classes.Background}>
-            <source src={background} type="video/mp4" />
+            {window.scrollY > 600 ? <source src={background} type="video/mp4" /> : null}
         </video>
     );
 }
