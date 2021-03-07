@@ -134,9 +134,12 @@
         font-size: 2.3rem;
         width: 350px;
     }
-}
-@media (max-width: 693px){
     .Picture .TypeSec{
         width: 400px;
+    }
+}
+@media (max-width: 550px){
+    .Picture {
+        background-position: -600px;
     }
 }
