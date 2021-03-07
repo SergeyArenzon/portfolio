@@ -1,8 +1,10 @@
 import classes from './Projects.module.css'
 import React from 'react';
+import project_list from './project_list.json';
 
 
 export default function Projects() {
+    console.log(project_list);
     return (
         <div className={classes.Projects}>
             <div className={classes.Title}>

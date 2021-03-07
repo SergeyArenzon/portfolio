@@ -28,7 +28,7 @@
     box-shadow: 0 0 30px black;
     transition: all 0.4s ease-out;
     transition-delay: 0.2s;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .AboutMe p {
@@ -232,11 +232,11 @@
     .AboutMe {
         padding-top: 40px;
         flex-direction: column;
-        height: 1120px;
+        height: 900px;
     }
     .AboutMe .LeftSide {
         width: 95%;
-        height: auto;
+        height: 450px;
         border-radius: 10px;
         border-bottom-left-radius: 90px;
         border-top-right-radius: 90px;
@@ -247,6 +247,7 @@
         text-align: left;
         padding-right: 0;
         display: flex;
+        font-size: 3rem;
     }
 
     .AboutMe .LeftSide .MeText {
@@ -255,8 +256,17 @@
         position: static;
         text-align: center;
         padding-left: 10px;
+        font-size: 3rem;
+
     }
 
+    .AboutMe .LeftSide .Profile {
+        height: 200px;
+        width: 200px;
+    }
+    .AboutMe .LeftSide ul {
+        width: 50%;
+    }
     .AboutMe .RightSide {
         width: 100vw;
         display: flex;
