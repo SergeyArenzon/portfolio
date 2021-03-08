@@ -1,13 +1,42 @@
 [
     {
         "name": "MyBurger",
-        "descriuption": "lorem idf sdf s, dfs dfdfsdfdf.",
-        "image": "location/1/2/3/4"
+        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "image": "location/1/2/3/4",
+        "technologies": [
+            "NodeJS",
+            "ExpressJS",
+            "ReactJS",
+            "MongoDB",
+            "Redux",
+            "React Hooks",
+            "JWT"
+        ]
     },
 
     {
-        "name": "MyBurger2",
-        "descriuption": "lorem idf sdf s, dfs dfdfsdfdf.",
-        "image": "location/1/2/3/4"
+        "name": "Sentimental Analysis Web Tool",
+        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "image": "",
+        "technologies": ["NodeJS", "ExpressJS", "Twitter API"]
+    },
+    {
+        "name": "MyAppartment",
+        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "image": "",
+        "technologies": ["Java", "Firebase"]
+    },
+    {
+        "name": "Evil twin attack (Arch linux)",
+        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "image": "",
+        "technologies": [
+            "Python",
+            "scapy",
+            "Apache server",
+            "HTML",
+            "CSS",
+            "php"
+        ]
     }
 ]
