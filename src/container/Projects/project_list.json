@@ -1,7 +1,7 @@
 [
     {
         "name": "MyBurger",
-        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders. Using JWT Auth.",
         "image": "location/1/2/3/4",
         "technologies": [
             "NodeJS",
@@ -11,32 +11,39 @@
             "Redux",
             "React Hooks",
             "JWT"
-        ]
+        ],
+        "github": "https://github.com/SergeyArenzon/MyBurger",
+        "liveDemo": "https://my-burger-market.herokuapp.com"
     },
 
     {
         "name": "Sentimental Analysis Web Tool",
-        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "description": "This Web app tool analyzing recent tweeters opinion about any subject user like",
         "image": "",
-        "technologies": ["NodeJS", "ExpressJS", "Twitter API"]
+        "technologies": ["NodeJS", "ExpressJS", "Twitter API"],
+        "github": "https://github.com/SergeyArenzon/sentimental_analysis_project.git",
+        "liveDemo": "https://tweets-sanalysis.herokuapp.com/"
     },
     {
         "name": "MyAppartment",
-        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "description": "Roommates Android app for that helps us to manage bills & expenses properly.",
         "image": "",
-        "technologies": ["Java", "Firebase"]
+        "technologies": ["Java", "Firebase"],
+        "github": "https://github.com/SergeyArenzon/My_Appartment.git"
+        
     },
     {
         "name": "Evil twin attack (Arch linux)",
-        "description": "lorem idf sdf s, dfs dfdfsdfdf.",
+        "description": "Built in cyber security course, Python app for phishing gmail accounts by creating fake AP & fake gmail login page, Apache server, spamming deAuth packets.",
         "image": "",
         "technologies": [
             "Python",
-            "scapy",
+            "Scapy",
             "Apache server",
             "HTML",
             "CSS",
             "php"
-        ]
+        ],
+        "github": "https://github.com/SergeyArenzon/MITM_ATTACK_TOOL"
     }
 ]
