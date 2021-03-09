@@ -1,14 +1,10 @@
 import classes from "./Projects.module.css";
-import React, { useEffect } from "react";
-import project_list from "./project_list.json";
+import React from "react";
+// import project_list from "./project_list.json";
 import Project from "./Project/Project";
 // import VisibilitySensor from "react-visibility-sensor";
 
 export default function Projects() {
-    let projectClasses = classes.HiddenProject;
-
-   
-
     return (
         <div className={classes.Projects}>
             <div className={classes.Title}>
