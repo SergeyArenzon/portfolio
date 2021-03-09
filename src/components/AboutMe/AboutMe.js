@@ -88,7 +88,7 @@ export default function AboutMe() {
                 >
                     <p className={classes.TextP}>
                         I'am BS.c graduate of{" "}
-                        <strong>Computer Science & Mathematics</strong> and web
+                        <strong>Computer Science & Mathematics <i className="fas fa-graduation-cap"></i></strong> and web
                         fullstack developer course.<br></br> Experienced with
                         the newest technologies like{" "}
                         <strong>
