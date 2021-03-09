@@ -1,8 +1,25 @@
 import classes from "./Projects.module.css";
 import React from "react";
-// import project_list from "./project_list.json";
+import project_list from "./project_list.json";
 import Project from "./Project/Project";
-// import VisibilitySensor from "react-visibility-sensor";
+
+const projects = project_list.map((project, index) => {
+    if (index % 2) {
+        return (
+            <li key={index}>
+                <Project projectData={project} />
+            </li>
+        );
+    } else {
+        return (
+            <li key={index}>
+                <div className={classes.Skew}></div>
+                <Project projectData={project} />
+                <div className={classes.SkewReverse}></div>
+            </li>
+        );
+    }
+});
 
 export default function Projects() {
     return (
@@ -23,24 +40,8 @@ export default function Projects() {
                     <path d="M0 100 C 20 0 50 0 100 100 Z" />
                 </svg>
             </div>
-          
-                <ul className={classes.ProjectsList}>
-                    <li>
-                        <div className={classes.Skew}></div>
-                        <Project />
-                        <div className={classes.SkewReverse}></div>
-                    </li>
-                    <li>
-                        <Project />
-                    </li>
-                    <li>
-                        <Project />
-                    </li>
-                    <li>
-                        <Project />
-                    </li>
-                </ul>
-            
+
+            <ul className={classes.ProjectsList}>{projects}</ul>
         </div>
     );
 }
