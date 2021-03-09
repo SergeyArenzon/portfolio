@@ -1,0 +1,21 @@
+.HiddenProject {
+    background: grey;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+    transition: all 1s linear;
+    transform: translateX(-50vw);
+}   
+
+
+.ShowenProject {
+    width: 400px;
+    height: 300px;
+    background: grey;
+    margin: auto;
+    margin-bottom: 10px;
+    transition: all 1s linear;
+    /* transform: translateX(0); */
+
+}

@@ -2,7 +2,7 @@
     {
         "name": "MyBurger",
         "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders. Using JWT Auth.",
-        "image": "location/1/2/3/4",
+        "image": "",
         "technologies": [
             "NodeJS",
             "ExpressJS",
@@ -25,12 +25,18 @@
         "liveDemo": "https://tweets-sanalysis.herokuapp.com/"
     },
     {
+        "name": "Camping forum",
+        "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
+        "image": "",
+        "technologies": ["NodeJS", "ExpressJS", "MongoDB"],
+        "github": "https://github.com/SergeyArenzon/Yelp-Camp.git"
+    },
+    {
         "name": "MyAppartment",
         "description": "Roommates Android app for that helps us to manage bills & expenses properly.",
         "image": "",
         "technologies": ["Java", "Firebase"],
         "github": "https://github.com/SergeyArenzon/My_Appartment.git"
-        
     },
     {
         "name": "Evil twin attack (Arch linux)",

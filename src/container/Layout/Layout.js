@@ -39,7 +39,6 @@ export default function Layout() {
     const onScroll = () => {
         // progressbar handler
         progressBarHandler();
-        console.log(window.scrollY);
 
         if (window.scrollY > 50) {
             setNavColor(true);

@@ -1,15 +1,26 @@
-import classes from './Projects.module.css'
-import React from 'react';
-import project_list from './project_list.json';
-
+import classes from "./Projects.module.css";
+import React, { useEffect } from "react";
+import project_list from "./project_list.json";
+import Project from "./Project/Project";
+// import VisibilitySensor from "react-visibility-sensor";
 
 export default function Projects() {
-    console.log(project_list);
+    let projectClasses = classes.HiddenProject;
+
+    // const onChange = (isVisible) => {
+    //     if (isVisible) {
+    //         projectClasses = classes.ShowenProject;
+    //         console.log(projectClasses);
+    //     }
+    // };
+
     return (
         <div className={classes.Projects}>
             <div className={classes.Title}>
-                <h1><span>P</span>ROJECTS</h1>
-                <svg 
+                <h1>
+                    <span>P</span>ROJECTS
+                </h1>
+                <svg
                     className={classes.Curve}
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
@@ -18,10 +29,18 @@ export default function Projects() {
                     viewBox="0 0 100 100"
                     preserveAspectRatio="none"
                 >
-                    <path d="M0 100 C 20 0 50 0 100 100 Z"/>
+                    <path d="M0 100 C 20 0 50 0 100 100 Z" />
                 </svg>
             </div>
-            <div className={classes.ProjectsList}></div>
+            <div className={classes.ProjectsList}>
+                <>
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                </>
+            </div>
         </div>
-    )
+    );
 }

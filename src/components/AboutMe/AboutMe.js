@@ -4,7 +4,6 @@ import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 
 export default function AboutMe() {
-    console.log(window.scrollY);
 
     const [visible, setVisible] = useState(false);
 
