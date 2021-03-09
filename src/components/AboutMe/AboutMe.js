@@ -4,7 +4,6 @@ import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 
 export default function AboutMe() {
-
     const [visible, setVisible] = useState(false);
 
     if (!visible && window.scrollY > 600) {
@@ -88,9 +87,12 @@ export default function AboutMe() {
                 >
                     <p className={classes.TextP}>
                         I'am BS.c graduate of{" "}
-                        <strong>Computer Science & Mathematics <i className="fas fa-graduation-cap"></i></strong> and web
-                        fullstack developer course.<br></br> Experienced with
-                        the newest technologies like{" "}
+                        <strong>
+                            Computer Science & Mathematics{" "}
+                            <i className="fas fa-graduation-cap"></i>
+                        </strong>{" "}
+                        and web fullstack developer course.<br></br> Experienced
+                        with the newest technologies like{" "}
                         <strong>
                             React, Redux, React Hooks, NodeJS, ExpressJS &
                             MongoDB
