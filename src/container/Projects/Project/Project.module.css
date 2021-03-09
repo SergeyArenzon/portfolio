@@ -1,20 +1,18 @@
  
 .HiddenPictureLeft {
-    transform: translateX(-60vw);
-    margin: auto;
+    transform:   translateX(-40vw);
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 1s linear;
+    transition: all 0.4s linear;
     opacity: 0;
 }
 .HiddenPictureRight {
-    transform: translateX(60vw);
-    margin: auto;
+    transform:   translateX(40vw);
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 1s linear;
+    transition: all 0.4s  linear;
     opacity: 0;
 }
 
@@ -22,17 +20,24 @@
 .ShowenPicture {
     width: 400px;
     height: 300px;
-    margin: auto;
     margin-bottom: 10px;
-    transition: all 1s linear;
+    transition: all 0.4s  linear;
     opacity: 1;
-    transition-delay: 0.1s;
-    background: url('../../../assets/images/profile.jpeg');
-    transform: translateX(0);
+    border-radius: 15px;
+}
+
+.RotateRight{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: rotateY(-10deg) translateX(-50px);
 
 
 }
+.RotateLeft{
+    box-shadow:4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: rotateY(10deg) translateX(50px);
 
+
+}
 .Project {
     display: flex;
     justify-content: space-between;
@@ -40,4 +45,8 @@
 
 .ProjectReverse{
     flex-direction: row-reverse;
+}
+
+.PictureContainer{
+    perspective: 600px;
 }
