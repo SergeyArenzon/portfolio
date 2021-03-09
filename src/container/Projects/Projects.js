@@ -7,12 +7,7 @@ import Project from "./Project/Project";
 export default function Projects() {
     let projectClasses = classes.HiddenProject;
 
-    // const onChange = (isVisible) => {
-    //     if (isVisible) {
-    //         projectClasses = classes.ShowenProject;
-    //         console.log(projectClasses);
-    //     }
-    // };
+   
 
     return (
         <div className={classes.Projects}>
@@ -32,15 +27,24 @@ export default function Projects() {
                     <path d="M0 100 C 20 0 50 0 100 100 Z" />
                 </svg>
             </div>
-            <div className={classes.ProjectsList}>
-                <>
-                    <Project />
-                    <Project />
-                    <Project />
-                    <Project />
-                    <Project />
-                </>
-            </div>
+          
+                <ul className={classes.ProjectsList}>
+                    <li>
+                        <div className={classes.Skew}></div>
+                        <Project />
+                        <div className={classes.SkewReverse}></div>
+                    </li>
+                    <li>
+                        <Project />
+                    </li>
+                    <li>
+                        <Project />
+                    </li>
+                    <li>
+                        <Project />
+                    </li>
+                </ul>
+            
         </div>
     );
 }
