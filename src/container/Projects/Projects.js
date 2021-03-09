@@ -3,19 +3,25 @@ import React from "react";
 import project_list from "./project_list.json";
 import Project from "./Project/Project";
 
+
+
+
+
+
+// Projects list mapping ti li's 
 const projects = project_list.map((project, index) => {
     if (index % 2) {
         return (
             <li key={index}>
-                <Project projectData={project} />
+                <div className={classes.Skew}></div>
+                <Project projectData={project} colored={true} />
+                <div className={classes.SkewReverse}></div>
             </li>
         );
     } else {
         return (
             <li key={index}>
-                <div className={classes.Skew}></div>
-                <Project projectData={project} />
-                <div className={classes.SkewReverse}></div>
+                <Project projectData={project} colored={false} />
             </li>
         );
     }
