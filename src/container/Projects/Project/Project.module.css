@@ -26,18 +26,7 @@
     border-radius: 15px;
 }
 
-.RotateRight{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: rotateY(-10deg) translateX(-50px);
 
-
-}
-.RotateLeft{
-    box-shadow:4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: rotateY(10deg) translateX(50px);
-
-
-}
 .Project {
     display: flex;
     justify-content: space-between;
@@ -47,14 +36,3 @@
     flex-direction: row-reverse;
 }
 
-.PictureContainer{
-    perspective: 600px;
-}
-
-.Description{
-    perspective: 600px;
-}
-.Description p{
-    max-width: 500px;
-    transform: rotateY(12deg) translateX(20px);
-}

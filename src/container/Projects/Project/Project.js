@@ -23,22 +23,14 @@ export default function Project(props) {
     }
 
     return (
-        <VisibilitySensor partialVisibility offset={{bottom:300}} onChange={onChange}>
+        <VisibilitySensor
+            partialVisibility
+            offset={{ bottom: 300 }}
+            onChange={onChange}
+        >
             <div className={projectClasses}>
-                <div className={classes.PictureContainer}>
-                    <img
-                        src={pic}
-                        alt={""}
-                        className={[
-                            pictureClasses,
-                            show ?  props.colored ? [classes.ShowenPicture, classes.RotateLeft].join(' ') : [classes.ShowenPicture, classes.RotateRight].join(' ') : null,
-                        ].join(" ")}
-                    />
-                </div>
-
-                <div class={classes.Description}>
-                    <p>{props.projectData.description}</p>
-                </div>
+                <img src={pic} alt={""} className={show ?  classes.ShowenPicture : pictureClasses}/>
+                <p>{props.projectData.description}</p>
             </div>
         </VisibilitySensor>
     );
