@@ -3,7 +3,7 @@ import classes from "./Layout.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
 import AboutMe from "../../components/AboutMe/AboutMe";
-// import Projects from "../Projects/Projects";
+import Projects from "../Projects/Projects";
 import Background from "../../components/Background/Background";
 
 // =========================
@@ -53,7 +53,7 @@ export default function Layout() {
             <Navbar color={navColor} scrollTop={scrollTop} />
             <Picture />
             <AboutMe />
-            {/* <Projects /> */}
+            <Projects />
         </div>
     );
 }
