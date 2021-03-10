@@ -1,6 +1,10 @@
- 
+.Project {
+    display: flex;
+    justify-content: space-between;
+}
+
 .HiddenPictureLeft {
-    transform:   translateX(-40vw);
+    transform: translateX(-40vw);
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
@@ -8,31 +12,30 @@
     opacity: 0;
 }
 .HiddenPictureRight {
-    transform:   translateX(40vw);
+    transform: translateX(40vw);
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 0.4s  linear;
+    transition: all 0.4s linear;
     opacity: 0;
 }
-
 
 .ShowenPicture {
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 0.4s  linear;
+    transition: all 0.4s linear;
     opacity: 1;
     border-radius: 15px;
 }
 
-
-.Project {
-    display: flex;
-    justify-content: space-between;
-}
-
-.ProjectReverse{
+.ProjectReverse {
     flex-direction: row-reverse;
 }
 
+@media only screen and (max-width: 560px) {
+    .Project {
+        flex-direction: column;
+    }
+  
+}
