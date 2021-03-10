@@ -1,22 +1,29 @@
 .Project {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
+.Project img {
+    outline: white solid 1px;
+    outline-offset: -4px;
+    margin: 0;
+    display: block;
+}
+
+
 .HiddenPictureLeft {
-    transform: translateX(-40vw);
+    transform: translateX(-20vw);
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 0.4s linear;
     opacity: 0;
 }
 .HiddenPictureRight {
-    transform: translateX(40vw);
+    transform: translateX(20vw);
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 0.4s linear;
     opacity: 0;
 }
 
@@ -24,9 +31,9 @@
     width: 400px;
     height: 300px;
     margin-bottom: 10px;
-    transition: all 0.4s linear;
+    transition: all 0.4s ease-out;
     opacity: 1;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .ProjectReverse {

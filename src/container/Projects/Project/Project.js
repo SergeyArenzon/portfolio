@@ -29,7 +29,8 @@ export default function Project(props) {
             onChange={onChange}
         >
             <div className={projectClasses}>
-                <img src={pic} alt={""} className={show ?  classes.ShowenPicture : pictureClasses}/>
+                    <img src={pic} alt={""} className={show ?  classes.ShowenPicture : pictureClasses} />
+                
                 <p>{props.projectData.description}</p>
             </div>
         </VisibilitySensor>
