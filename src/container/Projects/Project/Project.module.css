@@ -50,3 +50,11 @@
 .PictureContainer{
     perspective: 600px;
 }
+
+.Description{
+    perspective: 600px;
+}
+.Description p{
+    max-width: 500px;
+    transform: rotateY(12deg) translateX(20px);
+}
