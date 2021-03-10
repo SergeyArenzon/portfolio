@@ -229,6 +229,14 @@
 
 /* mobile */
 @media (max-width: 519px) {
+    .AboutMe .LeftSide ul li:hover {
+        color: white;
+    }
+    
+    .AboutMe .LeftSide ul li:first-child:hover,
+    .AboutMe .LeftSide ul li:nth-child(3):hover {
+        background-color: white;
+    }
     .AboutMe {
         padding-top: 40px;
         flex-direction: column;

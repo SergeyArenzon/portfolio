@@ -37,5 +37,16 @@
     .Project {
         flex-direction: column;
     }
-  
+    .HiddenPictureLeft {
+        height: 100px;
+        width: 100px;
+    }
+    .HiddenPictureRight {
+        height: 100px;
+        width: 100px;
+    }
+    .ShowenPicture {
+        height: 100px;
+        width: 100px;
+    }
 }
