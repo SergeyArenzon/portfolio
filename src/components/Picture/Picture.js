@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import classes from "./Picture.module.css";
-import Waves from '../Waves/Waves';
+import Waves from "../Waves/Waves";
 
 export default function Picture() {
     const [showText, setShowText] = useState(false);
@@ -43,7 +43,7 @@ export default function Picture() {
     const staticText = (
         <Typewriter
             options={{
-                strings: ["Hi my name is Sergey Arenzon and I'm a"],
+                strings: ["My name is Sergey Arenzon and I'm a"],
                 autoStart: true,
                 loop: false,
                 pauseFor: 1000000000000000000,
@@ -54,20 +54,21 @@ export default function Picture() {
     return (
         <header className={classes.Picture}>
             <div className={classes.TypingText}>
-            <div className={classes.Circles}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+                <div className={classes.Circles}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1>Hi</h1>
                 {staticText}
                 {text}
-            <div className={classes.Circles}>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className={classes.Circles}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-            </div>
-            <Waves/>
+            <Waves />
         </header>
     );
 }

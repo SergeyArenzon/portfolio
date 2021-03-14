@@ -35,7 +35,7 @@
     /* padding-top: 150px; */
     font-family: "Assistant";
     text-shadow: 2px 2px 2px #000000a6;
-    min-height: 205px;
+    min-height: 440px;
 }
 
 .Picture .TypeSec {
@@ -52,6 +52,15 @@
     height: 20px;
     margin: auto;
     margin: 20px auto 20px auto;;
+}
+
+.Picture .TypingText h1{
+    margin: 0;
+    /* text-align: center; */
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #2d54bd;
+    text-shadow: 2px 2px white;
 }
 .Picture .TypingText .Circles div {
     background: transparent;
