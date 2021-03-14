@@ -29,21 +29,32 @@ export default function Project(props) {
             onChange={onChange}
         >
             <>
-            <div className={projectClasses}>
-            <h1>{props.projectData.name}</h1>
-                <img
-                    src={pic}
-                    alt={""}
-                    className={show ? classes.ShowenPicture : pictureClasses}
-                />
-                <div className={classes.Left}>
-
-                    <p>{props.projectData.description}</p>
+                <div className={projectClasses}>
+                    <h1 className={classes.Item}>{props.projectData.name}</h1>
+                    <img
+                        src={pic}
+                        alt={""}
+                        className={
+                            show
+                                ? [classes.Item, classes.ShowenPicture].join(
+                                      " "
+                                  )
+                                : [classes.Item, pictureClasses].join(" ")
+                        }
+                    />
+                    <p className={classes.Item}>
+                        {props.projectData.description}
+                    </p>
+                    <div className={classes.Item}>
+                        {props.projectData.technologies}
+                    </div>
+                    <div className={classes.Item}>
+                        {props.projectData.github}
+                    </div>
+                    <div className={classes.Item}>
+                        {props.projectData.liveDemo}
+                    </div>
                 </div>
-                <div>{props.projectData.technologies}</div>
-                <div>{props.projectData.github}</div>
-                <div>{props.projectData.liveDemo}</div>
-            </div>
             </>
         </VisibilitySensor>
     );
