@@ -51,6 +51,7 @@
     justify-content: space-between;
     height: 20px;
     margin: auto;
+    margin: 20px auto 20px auto;;
 }
 .Picture .TypingText .Circles div {
     background: transparent;
@@ -59,6 +60,7 @@
     border-radius: 100%;
     border: 3px #2d53bd96 solid;
     animation: animate-circle2 2s infinite;
+   
 
 }
 
@@ -141,5 +143,9 @@
 @media (max-width: 550px){
     .Picture {
         background-position: -600px;
+    }
+    .Picture .TypingText{
+        font-size: 1.5rem;
+        width: auto;
     }
 }

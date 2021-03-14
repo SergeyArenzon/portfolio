@@ -1,6 +1,6 @@
 .ProgressStyle {
     height: 100%;
-    background-color: #2d54bd;
+    background-color: #5d5d5d;
     transition: width 0.2s linear;
 }
 .ProgressWrapper {
