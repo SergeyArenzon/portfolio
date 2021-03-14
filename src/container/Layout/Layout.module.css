@@ -35,21 +35,3 @@
     }
 }
 
-/* -------------- */
-/* .ProgressStyle {
-    height: 100%;
-    background-color: blue;
-    transition: width 0.1s linear;
-}
-.ProgressWrapper {
-    text-align: left;
-    background: transparent;
-    height: 8px;
-    position: fixed;
-    top: 5vh;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    transition: width 0.1s linear;
-
-} */

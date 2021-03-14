@@ -1,14 +1,15 @@
 .Project {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: center;
+    height: 80vh;
 }
 
 .Project img {
     outline: white solid 1px;
-    outline-offset: -4px;
+    outline-offset: -14px;
     margin: 0;
     display: block;
+    padding: 10px;
 }
 
 

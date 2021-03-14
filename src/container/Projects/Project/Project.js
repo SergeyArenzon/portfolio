@@ -28,11 +28,18 @@ export default function Project(props) {
             offset={{ bottom: 300 }}
             onChange={onChange}
         >
+            <>
+            <h1>{props.projectData.name}</h1>
             <div className={projectClasses}>
-                    <img src={pic} alt={""} className={show ?  classes.ShowenPicture : pictureClasses} />
-                
+                <img
+                    src={pic}
+                    alt={""}
+                    className={show ? classes.ShowenPicture : pictureClasses}
+                />
+
                 <p>{props.projectData.description}</p>
             </div>
+            </>
         </VisibilitySensor>
     );
 }

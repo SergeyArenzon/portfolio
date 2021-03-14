@@ -4,11 +4,7 @@ import project_list from "./project_list.json";
 import Project from "./Project/Project";
 
 
-
-
-
-
-// Projects list mapping ti li's 
+// Projects list mapping ti li's
 const projects = project_list.map((project, index) => {
     if (index % 2) {
         return (
