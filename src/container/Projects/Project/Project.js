@@ -29,15 +29,20 @@ export default function Project(props) {
             onChange={onChange}
         >
             <>
-            <h1>{props.projectData.name}</h1>
             <div className={projectClasses}>
+            <h1>{props.projectData.name}</h1>
                 <img
                     src={pic}
                     alt={""}
                     className={show ? classes.ShowenPicture : pictureClasses}
                 />
+                <div className={classes.Left}>
 
-                <p>{props.projectData.description}</p>
+                    <p>{props.projectData.description}</p>
+                </div>
+                <div>{props.projectData.technologies}</div>
+                <div>{props.projectData.github}</div>
+                <div>{props.projectData.liveDemo}</div>
             </div>
             </>
         </VisibilitySensor>

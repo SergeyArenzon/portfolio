@@ -1,7 +1,6 @@
 .btn {
     border: 1px solid #2d54bd;
     background: none;
-    /* padding: 10px 20px; */
     font-size: 20px;
     font-family: "montserrat";
     cursor: pointer;
@@ -13,13 +12,14 @@
     z-index: 1;
     padding: 0;
     padding-left: 0;
+    font-weight: bold;
+    
 }
 
 .btn:hover {
     color: #fff;
     z-index: 1;
 }
-
 
 /* FIX CHROME LINK COLOR */
 a:-webkit-any-link {
@@ -51,8 +51,6 @@ a:-webkit-any-link {
     display: block;
     padding: 10px 20px;
     color: #2d54bd;
-
-    
 }
 .btn a:focus {
     outline: none;
@@ -62,14 +60,12 @@ a:-webkit-any-link {
     color: inherit;
 }
 
-@media (max-width: 550px){
-    .btn::before{
+@media (max-width: 550px) {
+    .btn::before {
         content: none;
-     
     }
     .btn:hover {
-        color:#2d54bd;
+        color: #2d54bd;
         z-index: 1;
     }
-   
 }

@@ -1,8 +1,12 @@
 .Project {
-    display: flex;
-    justify-content: center;
+    display: grid;
     height: 80vh;
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+
 }
+
 
 .Project img {
     outline: white solid 1px;
@@ -11,6 +15,7 @@
     display: block;
     padding: 10px;
 }
+
 
 
 .HiddenPictureLeft {
