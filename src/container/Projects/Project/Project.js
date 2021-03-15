@@ -42,9 +42,12 @@ export default function Project(props) {
                                 : [classes.Item, pictureClasses].join(" ")
                         }
                     />
-                    <p className={classes.Item}>
+                    <div>
+                        <p className={classes.Item}>
                         {props.projectData.description}
                     </p>
+                    </div>
+                    
                     <div className={classes.Item}>
                         {props.projectData.technologies}
                     </div>
