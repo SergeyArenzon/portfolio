@@ -1,16 +1,15 @@
 [
     {
         "name": "MyBurger",
-        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders. Using JWT Auth.",
+        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders. Using jwt Auth.",
         "image": "",
         "technologies": [
-            "NodeJS",
-            "ExpressJS",
-            "ReactJS",
-            "MongoDB",
-            "Redux",
-            "React Hooks",
-            "JWT"
+            "nodejs",
+            "express",
+            "react",
+            "mongodb",
+            "redux",
+            "jwt"
         ],
         "github": "https://github.com/SergeyArenzon/MyBurger",
         "liveDemo": "https://my-burger-market.herokuapp.com"
@@ -20,7 +19,7 @@
         "name": "Sentimental Analysis Web Tool",
         "description": "This Web app tool analyzing recent tweeters opinion about any subject user like",
         "image": "",
-        "technologies": ["NodeJS", "ExpressJS", "Twitter API"],
+        "technologies": ["nodejs", "express", "twitter"],
         "github": "https://github.com/SergeyArenzon/sentimental_analysis_project.git",
         "liveDemo": "https://tweets-sanalysis.herokuapp.com/"
     },
@@ -28,14 +27,14 @@
         "name": "Camping forum",
         "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
         "image": "",
-        "technologies": ["NodeJS", "ExpressJS", "MongoDB"],
+        "technologies": ["nodejs", "express", "mongodb"],
         "github": "https://github.com/SergeyArenzon/Yelp-Camp.git"
     },
     {
         "name": "MyAppartment",
         "description": "Roommates Android app for that helps us to manage bills & expenses properly.",
         "image": "",
-        "technologies": ["Java", "Firebase"],
+        "technologies": ["java", "firebase"],
         "github": "https://github.com/SergeyArenzon/My_Appartment.git"
     },
     {
@@ -43,12 +42,9 @@
         "description": "Built in cyber security course, Python app for phishing gmail accounts by creating fake AP & fake gmail login page, Apache server, spamming deAuth packets.",
         "image": "",
         "technologies": [
-            "Python",
-            "Scapy",
-            "Apache server",
-            "HTML",
-            "CSS",
-            "php"
+            "python"
+            
+            
         ],
         "github": "https://github.com/SergeyArenzon/MITM_ATTACK_TOOL"
     }

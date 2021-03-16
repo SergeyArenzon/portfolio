@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import classes from "./Project.module.css";
 import VisibilitySensor from "react-visibility-sensor";
 import pic from "./../../../assets/images/profile.jpeg";
+import TechIcon from "../../../components/UI/TechIcon/TechIcon";
 
 export default function Project(props) {
     const [show, setShow] = useState(false);
@@ -22,9 +23,9 @@ export default function Project(props) {
         projectClasses = [classes.Project, classes.ProjectReverse].join(" ");
     }
 
-    
-
-
+    const techList = props.projectData.technologies.map((tech, index) => {
+        return <TechIcon iconName={tech} />;
+    });
 
     return (
         <VisibilitySensor
@@ -48,13 +49,11 @@ export default function Project(props) {
                     />
                     <div>
                         <p className={classes.Item}>
-                        {props.projectData.description}
-                    </p>
+                            {props.projectData.description}
+                        </p>
                     </div>
-                    
-                    <div className={classes.Item}>
-                        {props.projectData.technologies}
-                    </div>
+
+                    <div className={`${classes.Item} ${classes.TechContainer}`}>{techList}</div>
                     <div className={classes.Item}>
                         {props.projectData.github}
                     </div>

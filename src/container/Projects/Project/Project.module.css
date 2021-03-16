@@ -5,6 +5,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .Item:first-child {
@@ -15,6 +17,12 @@
     text-overflow: ellipsis;
     word-break: break-word
 
+}
+
+.Item.TechContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .Project img {

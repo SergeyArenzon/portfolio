@@ -1,0 +1,25 @@
+
+.TechIcon {
+    border-radius: 100%;
+    background: rgb(230, 230, 230);
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    
+}
+
+
+.TechIcon img {
+    height: 50px;
+    width: 50px;
+    outline: none;
+    padding: 0;
+    margin: auto;
+    
+}
+
+.TechIcon:hover{
+    height: 60px;
+    width: 60px;
+}
