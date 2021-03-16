@@ -22,7 +22,10 @@
 .Item.TechContainer{
     margin-top: 20px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+
 }
 
 .Project img {
