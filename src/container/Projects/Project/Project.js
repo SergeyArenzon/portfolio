@@ -24,7 +24,7 @@ export default function Project(props) {
     }
 
     const techList = props.projectData.technologies.map((tech, index) => {
-        return <TechIcon iconName={tech} />;
+        return <li className={classes.TechIconLi}><TechIcon iconName={tech} /></li>;
     });
 
     return (
@@ -53,7 +53,9 @@ export default function Project(props) {
                         </p>
                     </div>
 
-                    <div className={`${classes.Item} ${classes.TechContainer}`}>{techList}</div>
+                    <ul className={`${classes.Item} ${classes.TechContainer}`}>
+                        {techList}
+                    </ul>
                     <div className={classes.Item}>
                         {props.projectData.github}
                     </div>
