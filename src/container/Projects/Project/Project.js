@@ -22,6 +22,10 @@ export default function Project(props) {
         projectClasses = [classes.Project, classes.ProjectReverse].join(" ");
     }
 
+    
+
+
+
     return (
         <VisibilitySensor
             partialVisibility
