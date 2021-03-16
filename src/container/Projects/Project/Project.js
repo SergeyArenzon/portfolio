@@ -24,7 +24,7 @@ export default function Project(props) {
     }
 
     const techList = props.projectData.technologies.map((tech, index) => {
-        return <li className={classes.TechIconLi}><TechIcon iconName={tech} /></li>;
+        return <li className={[classes.TechIconLi, show ? classes.TechIconVisible : null].join(' ')}><TechIcon iconName={tech} /></li>;
     });
 
     return (
