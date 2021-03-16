@@ -8,6 +8,7 @@ export default function TechIcon(props) {
 
     return (
         <div className={classes.TechIcon}>
+            <div>{props.iconName}</div>
             <img
                 src={require(`../../../assets/icons/${props.iconName}.svg`).default}
                 alt="icons"
