@@ -6,10 +6,17 @@ import TechIcon from "../../../components/UI/TechIcon/TechIcon";
 
 export default function Project(props) {
     const [show, setShow] = useState(false);
+    const [techIconsVisible, setTechIconsVisible] = useState(false);
 
     const onChange = (isVisible) => {
         if (isVisible) {
             setShow(true);
+        }
+    };
+
+    const onTechIconsVisibility = (isVisible) => {
+        if (isVisible) {
+            setTechIconsVisible(true);
         }
     };
 
@@ -24,18 +31,27 @@ export default function Project(props) {
     }
 
     const techList = props.projectData.technologies.map((tech, index) => {
-        return <li className={[classes.TechIconLi, show ? classes.TechIconVisible : null].join(' ')}><TechIcon iconName={tech} /></li>;
+        return (
+            <li
+                className={[
+                    classes.TechIconLi,
+                    techIconsVisible ? classes.TechIconVisible : null,
+                ].join(" ")}
+            >
+                <TechIcon iconName={tech} />
+            </li>
+        );
     });
 
     return (
-        <VisibilitySensor
-            partialVisibility
-            offset={{ bottom: 300 }}
-            onChange={onChange}
-        >
-            <>
-                <div className={projectClasses}>
-                    <h1 className={classes.Item}>{props.projectData.name}</h1>
+        <>
+            <div className={projectClasses}>
+                <h1 className={classes.Item}>{props.projectData.name}</h1>
+                <VisibilitySensor
+                    partialVisibility
+                    offset={{ bottom: 300 }}
+                    onChange={onChange}
+                >
                     <img
                         src={pic}
                         alt={""}
@@ -47,23 +63,24 @@ export default function Project(props) {
                                 : [classes.Item, pictureClasses].join(" ")
                         }
                     />
-                    <div>
-                        <p className={classes.Item}>
-                            {props.projectData.description}
-                        </p>
-                    </div>
-
+                </VisibilitySensor>
+                <div>
+                    <p className={classes.Item}>
+                        {props.projectData.description}
+                    </p>
+                </div>
+                <VisibilitySensor
+                    partialVisibility
+                    offset={{ bottom: 300 }}
+                    onChange={onTechIconsVisibility}
+                >
                     <ul className={`${classes.Item} ${classes.TechContainer}`}>
                         {techList}
                     </ul>
-                    <div className={classes.Item}>
-                        {props.projectData.github}
-                    </div>
-                    <div className={classes.Item}>
-                        {props.projectData.liveDemo}
-                    </div>
-                </div>
-            </>
-        </VisibilitySensor>
+                </VisibilitySensor>
+                <div className={classes.Item}>{props.projectData.github}</div>
+                <div className={classes.Item}>{props.projectData.liveDemo}</div>
+            </div>
+        </>
     );
 }
