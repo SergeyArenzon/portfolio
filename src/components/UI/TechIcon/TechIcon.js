@@ -4,6 +4,8 @@ import classes from "./TechIcon.module.css";
 export default function TechIcon(props) {
     let hintName = null;
 
+
+    // CONVERTS TECH NAME TO PROPER HINT NAME 
     switch (props.iconName) {
         case "express":
             hintName = "Express";
