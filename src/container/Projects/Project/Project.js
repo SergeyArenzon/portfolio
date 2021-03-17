@@ -8,12 +8,14 @@ export default function Project(props) {
     const [show, setShow] = useState(false);
     const [techIconsVisible, setTechIconsVisible] = useState(false);
 
+    // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
         if (isVisible) {
             setShow(true);
         }
     };
 
+    // TECH ICONS VISIBILITY TRIGGER FUNC
     const onTechIconsVisibility = (isVisible) => {
         if (isVisible) {
             setTechIconsVisible(true);
@@ -30,6 +32,7 @@ export default function Project(props) {
         projectClasses = [classes.Project, classes.ProjectReverse].join(" ");
     }
 
+    // TECH ICONS LIST MAPPING
     const techList = props.projectData.technologies.map((tech, index) => {
         return (
             <li
@@ -46,7 +49,10 @@ export default function Project(props) {
     return (
         <>
             <div className={projectClasses}>
+                {/* PROJECT NAME */}
                 <h1 className={classes.Item}>{props.projectData.name}</h1>
+
+                {/* PROJECT IMAGE */}
                 <VisibilitySensor
                     partialVisibility
                     offset={{ bottom: 300 }}
@@ -64,11 +70,15 @@ export default function Project(props) {
                         }
                     />
                 </VisibilitySensor>
+
+                {/* PROJECT DESCRIPTION */}
                 <div>
                     <p className={classes.Item}>
                         {props.projectData.description}
                     </p>
                 </div>
+
+                {/* PROJECT STACK ICONS */}
                 <VisibilitySensor
                     partialVisibility
                     offset={{ bottom: 300 }}
@@ -78,7 +88,11 @@ export default function Project(props) {
                         {techList}
                     </ul>
                 </VisibilitySensor>
+
+                {/* PROJECT LIVE DEMO */}
                 <div className={classes.Item}>{props.projectData.github}</div>
+
+                {/* PROJECT LIVE DEMO */}
                 <div className={classes.Item}>{props.projectData.liveDemo}</div>
             </div>
         </>
