@@ -90,6 +90,7 @@
 .TechIconLi{
     background: none !important;
     opacity: 0;
+    transform: translateX(0);
 }
 .TechIconLi.TechIconVisible:first-child{
     
@@ -123,7 +124,7 @@
 @keyframes revealIcon {
     from{
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(-20px);
     }
     to{
         opacity: 1;

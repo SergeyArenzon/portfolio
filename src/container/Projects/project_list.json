@@ -42,7 +42,8 @@
         "description": "Built in cyber security course, Python app for phishing gmail accounts by creating fake AP & fake gmail login page, Apache server, spamming deAuth packets.",
         "image": "",
         "technologies": [
-            "python"
+            "python",
+            "apache"
             
             
         ],

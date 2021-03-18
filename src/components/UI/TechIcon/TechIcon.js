@@ -4,8 +4,7 @@ import classes from "./TechIcon.module.css";
 export default function TechIcon(props) {
     let hintName = null;
 
-
-    // CONVERTS TECH NAME TO PROPER HINT NAME 
+    // CONVERTS TECH NAME TO PROPER HINT NAME
     switch (props.iconName) {
         case "express":
             hintName = "Express";
@@ -45,6 +44,9 @@ export default function TechIcon(props) {
             break;
         case "twitter":
             hintName = "Twitter";
+            break;
+        case "apache":
+            hintName = "Apache";
             break;
         default:
             break;
