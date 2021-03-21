@@ -95,7 +95,10 @@ export default function Project(props) {
                     <div>{props.projectData.github}</div>
 
                     {/* PROJECT LIVE DEMO */}
-                    <div>{props.projectData.liveDemo}</div>
+                    {/* CHECK LIVE DEMO LINK EXISTENCE */}
+                    {props.projectData.liveDemo ? (
+                        <div>{props.projectData.liveDemo}</div>
+                    ) : null}
                 </div>
             </div>
         </>
