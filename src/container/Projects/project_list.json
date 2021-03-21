@@ -28,14 +28,16 @@
         "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
         "image": "",
         "technologies": ["nodejs", "express", "mongodb"],
-        "github": "https://github.com/SergeyArenzon/Yelp-Camp.git"
+        "github": "https://github.com/SergeyArenzon/Yelp-Camp.git",
+        "liveDemo": null
     },
     {
         "name": "MyAppartment",
         "description": "Roommates Android app for that helps us to manage bills & expenses properly.",
         "image": "",
         "technologies": ["java", "firebase"],
-        "github": "https://github.com/SergeyArenzon/My_Appartment.git"
+        "github": "https://github.com/SergeyArenzon/My_Appartment.git",
+        "liveDemo": null
     },
     {
         "name": "Evil twin attack (Arch linux)",
@@ -47,6 +49,7 @@
             
             
         ],
-        "github": "https://github.com/SergeyArenzon/MITM_ATTACK_TOOL"
+        "github": "https://github.com/SergeyArenzon/MITM_ATTACK_TOOL",
+        "liveDemo": null
     }
 ]

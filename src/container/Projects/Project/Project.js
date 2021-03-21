@@ -50,7 +50,9 @@ export default function Project(props) {
         <>
             <div className={projectClasses}>
                 {/* PROJECT NAME */}
-                <h1 className={classes.Item}>{props.projectData.name}</h1>
+                <h1 className={`${classes.Item} ${classes.ProjectTitleFont}`}>
+                    {props.projectData.name}
+                </h1>
 
                 {/* PROJECT IMAGE */}
                 <VisibilitySensor
@@ -72,11 +74,10 @@ export default function Project(props) {
                 </VisibilitySensor>
 
                 {/* PROJECT DESCRIPTION */}
-                <div>
-                    <p className={classes.Item}>
-                        {props.projectData.description}
-                    </p>
-                </div>
+
+                <p className={`${classes.Item} ${classes.ProjectDescription}`}>
+                    {props.projectData.description}
+                </p>
 
                 {/* PROJECT STACK ICONS */}
                 <VisibilitySensor
@@ -89,11 +90,13 @@ export default function Project(props) {
                     </ul>
                 </VisibilitySensor>
 
-                {/* PROJECT LIVE DEMO */}
-                <div className={classes.Item}>{props.projectData.github}</div>
+                <div className={classes.Item}>
+                    {/* PROJECT LIVE + GITHUB */}
+                    <div>{props.projectData.github}</div>
 
-                {/* PROJECT LIVE DEMO */}
-                <div className={classes.Item}>{props.projectData.liveDemo}</div>
+                    {/* PROJECT LIVE DEMO */}
+                    <div>{props.projectData.liveDemo}</div>
+                </div>
             </div>
         </>
     );

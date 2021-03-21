@@ -59,6 +59,17 @@
     padding: 0;
 }
 
+.ProjectTitleFont{
+    font-family: BebasNeue;
+    letter-spacing: 2px;
+    font-size: 5rem;
+    color: #2d54bd;
+}
+.ProjectDescription{
+    font-family: Alegreya-Italic;
+}
+
+
 .HiddenPictureLeft {
     transform: translateX(-20vw);
     width: 400px;
