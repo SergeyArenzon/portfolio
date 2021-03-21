@@ -24,9 +24,11 @@ export default function Project(props) {
 
     let pictureClasses = null;
     let projectClasses = null;
+    let projectTitleColored = null;
     if (props.colored) {
         pictureClasses = classes.HiddenPictureLeft;
         projectClasses = classes.Project;
+        projectTitleColored = classes.ProjectTitleColored;
     } else {
         pictureClasses = classes.HiddenPictureRight;
         projectClasses = [classes.Project, classes.ProjectReverse].join(" ");
@@ -50,7 +52,7 @@ export default function Project(props) {
         <>
             <div className={projectClasses}>
                 {/* PROJECT NAME */}
-                <h1 className={`${classes.Item} ${classes.ProjectTitleFont}`}>
+                <h1 className={`${classes.Item} ${classes.ProjectTitleFont} ${projectTitleColored}`}>
                     {props.projectData.name}
                 </h1>
 
@@ -75,7 +77,7 @@ export default function Project(props) {
 
                 {/* PROJECT DESCRIPTION */}
 
-                <p className={`${classes.Item} ${classes.ProjectDescription}`}>
+                <p className={`${classes.Item} ${classes.ProjectDescription} ${projectTitleColored}`}>
                     {props.projectData.description}
                 </p>
 

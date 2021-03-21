@@ -48,6 +48,8 @@
         transition: all 0.6s ease-out;
         padding: 0;
         margin: 0;
+        z-index: 13;
+
         
     }
 
@@ -57,6 +59,9 @@
         transition: all 0.3s ease-out;
         margin: 10px auto;
     }
+    .Slide{
+        z-index: 13;
+    }
 
     
     /* after click on hamburger */
@@ -64,6 +69,8 @@
         transform: translateX(0);
         transition: all 0.3s ease-out;
         opacity: 1;
+        
+       
     }
 
     .Slide li:nth-child(2){
@@ -78,8 +85,8 @@
 
 
     .DisplayNavLinks {
-        /* display: inline-flex; */
         clip-path: circle(1100px at 120% -10%);
         -webkit-clip-path: circle(1100px at 120% -10%);
+
     }
 }
