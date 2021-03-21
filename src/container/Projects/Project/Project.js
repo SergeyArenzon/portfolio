@@ -7,6 +7,7 @@ import TechIcon from "../../../components/UI/TechIcon/TechIcon";
 export default function Project(props) {
     const [show, setShow] = useState(false);
     const [techIconsVisible, setTechIconsVisible] = useState(false);
+    const [titleVisible, setTitleVisible] = useState(false);
 
     // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
@@ -19,6 +20,12 @@ export default function Project(props) {
     const onTechIconsVisibility = (isVisible) => {
         if (isVisible) {
             setTechIconsVisible(true);
+        }
+    };
+    // TITLE VISIBILITY TRIGGER FUNC
+    const onTitleVisibility = (isVisible) => {
+        if (isVisible) {
+            setTitleVisible(true);
         }
     };
 
@@ -51,15 +58,26 @@ export default function Project(props) {
     return (
         <>
             <div className={projectClasses}>
-                {/* PROJECT NAME */}
-                <h1 className={`${classes.Item} ${classes.ProjectTitleFont} ${projectTitleColored}`}>
-                    {props.projectData.name}
-                </h1>
+                {/* PROJECT TITLE */}
+                <VisibilitySensor
+                    partialVisibility
+                    
+                    onChange={onTitleVisibility}
+                >
+                    <h1
+                        className={`${classes.Item} ${
+                            classes.ProjectTitleFont
+                        } ${projectTitleColored} ${
+                            !titleVisible ? classes.HiddenItem : null
+                        }`}
+                    >
+                        {props.projectData.name}
+                    </h1>
+                </VisibilitySensor>
 
                 {/* PROJECT IMAGE */}
                 <VisibilitySensor
                     partialVisibility
-                    offset={{ bottom: 300 }}
                     onChange={onChange}
                 >
                     <img
@@ -70,14 +88,16 @@ export default function Project(props) {
                                 ? [classes.Item, classes.ShowenPicture].join(
                                       " "
                                   )
-                                : [classes.Item, pictureClasses].join(" ")
+                                : [classes.Item, classes.HiddenItem].join(" ")
                         }
                     />
                 </VisibilitySensor>
 
                 {/* PROJECT DESCRIPTION */}
 
-                <p className={`${classes.Item} ${classes.ProjectDescription} ${projectTitleColored}`}>
+                <p
+                    className={`${classes.Item} ${classes.ProjectDescription} ${projectTitleColored}`}
+                >
                     {props.projectData.description}
                 </p>
 

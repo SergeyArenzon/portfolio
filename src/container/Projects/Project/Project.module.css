@@ -5,8 +5,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     overflow: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 }
 
 .Item:first-child {
@@ -15,7 +15,9 @@
 
 .Item{
     text-overflow: ellipsis;
-    word-break: break-word
+    word-break: break-word;
+    transition: all 0.3s ease-in;
+    opacity: 1;
 
 }
 
@@ -68,6 +70,10 @@
 
 .ProjectTitleColored{
     color: white;
+}
+
+.ProjectImage{
+    /* width: 300px; */
 }
 
 .ProjectDescription{
@@ -137,6 +143,12 @@
 
 
 
+.HiddenItem{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
 
 @keyframes revealIcon {
     from{
@@ -169,6 +181,9 @@
     }
     .Item:first-child {
         grid-column: 1 / span 1;
+    }
+    .ProjectTitleFont{
+        font-size: 2rem;
     }
 
 }
