@@ -59,10 +59,7 @@
         transition: all 0.3s ease-out;
         margin: 10px auto;
     }
-    .Slide{
-        z-index: 13;
-    }
-
+   
     
     /* after click on hamburger */
     .Slide li {
