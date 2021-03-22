@@ -20,6 +20,7 @@ export default function Project(props) {
     // TECH ICONS VISIBILITY TRIGGER FUNC
     const onTechIconsVisibility = (isVisible) => {
         if (isVisible) {
+            
             setTechIconsVisible(true);
         }
     };
