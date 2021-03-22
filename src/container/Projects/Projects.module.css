@@ -39,7 +39,7 @@
     bottom: 0;
     left: 0;
 }
-.Projects .ProjectsList li{
+.Projects .ProjectsList{
     overflow: hidden;
 }
 .Projects .ProjectsList li:nth-child(2n) {

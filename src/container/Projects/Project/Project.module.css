@@ -20,9 +20,6 @@
    
 }
 
-.Project .Item{
-    /* margin-bottom: 50px; */
-}
 
 .Item.TechContainer {
     display: flex;
@@ -31,11 +28,12 @@
     align-items: center;
     list-style: none;
     flex-wrap: wrap;
+    height: 100px;
+
 }
 .TechContainer {
     padding: 0;
     margin: 0;
-    /* height: 150px; */
 }
 
 .Project img {

@@ -13,7 +13,7 @@ export default function Project(props) {
     // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
         if (isVisible) {
-            console.log('----------')
+            console.log("----------");
             setShow(true);
         }
     };
@@ -21,7 +21,6 @@ export default function Project(props) {
     // TECH ICONS VISIBILITY TRIGGER FUNC
     const onTechIconsVisibility = (isVisible) => {
         if (isVisible) {
-            
             setTechIconsVisible(true);
         }
     };
@@ -51,6 +50,7 @@ export default function Project(props) {
     const techList = props.projectData.technologies.map((tech, index) => {
         return (
             <li
+                key={index}
                 className={[
                     classes.TechIconLi,
                     techIconsVisible ? classes.TechIconVisible : null,
@@ -81,10 +81,7 @@ export default function Project(props) {
                 </VisibilitySensor>
 
                 {/* PROJECT IMAGE */}
-                <VisibilitySensor
-                    partialVisibility
-                    onChange={onChange}
-                >
+                <VisibilitySensor partialVisibility onChange={onChange}>
                     <img
                         src={pic}
                         alt={""}
@@ -99,11 +96,16 @@ export default function Project(props) {
                 </VisibilitySensor>
 
                 {/* PROJECT DESCRIPTION */}
-                <VisibilitySensor  partialVisibility
-                    
-                    onChange={onDescriptionVisibility}>
+                <VisibilitySensor
+                    partialVisibility
+                    onChange={onDescriptionVisibility}
+                >
                     <p
-                        className={`${classes.Item} ${classes.ProjectDescription} ${projectTitleColored} ${!descriptionVisible ? classes.HiddenItem : null}`}
+                        className={`${classes.Item} ${
+                            classes.ProjectDescription
+                        } ${projectTitleColored} ${
+                            !descriptionVisible ? classes.HiddenItem : null
+                        }`}
                     >
                         {props.projectData.description}
                     </p>
