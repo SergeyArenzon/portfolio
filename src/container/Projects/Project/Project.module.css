@@ -78,21 +78,6 @@
 }
 
 
-/* .HiddenPictureLeft {
-    transform: translateX(-20vw);
-    width: 400px;
-    height: 300px;
-    margin-bottom: 10px;
-    opacity: 0;
-}
-.HiddenPictureRight {
-    transform: translateX(20vw);
-    width: 400px;
-    height: 300px;
-    margin-bottom: 10px;
-    opacity: 0;
-} */
-
 .ShowenPicture {
     width: 400px;
     height: 300px;

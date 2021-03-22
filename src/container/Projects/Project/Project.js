@@ -37,15 +37,12 @@ export default function Project(props) {
         }
     };
 
-    let pictureClasses = null;
     let projectClasses = null;
     let projectTitleColored = null;
     if (props.colored) {
-        pictureClasses = classes.HiddenPictureLeft;
         projectClasses = classes.Project;
         projectTitleColored = classes.ProjectTitleColored;
     } else {
-        pictureClasses = classes.HiddenPictureRight;
         projectClasses = [classes.Project, classes.ProjectReverse].join(" ");
     }
 
