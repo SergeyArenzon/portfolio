@@ -39,7 +39,9 @@
     bottom: 0;
     left: 0;
 }
-
+.Projects .ProjectsList li{
+    overflow: hidden;
+}
 .Projects .ProjectsList li:nth-child(2n) {
     background: #2d54bd;
 }

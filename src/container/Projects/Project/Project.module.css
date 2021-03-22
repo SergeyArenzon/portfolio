@@ -1,5 +1,6 @@
 .Project {
     display: grid;
+    grid-row-gap: 100px;
     height: 100%;
     padding-top: 50px;
     grid-template-columns: 1fr 1fr;
@@ -16,10 +17,14 @@
     word-break: break-word;
     transition: all 0.3s ease-in;
     opacity: 1;
+   
+}
+
+.Project .Item{
+    /* margin-bottom: 50px; */
 }
 
 .Item.TechContainer {
-    margin-top: 100px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -30,7 +35,7 @@
 .TechContainer {
     padding: 0;
     margin: 0;
-    height: 150px;
+    /* height: 150px; */
 }
 
 .Project img {
