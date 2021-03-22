@@ -8,6 +8,7 @@ export default function Project(props) {
     const [show, setShow] = useState(false);
     const [techIconsVisible, setTechIconsVisible] = useState(false);
     const [titleVisible, setTitleVisible] = useState(false);
+    const [descriptionVisible, setDescriptionVisible] = useState(false);
 
     // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
@@ -26,6 +27,12 @@ export default function Project(props) {
     const onTitleVisibility = (isVisible) => {
         if (isVisible) {
             setTitleVisible(true);
+        }
+    };
+    // DESCRIPTION VISIBILITY TRIGGER FUNC
+    const onDescriptionVisibility = (isVisible) => {
+        if (isVisible) {
+            setDescriptionVisible(true);
         }
     };
 
@@ -61,7 +68,6 @@ export default function Project(props) {
                 {/* PROJECT TITLE */}
                 <VisibilitySensor
                     partialVisibility
-                    
                     onChange={onTitleVisibility}
                 >
                     <h1
@@ -78,6 +84,7 @@ export default function Project(props) {
                 {/* PROJECT IMAGE */}
                 <VisibilitySensor
                     partialVisibility
+                    offset={"0px"}
                     onChange={onChange}
                 >
                     <img
@@ -94,17 +101,19 @@ export default function Project(props) {
                 </VisibilitySensor>
 
                 {/* PROJECT DESCRIPTION */}
-
-                <p
-                    className={`${classes.Item} ${classes.ProjectDescription} ${projectTitleColored}`}
-                >
-                    {props.projectData.description}
-                </p>
+                <VisibilitySensor  partialVisibility
+                    
+                    onChange={onDescriptionVisibility}>
+                    <p
+                        className={`${classes.Item} ${classes.ProjectDescription} ${projectTitleColored} ${!descriptionVisible ? classes.HiddenItem : null}`}
+                    >
+                        {props.projectData.description}
+                    </p>
+                </VisibilitySensor>
 
                 {/* PROJECT STACK ICONS */}
                 <VisibilitySensor
                     partialVisibility
-                    offset={{ bottom: 300 }}
                     onChange={onTechIconsVisibility}
                 >
                     <ul className={`${classes.Item} ${classes.TechContainer}`}>
