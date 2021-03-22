@@ -3,6 +3,7 @@ import classes from "./Project.module.css";
 import VisibilitySensor from "react-visibility-sensor";
 import pic from "./../../../assets/images/profile.jpeg";
 import TechIcon from "../../../components/UI/TechIcon/TechIcon";
+import LiveIcon from '../../../components/UI/LiveIcon/LiveIcon';
 
 export default function Project(props) {
     const [show, setShow] = useState(false);
@@ -128,7 +129,8 @@ export default function Project(props) {
                     {/* PROJECT LIVE DEMO */}
                     {/* CHECK LIVE DEMO LINK EXISTENCE */}
                     {props.projectData.liveDemo ? (
-                        <div>{props.projectData.liveDemo}</div>
+                        <LiveIcon url={props.projectData.liveDemo}/>
+                       
                     ) : null}
                 </div>
             </div>
