@@ -144,6 +144,7 @@
 @media (max-width: 550px) {
     .Picture {
         background-position: -600px;
+        height: 90vh;
     }
     .Picture .TypingText {
         font-size: 1.5rem;
