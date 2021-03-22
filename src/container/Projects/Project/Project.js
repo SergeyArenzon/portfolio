@@ -13,6 +13,7 @@ export default function Project(props) {
     // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
         if (isVisible) {
+            console.log('----------')
             setShow(true);
         }
     };
@@ -82,7 +83,6 @@ export default function Project(props) {
                 {/* PROJECT IMAGE */}
                 <VisibilitySensor
                     partialVisibility
-                    offset={"0px"}
                     onChange={onChange}
                 >
                     <img

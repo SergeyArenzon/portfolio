@@ -21,7 +21,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "dev": "export BROWSER=/usr/bin/firefox-developer-edition  && npm start "
+        "dev": "export BROWSER=/usr/bin/google-chrome-unstable  && npm start "
     },
     "eslintConfig": {
         "extends": [

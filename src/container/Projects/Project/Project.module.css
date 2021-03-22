@@ -3,7 +3,7 @@
     height: 100%;
     padding-top: 50px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     overflow: hidden;
 }
 
@@ -11,15 +11,14 @@
     grid-column: 1 / span 2;
 }
 
-.Item{
+.Item {
     text-overflow: ellipsis;
     word-break: break-word;
     transition: all 0.3s ease-in;
     opacity: 1;
-
 }
 
-.Item.TechContainer{
+.Item.TechContainer {
     margin-top: 100px;
     display: flex;
     flex-direction: row-reverse;
@@ -27,15 +26,12 @@
     align-items: center;
     list-style: none;
     flex-wrap: wrap;
-    
-
 }
 .TechContainer {
     padding: 0;
     margin: 0;
     height: 150px;
 }
-
 
 .Project img {
     outline: white solid 1px;
@@ -45,7 +41,7 @@
     padding: 10px;
 }
 
-.Project p{
+.Project p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,29 +50,27 @@
     direction: ltr;
 }
 
-
-.Project h1{
+.Project h1 {
     margin: 0;
     padding: 0;
     width: 100vw;
 }
 
-.ProjectTitleFont{
+.ProjectTitleFont {
     font-family: BebasNeue;
     letter-spacing: 2px;
     font-size: 5rem;
     color: #2d54bd;
+    height: 100%;
 }
 
-.ProjectTitleColored{
+.ProjectTitleColored {
     color: white;
 }
 
-
-.ProjectDescription{
+.ProjectDescription {
     font-family: Alegreya-Italic;
 }
-
 
 .ShowenPicture {
     width: 400px;
@@ -91,60 +85,49 @@
     direction: rtl;
 }
 
-
-.TechIconLi{
+.TechIconLi {
     background: none !important;
     opacity: 0;
     transform: translateX(0);
 }
-.TechIconLi.TechIconVisible:first-child{
-    
+.TechIconLi.TechIconVisible:first-child {
     animation: revealIcon 0.2s ease-out forwards;
 }
 
-.TechIconLi.TechIconVisible:nth-child(2){
-    
+.TechIconLi.TechIconVisible:nth-child(2) {
     animation: revealIcon 0.2s ease-out 0.3s forwards;
 }
-.TechIconLi.TechIconVisible:nth-child(3){
-    
+.TechIconLi.TechIconVisible:nth-child(3) {
     animation: revealIcon 0.2s ease-out 0.6s forwards;
 }
-.TechIconLi.TechIconVisible:nth-child(4){
-    
+.TechIconLi.TechIconVisible:nth-child(4) {
     animation: revealIcon 0.2s ease-out 0.9s forwards;
 }
-.TechIconLi.TechIconVisible:nth-child(5){
-    
+.TechIconLi.TechIconVisible:nth-child(5) {
     animation: revealIcon 0.2s ease-out 1.2s forwards;
 }
-.TechIconLi.TechIconVisible:nth-child(6){
-    
+.TechIconLi.TechIconVisible:nth-child(6) {
     animation: revealIcon 0.2s ease-out 1.5s forwards;
 }
 
-
-
-.HiddenItem{
+.HiddenItem {
     transform: translateY(100px);
     opacity: 0;
     transition: all 0.3s ease-in;
 }
 
-
 @keyframes revealIcon {
-    from{
+    from {
         opacity: 0;
         transform: translateX(-20px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 800px) {
     .Project {
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -165,14 +148,13 @@
     .Item:first-child {
         grid-column: 1 / span 1;
     }
-    .ProjectTitleFont{
+    .ProjectTitleFont {
         font-size: 2rem;
     }
-    .Item.TechContainer{
+    .Item.TechContainer {
         margin-top: 20px;
     }
-    .Project .ProjectDescription{
+    .Project .ProjectDescription {
         font-size: 1.2rem;
     }
-
 }

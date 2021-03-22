@@ -29,7 +29,6 @@
     margin: 0;
     list-style: none;
     padding-left: 0;
-    
 }
 
 .Curve {
@@ -61,17 +60,19 @@
         linear-gradient(-50deg, #ffffff 16px, #000 0);
 }
 
-
-
-.row{
-    width:100%;
-    height:80vh;
-    padding:0;
-    margin:0;
+.row {
+    width: 100%;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position:relative;
-  }
-  
-  
+    position: relative;
+}
+
+@media only screen and (max-width: 560px) {
+    .Skew, .SkewReverse {
+        width: 300%;
+    }
+}
