@@ -119,13 +119,14 @@ export default function Project(props) {
                     onChange={onTechIconsVisibility}
                 >
                     <ul className={`${classes.Item} ${classes.TechContainer}`}>
+                        {/* <li className={classes.StackItem}></li> */}
                         {techList}
                     </ul>
                 </VisibilitySensor>
 
                         {/* GITGUB & LIVE DEMOS ITEM */}
                 <div className={`${classes.Item} ${classes.LiveDemoItem}`}>
-
+                        
                         <div className={classes.LiveDemoItemContainer}> 
 
                             {/* PROJECT LIVE + GITHUB */}

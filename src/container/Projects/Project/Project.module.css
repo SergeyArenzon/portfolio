@@ -2,6 +2,7 @@
     display: grid;
     grid-row-gap: 100px;
     height: 100%;
+    min-height: 110vh;
     padding-top: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -24,9 +25,10 @@
     justify-content: center;
     align-items: center;
     height: 300px;
+    grid-column: 1 / span 2;
 }
 .LiveDemoItem .LiveDemoItemContainer {
-    background: #a5a5a5;
+    background: #e6e6e6;
     border-radius: 50px;
     height: 30%;
     display: flex;
@@ -38,12 +40,10 @@
 
 .LiveDemoItemContainer:after {
     content: "";
-    /* color: wheat; */
     position: absolute;
     bottom: 0;
     height: 1px;
     width: 90%;
-    /* background: red; */
     box-shadow: 0px 25px 25px 5px black;
     border-radius: 20%;
 
@@ -61,6 +61,13 @@
 .TechContainer {
     padding: 0;
     margin: 0;
+    padding: 0 10px;
+}
+
+.TechContainer .StackItem{
+    height: 70px;
+    width: 70px;
+    background: violet;
 }
 
 .Project img {
@@ -163,14 +170,6 @@
         grid-template-rows: auto;
         min-height: 100vh;
     }
-    /* .HiddenPictureLeft {
-        height: 100px;
-        width: 100px;
-    }
-    .HiddenPictureRight {
-        height: 100px;
-        width: 100px;
-    } */
     .ShowenPicture {
         height: 100px;
         width: 100px;
@@ -186,5 +185,8 @@
     }
     .Project .ProjectDescription {
         font-size: 1.2rem;
+    }
+    .LiveDemoItem {
+        grid-column: unset;
     }
 }
