@@ -1,10 +1,11 @@
 .LiveIcon {
-    display: block;
+    display: inline-block;
     text-indent: -9999px;
     width: 100px;
     height: 82px;
     background: url('../../../assets/icons/live.svg');
     background-size: 100px 82px;
+   
 }
 
 .LiveIcon:active, .LiveIcon:focus{

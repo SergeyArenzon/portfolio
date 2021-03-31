@@ -1,0 +1,10 @@
+.GithubIcon{
+    background-image: url('./github_icon.svg');
+    display: inline-block;
+    text-indent: -9999px;
+    width: 100px;
+    height: 82px;
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

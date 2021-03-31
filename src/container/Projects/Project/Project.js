@@ -4,6 +4,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import pic from "./../../../assets/images/profile.jpeg";
 import TechIcon from "../../../components/UI/TechIcon/TechIcon";
 import LiveIcon from '../../../components/UI/LiveIcon/LiveIcon';
+import GithubIcon from '../../../components/UI/GithubIcon/GithubIcon';
 
 export default function Project(props) {
     const [show, setShow] = useState(false);
@@ -124,7 +125,7 @@ export default function Project(props) {
 
                 <div className={classes.Item}>
                     {/* PROJECT LIVE + GITHUB */}
-                    <div>{props.projectData.github}</div>
+                    <GithubIcon url={props.projectData.github} />
 
                     {/* PROJECT LIVE DEMO */}
                     {/* CHECK LIVE DEMO LINK EXISTENCE */}
@@ -132,6 +133,8 @@ export default function Project(props) {
                         <LiveIcon url={props.projectData.liveDemo}/>
                        
                     ) : null}
+
+
                 </div>
             </div>
         </>
