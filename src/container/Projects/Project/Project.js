@@ -123,18 +123,23 @@ export default function Project(props) {
                     </ul>
                 </VisibilitySensor>
 
-                <div className={classes.Item}>
-                    {/* PROJECT LIVE + GITHUB */}
-                    <GithubIcon url={props.projectData.github} />
+                        {/* GITGUB & LIVE DEMOS ITEM */}
+                <div className={`${classes.Item} ${classes.LiveDemoItem}`}>
 
-                    {/* PROJECT LIVE DEMO */}
-                    {/* CHECK LIVE DEMO LINK EXISTENCE */}
-                    {props.projectData.liveDemo ? (
-                        <LiveIcon url={props.projectData.liveDemo}/>
-                       
-                    ) : null}
+                        <div className={classes.LiveDemoItemContainer}> 
 
+                            {/* PROJECT LIVE + GITHUB */}
+                            <GithubIcon url={props.projectData.github} />
 
+                            {/* PROJECT LIVE DEMO */}
+                            {/* CHECK LIVE DEMO LINK EXISTENCE */}
+                            {props.projectData.liveDemo ? (
+                                <LiveIcon url={props.projectData.liveDemo}/>
+                            
+                            ) : null}
+ 
+                        </div>
+                        
                 </div>
             </div>
         </>
