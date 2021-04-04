@@ -1,7 +1,7 @@
 [
     {
         "name": "MyBurger",
-        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders. Using jwt Auth.",
+        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders.\n Build with: React, Redux, Node, Express, JWT & MongoDB  \n1.Register/Login\n2.Easily build your burger ingredients\n 3.Fill your address for delivery\n4.Order!\n5. Check your orders history ",
         "image": "",
         "technologies": [
             "nodejs",
@@ -17,7 +17,7 @@
 
     {
         "name": "Sentimental Analysis Web Tool",
-        "description": "This Web app tool analyzing recent tweeters opinion about any subject user like",
+        "description": "Web tool    analyzing recent tweetes opinion about any subject you like and supplies some interesting information about your subject",
         "image": "",
         "technologies": ["nodejs", "express", "twitter"],
         "github": "https://github.com/SergeyArenzon/sentimental_analysis_project.git",

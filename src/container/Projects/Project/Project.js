@@ -102,7 +102,7 @@ export default function Project(props) {
                     partialVisibility
                     onChange={onDescriptionVisibility}
                 >
-                    <p
+                    <pre
                         className={`${classes.Item} ${
                             classes.ProjectDescription
                         } ${projectTitleColored} ${
@@ -110,7 +110,7 @@ export default function Project(props) {
                         }`}
                     >
                         {props.projectData.description}
-                    </p>
+                    </pre>
                 </VisibilitySensor>
 
                 {/* PROJECT STACK ICONS */}

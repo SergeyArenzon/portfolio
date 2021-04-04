@@ -20,6 +20,16 @@
     opacity: 1;
 }
 
+.Project pre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    white-space: pre-wrap;
+
+
+}
+
 .LiveDemoItem {
     display: flex;
     justify-content: center;
@@ -107,6 +117,7 @@
 
 .ProjectDescription {
     font-family: Alegreya-Italic;
+    direction: ltr;
 }
 
 .ShowenPicture {
