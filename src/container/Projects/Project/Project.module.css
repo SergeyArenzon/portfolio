@@ -20,15 +20,32 @@
     opacity: 1;
 }
 
-.Project pre{
+.Project pre {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     white-space: pre-wrap;
-
-
 }
+.StackTabContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.StackTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    position: relative;
+    /* border-bottom: 5px cornflowerblue solid; */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: BebasNeue;
+    letter-spacing: 2px;
+}
+
 
 .LiveDemoItem {
     display: flex;
@@ -49,14 +66,13 @@
 }
 
 .LiveDemoItemContainer:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     height: 1px;
     width: 90%;
     box-shadow: 0px 25px 25px 5px black;
     border-radius: 20%;
-
 }
 
 .Item.TechContainer {
@@ -74,7 +90,7 @@
     padding: 0 10px;
 }
 
-.TechContainer .StackItem{
+.TechContainer .StackItem {
     height: 70px;
     width: 70px;
     background: violet;

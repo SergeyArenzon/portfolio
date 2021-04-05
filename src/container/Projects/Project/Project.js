@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import classes from "./Project.module.css";
-import VisibilitySensor from "react-visibility-sensor";
-import pic from "./../../../assets/images/profile.jpeg";
-import TechIcon from "../../../components/UI/TechIcon/TechIcon";
+import React, { useState } from 'react';
+import classes from './Project.module.css';
+import VisibilitySensor from 'react-visibility-sensor';
+import pic from './../../../assets/images/profile.jpeg';
+import TechIcon from '../../../components/UI/TechIcon/TechIcon';
 import LiveIcon from '../../../components/UI/LiveIcon/LiveIcon';
 import GithubIcon from '../../../components/UI/GithubIcon/GithubIcon';
 
@@ -15,7 +15,7 @@ export default function Project(props) {
     // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
         if (isVisible) {
-            console.log("----------");
+            console.log('----------');
             setShow(true);
         }
     };
@@ -45,7 +45,7 @@ export default function Project(props) {
         projectClasses = classes.Project;
         projectTitleColored = classes.ProjectTitleColored;
     } else {
-        projectClasses = [classes.Project, classes.ProjectReverse].join(" ");
+        projectClasses = [classes.Project, classes.ProjectReverse].join(' ');
     }
 
     // TECH ICONS LIST MAPPING
@@ -56,7 +56,7 @@ export default function Project(props) {
                 className={[
                     classes.TechIconLi,
                     techIconsVisible ? classes.TechIconVisible : null,
-                ].join(" ")}
+                ].join(' ')}
             >
                 <TechIcon iconName={tech} />
             </li>
@@ -86,13 +86,13 @@ export default function Project(props) {
                 <VisibilitySensor partialVisibility onChange={onChange}>
                     <img
                         src={pic}
-                        alt={""}
+                        alt={''}
                         className={
                             show
                                 ? [classes.Item, classes.ShowenPicture].join(
-                                      " "
+                                      ' '
                                   )
-                                : [classes.Item, classes.HiddenItem].join(" ")
+                                : [classes.Item, classes.HiddenItem].join(' ')
                         }
                     />
                 </VisibilitySensor>
@@ -118,29 +118,31 @@ export default function Project(props) {
                     partialVisibility
                     onChange={onTechIconsVisibility}
                 >
-                    <ul className={`${classes.Item} ${classes.TechContainer}`}>
-                        {/* <li className={classes.StackItem}></li> */}
-                        {techList}
-                    </ul>
+                    <div>
+                        <div className={classes.StackTabContainer}>
+                            <div className={classes.StackTab}>Technologies</div>
+                        </div>
+
+                        <ul
+                            className={`${classes.Item} ${classes.TechContainer}`}
+                        >
+                            {techList}
+                        </ul>
+                    </div>
                 </VisibilitySensor>
 
-                        {/* GITGUB & LIVE DEMOS ITEM */}
+                {/* GITGUB & LIVE DEMOS ITEM */}
                 <div className={`${classes.Item} ${classes.LiveDemoItem}`}>
-                        
-                        <div className={classes.LiveDemoItemContainer}> 
+                    <div className={classes.LiveDemoItemContainer}>
+                        {/* PROJECT LIVE + GITHUB */}
+                        <GithubIcon url={props.projectData.github} />
 
-                            {/* PROJECT LIVE + GITHUB */}
-                            <GithubIcon url={props.projectData.github} />
-
-                            {/* PROJECT LIVE DEMO */}
-                            {/* CHECK LIVE DEMO LINK EXISTENCE */}
-                            {props.projectData.liveDemo ? (
-                                <LiveIcon url={props.projectData.liveDemo}/>
-                            
-                            ) : null}
- 
-                        </div>
-                        
+                        {/* PROJECT LIVE DEMO */}
+                        {/* CHECK LIVE DEMO LINK EXISTENCE */}
+                        {props.projectData.liveDemo ? (
+                            <LiveIcon url={props.projectData.liveDemo} />
+                        ) : null}
+                    </div>
                 </div>
             </div>
         </>
