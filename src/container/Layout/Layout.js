@@ -3,6 +3,7 @@ import classes from "./Layout.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Picture from "../../components/Picture/Picture";
 import AboutMe from "../../components/AboutMe/AboutMe";
+import Contacts from "../../components/Contacts/Contacts";
 import Projects from "../Projects/Projects";
 import Background from "../../components/Background/Background";
 
@@ -54,6 +55,7 @@ export default function Layout() {
             <Picture />
             <AboutMe />
             <Projects />
+            <Contacts/>
         </div>
     );
 }

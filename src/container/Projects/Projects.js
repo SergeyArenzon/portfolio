@@ -45,7 +45,7 @@ export default function Projects() {
             <ul className={classes.ProjectsList}>{projects}</ul>
 
             <svg
-                className="separator"
+                className={classes.Seperator}
                 width="100%"
                 height="120"
                 viewBox="0.1 0.1 180 40"

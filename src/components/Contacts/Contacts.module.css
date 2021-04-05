@@ -1,0 +1,20 @@
+.Contacts {
+    /* background: grey; */
+    /* height: 30vh; */
+    width: 100%;
+    position: relative;
+
+}
+
+.Seperator{
+    position: relative;
+    top: 4px;
+    left: 0;
+    transform: rotate(180deg);
+}
+.Contacts .Body{
+    background: rgb(36, 36, 36);
+    height: 40vh;
+    position: relative;
+    
+}
