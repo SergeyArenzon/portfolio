@@ -1,3 +1,5 @@
+
+
 .Project {
     display: grid;
     grid-row-gap: 100px;
@@ -26,6 +28,9 @@
     align-items: center;
     font-size: 2rem;
     white-space: pre-wrap;
+    font-family: Assistant;
+    padding: 0 30px;
+    font-weight: 600;
 }
 .StackTabContainer {
     display: flex;
@@ -104,14 +109,7 @@
     padding: 10px;
 }
 
-.Project p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-    font-size: 2rem;
-    direction: ltr;
-}
+
 
 .Project h1 {
     margin: 0;
@@ -123,7 +121,7 @@
     font-family: BebasNeue;
     letter-spacing: 2px;
     font-size: 5rem;
-    color: #2d54bd;
+    color: var(--main-color);
     height: 100%;
 }
 
@@ -132,7 +130,7 @@
 }
 
 .ProjectDescription {
-    font-family: Alegreya-Italic;
+    /* font-family: Alegreya-Italic; */
     direction: ltr;
 }
 
