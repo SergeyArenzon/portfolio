@@ -2,10 +2,11 @@ import React from 'react';
 import classes from './Contacts.module.css';
 
 
+
 export default function Contacts() {
     return (
         <div className={classes.Contacts}>
-             {/* <svg
+            {/* <svg
                 className={classes.Seperator}
                 width="100%"
                 height="120"
@@ -24,9 +25,8 @@ export default function Contacts() {
                 </g>
             </svg> */}
             <div className={classes.Body}>
-               
             </div>
-             <div className={classes.Image}></div>
+            <div className={classes.Image}></div>
         </div>
-    )
+    );
 }

@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
-import classes from "./Layout.module.css";
-import Navbar from "../../components/Navbar/Navbar";
-import Picture from "../../components/Picture/Picture";
-import AboutMe from "../../components/AboutMe/AboutMe";
-import Contacts from "../../components/Contacts/Contacts";
-import Projects from "../Projects/Projects";
-import Background from "../../components/Background/Background";
+import React, { useState, useEffect } from 'react';
+import classes from './Layout.module.css';
+import Navbar from '../../components/Navbar/Navbar';
+import Picture from '../../components/Picture/Picture';
+import AboutMe from '../../components/AboutMe/AboutMe';
+import Contacts from '../../components/Contacts/Contacts';
+import Projects from '../Projects/Projects';
+import Background from '../../components/Background/Background';
+import FlyingObject from '../../components/UI/FlyingObject/FlyingObject';
 
 // =========================
 // Main scrolling background
@@ -13,9 +14,9 @@ import Background from "../../components/Background/Background";
 
 export default function Layout() {
     useEffect(() => {
-        window.addEventListener("scroll", onScroll);
-        console.log("useEffect");
-        return () => window.removeEventListener("scroll", onScroll);
+        window.addEventListener('scroll', onScroll);
+        console.log('useEffect');
+        return () => window.removeEventListener('scroll', onScroll);
         // eslint-disable-next-line
     }, []);
 
@@ -55,7 +56,8 @@ export default function Layout() {
             <Picture />
             <AboutMe />
             <Projects />
-            <Contacts/>
+            <Contacts />
+            <FlyingObject scrollTop={scrollTop} fill={'red'} name={'x'} width={'200px'}/>
         </div>
     );
 }

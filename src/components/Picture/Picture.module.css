@@ -1,5 +1,5 @@
 .Picture {
-    background: url("../../assets/images/background.jpeg");
+    background: url('../../assets/images/background.jpeg');
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
@@ -13,7 +13,7 @@
 }
 
 .Picture::after {
-    content: "";
+    content: '';
     background: rgba(0, 0, 0, 0.37);
     position: absolute;
     height: 100%;
@@ -33,7 +33,7 @@
     text-align: left;
     padding: 0 50px;
     /* padding-top: 150px; */
-    font-family: "Assistant";
+    font-family: 'Assistant';
     text-shadow: 2px 2px 2px #000000a6;
     min-height: 440px;
 }
@@ -60,7 +60,7 @@
     font-size: 4.5rem;
     font-weight: bold;
     color: #2d54bd;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px 2px white;
 }
 .Picture .TypingText .Circles div {
     background: transparent;
