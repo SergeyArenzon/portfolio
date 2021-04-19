@@ -3,7 +3,7 @@ import classes from "./AboutMe.module.css";
 import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 
-export default function AboutMe() {
+export default function AboutMe({scrollTop}) {
     const [visible, setVisible] = useState(false);
 
     if (!visible && window.scrollY > 600) {
@@ -56,9 +56,10 @@ export default function AboutMe() {
 
     return (
         <div>
-            <div className={classes.AboutMe}>
+            <div className={classes.AboutMe} >
                 <div className={classes.LeftSide}>
                     <h1
+                    
                         className={[
                             classes.AboutText,
                             visible ? null : classes.HideLeft,
@@ -85,7 +86,7 @@ export default function AboutMe() {
                         visible ? classes.Shake : null,
                     ].join(" ")}
                 >
-                    <p className={classes.TextP}>
+                    <p className={classes.TextP}  >
                         I'am BS.c graduate of{" "}
                         <strong>
                             Computer Science & Mathematics{" "}

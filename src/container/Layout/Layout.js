@@ -53,11 +53,11 @@ export default function Layout() {
         <div className={classes.Layout}>
             <Background />
             <Navbar color={navColor} scrollTop={scrollTop} />
-            <Picture />
-            <AboutMe />
+            <Picture scrollTop={scrollTop}/>
+            <AboutMe  />
             <Projects />
             <Contacts />
-            <FlyingObject scrollTop={scrollTop} fill={'red'} name={'x'} width={'200px'}/>
+            {/* <FlyingObject scrollTop={scrollTop} /> */}
         </div>
     );
 }

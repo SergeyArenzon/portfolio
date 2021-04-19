@@ -72,6 +72,9 @@ export default function Project(props) {
                     onChange={onTitleVisibility}
                 >
                     <h1
+                        style={{
+                            transform: `translateY(${props.scrollTop * -30}px)`,
+                        }}
                         className={`${classes.Item} ${
                             classes.ProjectTitleFont
                         } ${projectTitleColored} ${

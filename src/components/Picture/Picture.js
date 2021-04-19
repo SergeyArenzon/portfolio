@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Typewriter from "typewriter-effect";
-import classes from "./Picture.module.css";
-import Waves from "../Waves/Waves";
+import React, { useEffect, useState } from 'react';
+import Typewriter from 'typewriter-effect';
+import classes from './Picture.module.css';
+import Waves from '../Waves/Waves';
 
-export default function Picture() {
+export default function Picture({ scrollTop }) {
     const [showText, setShowText] = useState(false);
 
     //  Delaying the seconde typing effect
@@ -26,9 +26,9 @@ export default function Picture() {
                     className={classes.TypeSec}
                     options={{
                         strings: [
-                            "FULLSTACK Developer.",
-                            "FRONTEND Developer.",
-                            "BACKEND Developer.",
+                            'FULLSTACK Developer.',
+                            'FRONTEND Developer.',
+                            'BACKEND Developer.',
                         ],
                         autoStart: true,
                         loop: true,
@@ -53,7 +53,12 @@ export default function Picture() {
     );
     return (
         <header className={classes.Picture}>
-            <div className={classes.TypingText}>
+            <div
+                className={classes.TypingText}
+                style={{
+                    transform: `translateY(${scrollTop * -30}px)`,
+                }}
+            >
                 <div className={classes.Circles}>
                     <div></div>
                     <div></div>
