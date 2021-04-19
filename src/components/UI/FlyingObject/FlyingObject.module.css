@@ -39,7 +39,6 @@
     width: 50px;
     top: 20vh;
     left: 30px;
-    animation: spin infinite linear;
 }
 .Second polygon {
     fill: var(--grey-color);

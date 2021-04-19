@@ -6,6 +6,7 @@
     background-position: right;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 
     display: flex;
     flex-direction: column;
@@ -79,6 +80,18 @@
     width: 0;
 }
 
+.FlyingContainer {
+    max-height: 10px;
+}
+
+
+
+.FlyingContainer .Star{
+    color: #2d54bd;
+    position: absolute;
+    bottom: -20px;
+}
+
 @keyframes animate-circle2 {
     0% {
         height: 20px;
@@ -141,6 +154,7 @@
         width: 400px;
     }
 }
+
 @media (max-width: 550px) {
     .Picture {
         background-position: -440px;
