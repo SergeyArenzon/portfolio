@@ -86,7 +86,7 @@ export default function Picture({ scrollTop }) {
                     }}
                 ></i>
                 <i
-                    className={`far fa-star fa-3x ${classes.Star}`}
+                    className={`far fa-star fa-sm ${classes.Star}`}
                     style={{
                         transform: `translateY(${scrollTop * -60}px) rotate(${
                             scrollTop * 100
@@ -106,7 +106,7 @@ export default function Picture({ scrollTop }) {
                     }}
                 ></i>
                 <i
-                    className={`far fa-star fa-4x ${classes.Star}`}
+                    className={`far fa-star fa-xs ${classes.Star}`}
                     style={{
                         transform: `translateY(${scrollTop * -25}px) rotate(${
                             scrollTop * 70
@@ -142,7 +142,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 120
                         }deg)`,
                         right: '24vw',
-                        color: '#9eba00',
+                        color: 'white',
                     }}
                 ></i>
                 <i
@@ -156,7 +156,7 @@ export default function Picture({ scrollTop }) {
                     }}
                 ></i>
                 <i
-                    className={`far fa-star fa-5x ${classes.Star}`}
+                    className={`far fa-star fa-lg ${classes.Star}`}
                     style={{
                         transform: `translateY(${scrollTop * -10}px) rotate(${
                             scrollTop * 10
@@ -166,7 +166,7 @@ export default function Picture({ scrollTop }) {
                     }}
                 ></i>
                 <i
-                    className={`far fa-star fa-lg ${classes.Star}`}
+                    className={`far fa-star fa-3x ${classes.Star}`}
                     style={{
                         transform: `translateY(${scrollTop * -40}px) rotate(${
                             scrollTop * 35
