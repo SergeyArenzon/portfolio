@@ -149,6 +149,8 @@
     .Picture .TypingText {
         font-size: 1.5rem;
         width: auto;
+        /* position: relative;
+        min-height: auto; */
     }
     .Picture .TypingText h1 {
         font-size: 2rem;
