@@ -90,6 +90,7 @@
     color: #2d54bd;
     position: absolute;
     bottom: -20px;
+    z-index: 1;
 }
 
 @keyframes animate-circle2 {

@@ -175,6 +175,16 @@ export default function Picture({ scrollTop }) {
                         color: '#00ff5e',
                     }}
                 ></i>
+                <i
+                    className={`far fa-star fa-3x ${classes.Star}`}
+                    style={{
+                        transform: `translateY(${scrollTop * -60}px) rotate(${
+                            scrollTop * 60
+                        }deg)`,
+                        right: '0',
+                        color: 'white',
+                    }}
+                ></i>
             </div>
         </header>
     );
