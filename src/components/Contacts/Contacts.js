@@ -24,9 +24,10 @@ export default function Contacts() {
                     />
                 </g>
             </svg>
-            {/* <div className={classes.Body}>
-            </div> */}
+            <div className={classes.Body}>
+
             {/* <div className={classes.Image}></div> */}
+            </div>
         </div>
     );
 }

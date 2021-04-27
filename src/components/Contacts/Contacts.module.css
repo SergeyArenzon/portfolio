@@ -3,13 +3,13 @@
     position: relative;
     background: rgb(44, 44, 44);
     /* margin-top: 400px; */
-    height: 20vh;
+    /* height: 20vh; */
     
 }
 
 .Seperator {
-    position: relative;
-    bottom: 115px;
+    position: absolute;
+    top: -115px;
     left: 0;
     transform: rotate(180deg);
     max-width: 100vw;
@@ -18,9 +18,11 @@
     
 }
 .Contacts .Body {
-    background: rgb(44, 44, 44);
+    background: rgba(44,44,44,0);
+
     height: 100%;
     position: relative;
+    height: 30vh;
 }
 
 .Image {
@@ -34,5 +36,14 @@
     position: absolute;
     left: 0;
     top: 0;
-    /* opacity: 0.1; */
+    opacity: 0.1;
+}
+
+
+
+@media(max-width: 550px){
+    .Seperator{
+        height: 60px;
+        top: -50px;
+    }
 }
