@@ -6,7 +6,7 @@ import classes from './Contacts.module.css';
 export default function Contacts() {
     return (
         <div className={classes.Contacts}>
-            {/* <svg
+            <svg
                 className={classes.Seperator}
                 width="100%"
                 height="120"
@@ -23,10 +23,10 @@ export default function Contacts() {
                         d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z"
                     />
                 </g>
-            </svg> */}
-            <div className={classes.Body}>
-            </div>
-            <div className={classes.Image}></div>
+            </svg>
+            {/* <div className={classes.Body}>
+            </div> */}
+            {/* <div className={classes.Image}></div> */}
         </div>
     );
 }
