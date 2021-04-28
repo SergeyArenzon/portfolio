@@ -26,7 +26,7 @@ export default function Contacts() {
             </svg>
             <div className={classes.Body}>
                 <div className={classes.Wrapper}>
-                    <h1>Contacts</h1>
+                    <h1 className={classes.ContactsTitle}>Contacts</h1>
                     <img
                         className={classes.Arrows}
                         src={arrow}
@@ -72,12 +72,9 @@ export default function Contacts() {
                         </div>
                     </div>
                     <div className={classes.ContactsSvg}>
-
-                        <img src={contacts_svg} alt='contacts'></img>
+                        <img src={contacts_svg} alt="contacts"></img>
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     );
