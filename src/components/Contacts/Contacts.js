@@ -37,17 +37,38 @@ export default function Contacts() {
                     <div className={classes.ContactsContainer}>
                         <div>
                             <i
-                                className={`far fa-envelope fa-2x ${classes.Icons}`}
+                                className={`fas fa-envelope-square fa-2x ${classes.Icons}`}
                             ></i>
                             <a href={'mailto:arenzonsergey@gmail.com'}>
                                 arenzonsergey@gmail.com
                             </a>
                         </div>
                         <div>
-                        <i className={`fab fa-github-square fa-2x ${classes.Icons}`}></i>
+                            <i
+                                className={`fab fa-github-square fa-2x ${classes.Icons}`}
+                            ></i>
                             <a href={'https://github.com/SergeyArenzon'}>
-                            https://github.com/SergeyArenzon
+                                www.github.com/SergeyArenzon
                             </a>
+                        </div>
+                        <div>
+                            <i
+                                className={`fab fa-linkedin fa-2x ${classes.Icons}`}
+                            ></i>
+                            <a
+                                href={
+                                    'https://www.linkedin.com/in/sergeyarenzon'
+                                }
+                            >
+                                www.linkedin.com/in/sergeyarenzon
+                            </a>
+                        </div>
+                        <div>
+                            <i
+                                className={`fas fa-phone-square fa-2x ${classes.Icons}`}
+                            ></i>
+
+                            <a href="tel:0544537060">0544537060</a>
                         </div>
                     </div>
                 </div>
