@@ -62,9 +62,20 @@
 .Sec{
     height: 100%;
     background: rgb(53, 53, 53);
+    padding-top: 100px;
+    z-index: 10;
 }
 .ContactsContainer{
-    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+
+}
+
+.Icons{
+    color: white;
+    margin-right: 10px;
 }
 
 @media(max-width: 550px){

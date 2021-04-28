@@ -26,11 +26,30 @@ export default function Contacts() {
             <div className={classes.Body}>
                 <div className={classes.Wrapper}>
                     <h1>Contacts</h1>
-                    <img className={classes.Arrows} src={arrow} alt="arrow"></img>
+                    <img
+                        className={classes.Arrows}
+                        src={arrow}
+                        alt="arrow"
+                    ></img>
                 </div>
                 <div className={`${classes.Wrapper} ${classes.Sec}`}>
                     {/* <div className={classes.Image}></div> */}
-                    <div className={classes.ContactsContainer}></div>
+                    <div className={classes.ContactsContainer}>
+                        <div>
+                            <i
+                                className={`far fa-envelope fa-2x ${classes.Icons}`}
+                            ></i>
+                            <a href={'mailto:arenzonsergey@gmail.com'}>
+                                arenzonsergey@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                        <i className={`fab fa-github-square fa-2x ${classes.Icons}`}></i>
+                            <a href={'https://github.com/SergeyArenzon'}>
+                            https://github.com/SergeyArenzon
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
