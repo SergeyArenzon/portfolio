@@ -73,7 +73,7 @@ export default function Contacts() {
                     </div>
                     <div className={classes.ContactsSvg}>
 
-                        <img src={contacts_svg}></img>
+                        <img src={contacts_svg} alt='contacts'></img>
                     </div>
                 </div>
                 
