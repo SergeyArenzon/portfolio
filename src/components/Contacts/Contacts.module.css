@@ -1,9 +1,14 @@
+:root {
+    --first-gray-color: rgb(53, 53, 53);;
+    --second-gray-color: rgb(44,44,44);
+}
+
+
 .Contacts {
     width: 100%;
     position: relative;
     background: rgb(44, 44, 44);
-    /* margin-top: 400px; */
-    /* height: 20%; */
+ 
     
 }
 
@@ -64,6 +69,7 @@
     background: rgb(53, 53, 53);
     padding-top: 100px;
     z-index: 10;
+    position: relative;
 }
 .ContactsContainer{
   display: flex;
@@ -77,11 +83,31 @@
 
 .ContactsContainer a{
     font-size: 1.2rem;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--second-gray-color);
+    /* font-style: italic; */
+    font-family: BebasNeue;
+    letter-spacing: 1px;
 }
-
+.ContactsContainer div{
+    display: flex;
+}
 .Icons{
     color: white;
     margin-right: 10px;
+}
+
+
+.ContactsSvg img{
+    position: absolute;
+    right: 0;
+    top: 10px ;
+    height: calc(100% - 10px);
+    z-index: -1;
+
+
 }
 
 @media(max-width: 550px){

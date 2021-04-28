@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Contacts.module.css';
 import arrow from './arrow.svg';
+import contacts_svg from './contacts.svg';
 
 export default function Contacts() {
     return (
@@ -33,7 +34,6 @@ export default function Contacts() {
                     ></img>
                 </div>
                 <div className={`${classes.Wrapper} ${classes.Sec}`}>
-                    {/* <div className={classes.Image}></div> */}
                     <div className={classes.ContactsContainer}>
                         <div>
                             <i
@@ -71,7 +71,13 @@ export default function Contacts() {
                             <a href="tel:0544537060">0544537060</a>
                         </div>
                     </div>
+                    <div className={classes.ContactsSvg}>
+
+                        <img src={contacts_svg}></img>
+                    </div>
                 </div>
+                
+                
             </div>
         </div>
     );
