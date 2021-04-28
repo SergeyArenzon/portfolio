@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Contacts.module.css';
-
-
+import arrow from './arrow.svg';
 
 export default function Contacts() {
     return (
@@ -25,8 +24,14 @@ export default function Contacts() {
                 </g>
             </svg>
             <div className={classes.Body}>
-
-            {/* <div className={classes.Image}></div> */}
+                <div className={classes.Wrapper}>
+                    <h1>Contacts</h1>
+                    <img className={classes.Arrows} src={arrow} alt="arrow"></img>
+                </div>
+                <div className={`${classes.Wrapper} ${classes.Sec}`}>
+                    {/* <div className={classes.Image}></div> */}
+                    <div className={classes.ContactsContainer}></div>
+                </div>
             </div>
         </div>
     );

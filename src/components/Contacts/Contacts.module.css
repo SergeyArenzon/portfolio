@@ -3,7 +3,7 @@
     position: relative;
     background: rgb(44, 44, 44);
     /* margin-top: 400px; */
-    /* height: 20vh; */
+    /* height: 20%; */
     
 }
 
@@ -39,11 +39,40 @@
     opacity: 0.1;
 }
 
+.Wrapper{
+    position: relative;
+    width: 100%;
+}
 
+.Wrapper h1 {
+
+    padding: 0;
+    color: white;
+    font-size: 4rem;
+}
+
+.Arrows{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+.Arrows svg {
+    fill: red;
+}
+.Sec{
+    height: 100%;
+    background: rgb(53, 53, 53);
+}
+.ContactsContainer{
+    
+}
 
 @media(max-width: 550px){
     .Seperator{
         height: 60px;
         top: -50px;
+    }
+    .Wrapper h1{
+        font-size: 2rem;
     }
 }
