@@ -82,7 +82,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 50
                         }deg)`,
                         left: 0,
-                        color: '#72b7db',
+                        color: '#AB92BF',
                     }}
                 ></i>
                 <i
@@ -112,7 +112,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 100
                         }deg)`,
                         left: '21vw',
-                        color: 'red',
+                        color: '#007bff',
                     }}
                 ></i>
                 <i
