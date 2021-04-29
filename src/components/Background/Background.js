@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../../assets/video/background.mp4";
+// import background from "../../assets/video/background.mp4";
 import classes from "./Background.module.css";
 import coding from './coding.mp4'
 
