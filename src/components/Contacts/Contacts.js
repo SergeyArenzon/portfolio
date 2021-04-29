@@ -33,43 +33,45 @@ export default function Contacts() {
                         alt="arrow"
                     ></img>
                 </div>
-                    <div className={classes.ContactsContainer}>
-                        <div>
-                            <i
-                                className={`fas fa-envelope-square fa-2x ${classes.Icons}`}
-                            ></i>
-                            <a href={'mailto:arenzonsergey@gmail.com'}>
-                                arenzonsergey@gmail.com
-                            </a>
-                        </div>
-                        <div>
-                            <i
-                                className={`fab fa-github-square fa-2x ${classes.Icons}`}
-                            ></i>
-                            <a href={'https://github.com/SergeyArenzon'}>
-                                www.github.com/SergeyArenzon
-                            </a>
-                        </div>
-                        <div>
-                            <i
-                                className={`fab fa-linkedin fa-2x ${classes.Icons}`}
-                            ></i>
-                            <a
-                                href={
-                                    'https://www.linkedin.com/in/sergeyarenzon'
-                                }
-                            >
-                                www.linkedin.com/in/sergeyarenzon
-                            </a>
-                        </div>
-                        <div>
-                            <i
-                                className={`fas fa-phone-square fa-2x ${classes.Icons}`}
-                            ></i>
-
-                            <a href="tel:0544537060">0544537060</a>
-                        </div>
+                <div className={classes.ContactsContainer}>
+                    <div>
+                        <i
+                            className={`fas fa-envelope-square fa-2x ${classes.Icons}`}
+                        ></i>
+                        <a href={'mailto:arenzonsergey@gmail.com'} target="_blank"
+                                rel="noreferrer">
+                            arenzonsergey@gmail.com
+                        </a>
                     </div>
+                    <div>
+                        <i
+                            className={`fab fa-github-square fa-2x ${classes.Icons}`}
+                        ></i>
+                        <a
+                            href={'https://github.com/SergeyArenzon'}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            www.github.com/SergeyArenzon
+                        </a>
+                    </div>
+                    <div>
+                        <i
+                            className={`fab fa-linkedin fa-2x ${classes.Icons}`}
+                        ></i>
+                        <a href={'https://www.linkedin.com/in/sergeyarenzon'} target="_blank"
+                                rel="noreferrer"> 
+                            www.linkedin.com/in/sergeyarenzon
+                        </a>
+                    </div>
+                    <div>
+                        <i
+                            className={`fas fa-phone-square fa-2x ${classes.Icons}`}
+                        ></i>
+
+                        <a href="tel:0544537060">0544537060</a>
+                    </div>
+                </div>
                 <div className={`${classes.Wrapper} ${classes.Sec}`}>
                     <div className={classes.ContactsSvg}>
                         <img src={contacts_svg} alt="contacts"></img>
