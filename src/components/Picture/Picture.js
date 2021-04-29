@@ -52,7 +52,7 @@ export default function Picture({ scrollTop }) {
         />
     );
     return (
-        <header className={classes.Picture}>
+        <header className={classes.Picture} id="home">
             <div
                 className={classes.TypingText}
                 style={{
@@ -103,6 +103,16 @@ export default function Picture({ scrollTop }) {
                         }deg)`,
                         left: '30vw',
                         color: '#096796',
+                    }}
+                ></i>
+                <i
+                    className={`far fa-star fa-2x ${classes.Star}`}
+                    style={{
+                        transform: `translateY(${scrollTop * -70}px) rotate(${
+                            scrollTop * 100
+                        }deg)`,
+                        left: '21vw',
+                        color: 'red',
                     }}
                 ></i>
                 <i

@@ -5,7 +5,7 @@ import contacts_svg from './contacts.svg';
 
 export default function Contacts() {
     return (
-        <div className={classes.Contacts}>
+        <div className={classes.Contacts} id="contact">
             <svg
                 className={classes.Seperator}
                 width="100%"

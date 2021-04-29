@@ -1,5 +1,6 @@
-import React from "react";
-import classes from "./NavLinks.module.css";
+import React from 'react';
+import classes from './NavLinks.module.css';
+import { Link } from 'react-scroll';
 
 export default function NavLinks(props) {
     let showNavLinks = null;
@@ -8,22 +9,29 @@ export default function NavLinks(props) {
     if (props.showFullscreenLinks) {
         showNavLinks = [classes.DisplayNavLinks];
         slideLink = [classes.Slide];
-
     }
 
     return (
-        <ul className={[classes.NavLinks, showNavLinks, slideLink].join(" ")}>
+        <ul className={[classes.NavLinks, showNavLinks, slideLink].join(' ')}>
             <li>
-                HOME <div></div>
+                <Link to="home" smooth={true} duration={1000}>
+                    HOME <div></div>
+                </Link>
             </li>
             <li>
-                ABOUT <div></div>
+                <Link to="about" smooth={true} duration={1000}>
+                    ABOUT <div></div>
+                </Link>
             </li>
             <li>
-                PROJECTS<div></div>
+                <Link to="projects" smooth={true} duration={1000}>
+                    PROJECTS<div></div>
+                </Link>
             </li>
             <li>
-                CONTACT<div></div>
+                <Link to="contact" smooth={true} duration={1000}>
+                    CONTACT<div></div>
+                </Link>
             </li>
         </ul>
     );

@@ -56,7 +56,7 @@ export default function AboutMe({scrollTop}) {
 
     return (
         <div>
-            <div className={classes.AboutMe} >
+            <div className={classes.AboutMe} id="about">
                 <div className={classes.LeftSide}>
                     <h1
                     

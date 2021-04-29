@@ -30,7 +30,7 @@ export default function Projects() {
         }
     });
     return (
-        <div className={classes.Projects}>
+        <div className={classes.Projects} id="projects">
             <div className={classes.Title}>
                 <h1>
                     <span>P</span>ROJECTS
