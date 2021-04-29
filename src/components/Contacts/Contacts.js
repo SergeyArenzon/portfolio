@@ -33,7 +33,6 @@ export default function Contacts() {
                         alt="arrow"
                     ></img>
                 </div>
-                <div className={`${classes.Wrapper} ${classes.Sec}`}>
                     <div className={classes.ContactsContainer}>
                         <div>
                             <i
@@ -71,6 +70,7 @@ export default function Contacts() {
                             <a href="tel:0544537060">0544537060</a>
                         </div>
                     </div>
+                <div className={`${classes.Wrapper} ${classes.Sec}`}>
                     <div className={classes.ContactsSvg}>
                         <img src={contacts_svg} alt="contacts"></img>
                     </div>
