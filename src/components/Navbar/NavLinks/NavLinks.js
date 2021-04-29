@@ -13,23 +13,23 @@ export default function NavLinks(props) {
 
     return (
         <ul className={[classes.NavLinks, showNavLinks, slideLink].join(' ')}>
-            <li>
-                <Link to="home" smooth={true} duration={1000}>
+            <li >
+                <Link onClick={() => props.hamburgerClickHandler()} to="home" smooth={true} duration={1000}>
                     HOME <div></div>
                 </Link>
             </li>
-            <li>
-                <Link to="about" smooth={true} duration={1000}>
+            <li >
+                <Link onClick={() => props.hamburgerClickHandler()} offset={-30} to="about" smooth={true} duration={1000}>
                     ABOUT <div></div>
                 </Link>
             </li>
             <li>
-                <Link to="projects" smooth={true} duration={1000}>
+                <Link onClick={() => props.hamburgerClickHandler()} to="projects" smooth={true} duration={1000}>
                     PROJECTS<div></div>
                 </Link>
             </li>
             <li>
-                <Link to="contact" smooth={true} duration={1000}>
+                <Link onClick={() => props.hamburgerClickHandler()} to="contact" smooth={true} duration={1000}>
                     CONTACT<div></div>
                 </Link>
             </li>
