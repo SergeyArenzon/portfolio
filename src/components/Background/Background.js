@@ -9,9 +9,6 @@ import coding from './coding.mp4'
 // ================
 
 export default function Background() {
-    if(window.scrollY > 600){
-
-    }
     return (
         <video autoPlay loop muted className={classes.Background}>
             {<source src={coding} type="video/mp4" />}

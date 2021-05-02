@@ -33,9 +33,9 @@
     },
     {
         "name": "MyAppartment",
-        "description": "Roommates Android app for that helps us to manage bills & expenses properly.",
+        "description": "Roommates Android app helping us to manage bills & expenses properly.\n1. Register and create your \"room\" and become your apartment manager\n2. I room is existing, register and join existing room\n3.  ",
         "image": "",
-        "technologies": ["java", "firebase"],
+        "technologies": ["android","java", "firebase"],
         "github": "https://github.com/SergeyArenzon/My_Appartment.git",
         "liveDemo": null
     },
