@@ -17,7 +17,6 @@ export default React.memo(function AboutMe() {
 
     const onChange = (isVisible) => {
         if (isVisible) {
-            console.log(isVisible);
             setVisible(true);
         }
     };
