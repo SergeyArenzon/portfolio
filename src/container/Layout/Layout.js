@@ -34,10 +34,7 @@ export default function Layout() {
         setScrollTop(scrolled);
     };
 
-    // Checks if user on mobile mode
-    // const isMobile = () => {
-    //     return window.innerWidth <= 800;
-    // };
+    
     const onScroll = () => {
         // progressbar handler
         progressBarHandler();
