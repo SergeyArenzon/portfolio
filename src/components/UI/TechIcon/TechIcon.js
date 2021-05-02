@@ -51,9 +51,7 @@ export default function TechIcon(props) {
         case 'android':
             hintName = 'Android';
             break;
-        case 'scapy':
-            hintName = 'Scapy';
-            break;
+      
         default:
             break;
     }
