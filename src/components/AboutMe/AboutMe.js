@@ -4,7 +4,7 @@ import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 import VisibilitySensor from 'react-visibility-sensor';
 
-export default function AboutMe() {
+export default React.memo(function AboutMe() {
     // const [visible, setVisible] = useState(false);
 
     // if (!visible && window.scrollY > 600) {
@@ -132,3 +132,4 @@ export default function AboutMe() {
         
     );
 }
+)
