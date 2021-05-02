@@ -146,6 +146,7 @@
     color: var(--main-color);
     text-shadow: none;
     font-weight: 900;
+    text-shadow: 0.1px 0.1px 3px black;
 }
 .AboutText {
     position: relative;
