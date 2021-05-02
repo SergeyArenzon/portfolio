@@ -25,7 +25,7 @@
     background-size: cover;
     border: 2px solid white;
     position: relative;
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 3px black;
     transition: all 0.4s ease-out;
     transition-delay: 0.2s;
     margin-bottom: 30px;
@@ -91,7 +91,7 @@
     border-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.281);
     cursor: pointer;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.678);
+    /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.678); */
     transition: all 0.15s linear;
 }
 
@@ -146,7 +146,7 @@
     color: var(--main-color);
     text-shadow: none;
     font-weight: 900;
-    text-shadow: 0.1px 0.1px 3px black;
+    /* text-shadow: 0.1px 0.1px 3px black;   */
 }
 .AboutText {
     position: relative;
@@ -261,7 +261,7 @@
     }
 
     .AboutMe .LeftSide .MeText {
-        color: rgb(134, 134, 134);
+        color: black;
         width: auto;
         position: static;
         text-align: center;
@@ -305,6 +305,7 @@
     {
         color: var(--main-mobile-color);
     }
+    
 }
 
 .HideLeft {
