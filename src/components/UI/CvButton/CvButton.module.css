@@ -1,19 +1,18 @@
 .btn {
-    border: 1px solid #2d54bd;
+    border: 1px solid var(--main-color);
     background: none;
     font-size: 20px;
-    font-family: "montserrat";
+    font-family: 'montserrat';
     cursor: pointer;
     margin: 10px;
     transition: 0.8s;
     position: relative;
     overflow: hidden;
-    color: #2d54bd;
+    color: var(--main-color);
     z-index: 1;
     padding: 0;
     padding-left: 0;
     font-weight: bold;
-    
 }
 
 .btn:hover {
@@ -29,12 +28,12 @@ a:-webkit-any-link {
 }
 
 .btn::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     width: 100%;
     height: 0%;
-    background: #2d54bd;
+    background: var(--main-color);
     z-index: 0;
     transition: 0.8s;
     bottom: 0;
@@ -50,7 +49,7 @@ a:-webkit-any-link {
     text-decoration: none;
     display: block;
     padding: 10px 20px;
-    color: #2d54bd;
+    color: var(--main-color);
 }
 .btn a:focus {
     outline: none;
@@ -61,11 +60,15 @@ a:-webkit-any-link {
 }
 
 @media (max-width: 550px) {
+    .btn {
+        border: 1px solid var(--main-mobile-color);
+        color: var(--main-mobile-color);
+    }
     .btn::before {
         content: none;
     }
     .btn:hover {
-        color: #2d54bd;
+        color: var(--main-mobile-color);
         z-index: 1;
     }
 }

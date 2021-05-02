@@ -16,12 +16,12 @@
     transition: color 0.3s linear;
 }
 .NavLinks li:hover {
-    color: #2d54bd;
+    color: var(--main-color);
     transition: color 0.2s linear;
 }
 
 .NavLinks li:hover div {
-    background: #2d54bd;
+    background: var(--main-color);
     animation: border-grow 0.5s linear;
 }
 
@@ -35,12 +35,11 @@
 }
 
 @media (max-width: 500px) {
-    /* before click on hamburger */
     .NavLinks {
         position: fixed;
         height: 100vh;
         width: 100vw;
-        background: #2d54bd;
+        background: var(--main-mobile-color);
         flex-direction: column;
         justify-content: center;
         clip-path: circle(100px at 120% -10%);
