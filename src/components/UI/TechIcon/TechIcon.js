@@ -51,6 +51,9 @@ export default function TechIcon(props) {
         case 'android':
             hintName = 'Android';
             break;
+        case 'scapy':
+            hintName = 'Scapy';
+            break;
         default:
             break;
     }
@@ -63,7 +66,7 @@ export default function TechIcon(props) {
             </div>
             <img
                 src={
-                    require(`../../../assets/icons/${props.iconName}.svg`)
+                    require(`../../../assets/icons/${props.iconName}.svg` )
                         .default
                 }
                 alt="icons"
