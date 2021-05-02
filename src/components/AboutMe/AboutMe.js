@@ -70,7 +70,7 @@ export default React.memo(function AboutMe() {
             <VisibilitySensor
                     partialVisibility
                     onChange={onChange}
-                    minTopValue={250}
+                    // minTopValue={250}
                 >
                 <div className={classes.LeftSide}>
                     <h1
