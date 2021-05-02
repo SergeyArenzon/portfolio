@@ -49,7 +49,7 @@ export default function Layout() {
         setNavColor(null);
     };
 
-    if (window.scrollX > 360){
+    if (window.innerWidth > 360){
         alert()
     }
     return (
