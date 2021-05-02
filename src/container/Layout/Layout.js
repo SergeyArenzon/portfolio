@@ -31,7 +31,7 @@ export default function Layout() {
             document.documentElement.clientHeight;
 
         const scrolled = (winScroll / height) * 100;
-        setScrollTop(scrolled);
+        // setScrollTop(scrolled);
     };
 
     // Checks if user on mobile mode
@@ -49,9 +49,8 @@ export default function Layout() {
         setNavColor(null);
     };
 
-    if (window.innerWidth > 360){
-        alert()
-    }
+   
+    
     return (
         <div className={classes.Layout}>
             <Background />
