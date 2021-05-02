@@ -89,7 +89,7 @@
     height: 32px;
     width: 32px;
     border-radius: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.281);
+    /* border: 1px solid rgba(0, 0, 0, 0.281); */
     cursor: pointer;
     /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.678); */
     transition: all 0.15s linear;
@@ -261,12 +261,14 @@
     }
 
     .AboutMe .LeftSide .MeText {
-        color: black;
+        color: rgb(65, 64, 64);
         width: auto;
         position: static;
         text-align: center;
         padding-left: 10px;
         font-size: 3rem;
+        font-weight: 900;
+        text-shadow: 1px 1px 1px 10px white;
     }
 
     .AboutMe .LeftSide .Profile {
