@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './Project.module.css';
 import VisibilitySensor from 'react-visibility-sensor';
 import pic from './../../../assets/images/profile.jpeg';
@@ -6,11 +6,15 @@ import TechIcon from '../../../components/UI/TechIcon/TechIcon';
 import LiveIcon from '../../../components/UI/LiveIcon/LiveIcon';
 import GithubIcon from '../../../components/UI/GithubIcon/GithubIcon';
 
-export default function Project(props) {
+export default React.memo(function Project(props) {
     const [show, setShow] = useState(false);
     const [techIconsVisible, setTechIconsVisible] = useState(false);
     const [titleVisible, setTitleVisible] = useState(false);
     const [descriptionVisible, setDescriptionVisible] = useState(false);
+
+    useEffect(() => {
+        console.log('Project updated');
+    });
 
     // IMAGE VISIBILITY TRIGGER FUNC
     const onChange = (isVisible) => {
@@ -148,3 +152,4 @@ export default function Project(props) {
         </>
     );
 }
+)

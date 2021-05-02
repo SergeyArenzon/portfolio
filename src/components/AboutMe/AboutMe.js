@@ -3,7 +3,7 @@ import classes from "./AboutMe.module.css";
 import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 
-export default function AboutMe({scrollTop}) {
+export default function AboutMe() {
     const [visible, setVisible] = useState(false);
 
     if (!visible && window.scrollY > 600) {

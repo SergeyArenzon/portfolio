@@ -3,7 +3,7 @@ import classes from './Contacts.module.css';
 import arrow from './arrow.svg';
 import contacts_svg from './contacts.svg';
 
-export default function Contacts() {
+export default React.memo(function Contacts() {
     return (
         <div className={classes.Contacts} id="contact">
             <svg
@@ -81,3 +81,4 @@ export default function Contacts() {
         </div>
     );
 }
+)

@@ -8,10 +8,11 @@ import coding from './coding.mp4'
 // Video background
 // ================
 
-export default function Background() {
+export default React.memo(function Background() {
+  
     return (
         <video autoPlay loop muted className={classes.Background}>
             {<source src={coding} type="video/mp4" />}
         </video>
     );
-}
+})
