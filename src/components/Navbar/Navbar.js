@@ -18,7 +18,6 @@ export default function Navbar(props) {
 
     // Hamburger click & full screen navlinks handler
     const hamburgerClickHandler = () => {
-        console.log('hamburgerClickHandler!!');
         setHamburgerClicked(!hamburgerClicked);
     };
 
@@ -27,7 +26,6 @@ export default function Navbar(props) {
         hamburgerClick = classes.HamburgerClicked;
     }
 
-    console.log('clicked:', hamburgerClicked)
 
     return (
         <nav className={[classes.Navbar, color].join(" ")}>

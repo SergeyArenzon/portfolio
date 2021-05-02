@@ -2,15 +2,25 @@ import React, { useState } from "react";
 import classes from "./AboutMe.module.css";
 import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
+import VisibilitySensor from 'react-visibility-sensor';
 
 export default function AboutMe() {
+    // const [visible, setVisible] = useState(false);
+
+    // if (!visible && window.scrollY > 600) {
+    //     setVisible(true);
+    // } else {
+    //     // setVisible(false);
+    // }
+
     const [visible, setVisible] = useState(false);
 
-    if (!visible && window.scrollY > 600) {
-        setVisible(true);
-    } else {
-        // setVisible(false);
-    }
+    const onChange = (isVisible) => {
+        if (isVisible) {
+            console.log(isVisible);
+            setVisible(true);
+        }
+    };
 
     const socialIcons = (
         <ul className={visible ? null : classes.HideLeft}>
@@ -56,7 +66,13 @@ export default function AboutMe() {
 
     return (
         <div>
+            
             <div className={classes.AboutMe} id="about">
+            <VisibilitySensor
+                    partialVisibility
+                    onChange={onChange}
+                    minTopValue={250}
+                >
                 <div className={classes.LeftSide}>
                     <h1
                     
@@ -80,6 +96,7 @@ export default function AboutMe() {
                         <div></div>
                     </div>
                 </div>
+                </VisibilitySensor>
                 <div
                     className={[
                         classes.RightSide,
@@ -109,7 +126,9 @@ export default function AboutMe() {
                     <CvButton type="resume_link">RESUME</CvButton>
                 </div>
             </div>
+            
             <Clouds />
         </div>
+        
     );
 }
