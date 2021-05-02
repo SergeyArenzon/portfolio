@@ -49,6 +49,9 @@ export default function Layout() {
         setNavColor(null);
     };
 
+    if (window.scrollX > 360){
+        alert()
+    }
     return (
         <div className={classes.Layout}>
             <Background />

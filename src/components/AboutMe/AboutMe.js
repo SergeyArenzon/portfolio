@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./AboutMe.module.css";
 import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
@@ -12,6 +12,12 @@ export default React.memo(function AboutMe() {
     // } else {
     //     // setVisible(false);
     // }
+
+
+    useEffect(() => {
+      console.log('AboutMe updates');
+    })
+
 
     const [visible, setVisible] = useState(false);
 
