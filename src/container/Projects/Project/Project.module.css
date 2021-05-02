@@ -171,6 +171,9 @@
 .TechIconLi.TechIconVisible:nth-child(6) {
     animation: revealIcon 0.2s ease-out 1.5s forwards;
 }
+.TechIconLi.TechIconVisible:nth-child(7) {
+    animation: revealIcon 0.2s ease-out 1.8s forwards;
+}
 
 .HiddenItem {
     transform: translateY(100px);
