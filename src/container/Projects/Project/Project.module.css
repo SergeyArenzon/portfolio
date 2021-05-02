@@ -215,3 +215,15 @@
         grid-column: unset;
     }
 }
+
+@media (max-width: 550px){
+    .ProjectTitleFont {
+        
+        color: var(--main-mobile-color);
+        
+    }
+    
+    .ProjectTitleColored {
+        color: white;
+    }
+}

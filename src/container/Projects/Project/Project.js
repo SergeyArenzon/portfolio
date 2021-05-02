@@ -68,12 +68,10 @@ export default function Project(props) {
             <div className={projectClasses}>
                 {/* PROJECT TITLE */}
                 <VisibilitySensor
-                
                     partialVisibility
                     onChange={onTitleVisibility}
                 >
                     <h1
-                    
                         className={`${classes.Item} ${
                             classes.ProjectTitleFont
                         } ${projectTitleColored} ${

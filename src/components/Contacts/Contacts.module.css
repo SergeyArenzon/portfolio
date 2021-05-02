@@ -118,6 +118,10 @@
     letter-spacing: 4px;
 }
 
+
+.Line{
+    fill:var(--main-color);
+}
 @media (max-width: 550px) {
     .Seperator {
         height: 60px;
@@ -128,5 +132,8 @@
     }
     .ContactsContainer {
         padding-left: 30px;
+    }
+    .Line{
+        fill:var(--main-mobile-color);
     }
 }

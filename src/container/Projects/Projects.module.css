@@ -48,6 +48,10 @@
     background: var(--main-color);
 }
 
+
+.Line{
+    fill: var(--main-color);
+}
 .Skew {
     width: 100%;
     height: 100px;
@@ -94,13 +98,16 @@
         left: -10px;
         top: -10px;
     }
+   .Line{
+       fill:var(--main-mobile-color);
+   }
     .Projects .Title h1 span {
         background: var(--main-mobile-color);
     }
     .Projects .ProjectsList li:nth-child(2n) {
         background: var(--main-mobile-color);
     }
-    
+
     .Skew {
         background: linear-gradient(
             to left bottom,
