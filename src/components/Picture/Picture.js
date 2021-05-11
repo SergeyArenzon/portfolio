@@ -82,7 +82,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 50
                         }deg)`,
                         left: 0,
-                        color: '#AB92BF',
+                        color: 'white',
                     }}
                 ></i>
                 <i
@@ -92,7 +92,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 100
                         }deg)`,
                         left: '10vw',
-                        color: '#123c52',
+                        color: '#adadad',
                     }}
                 ></i>
                 <i
@@ -102,7 +102,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 10
                         }deg)`,
                         left: '30vw',
-                        color: '#096796',
+                        color: '#788efa',
                     }}
                 ></i>
                 <i
@@ -112,7 +112,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 100
                         }deg)`,
                         left: '21vw',
-                        color: '#007bff',
+                        color: '#a9acfc',
                     }}
                 ></i>
                 <i
@@ -122,7 +122,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 70
                         }deg)`,
                         right: '10vw',
-                        color: '#0aa3f0',
+                        color: 'white',
                     }}
                 ></i>
                 <i
@@ -132,7 +132,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 25
                         }deg)`,
                         right: '15vw',
-                        color: '#0932d9',
+                        color: '#d4e1fc',
                     }}
                 ></i>
                 <i
@@ -182,7 +182,7 @@ export default function Picture({ scrollTop }) {
                             scrollTop * 35
                         }deg)`,
                         right: '55vw',
-                        color: '#00ff5e',
+                        color: '#3879ff',
                     }}
                 ></i>
                 <i

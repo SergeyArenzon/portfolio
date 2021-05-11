@@ -11,7 +11,7 @@ import coding from './coding.mp4'
 export default React.memo(function Background() {
   
     return (
-        <video autoPlay loop muted className={classes.Background}>
+        <video autoPlay={true} loop muted className={classes.Background}>
             {<source src={coding} type="video/mp4" />}
         </video>
     );
