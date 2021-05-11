@@ -103,9 +103,9 @@
 }
 
 .Project img {
-    outline: white solid 1px;
-    outline-offset: -14px;
-    margin: auto;
+    /* outline: white solid 1px; */
+    /* outline-offset: -14px; */
+    
     display: block;
     padding: 10px;
 }
@@ -136,8 +136,8 @@
 }
 
 .ShowenPicture {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    /* height: 300px; */
     margin-bottom: 10px;
     transition: all 0.4s ease-out;
     opacity: 1;

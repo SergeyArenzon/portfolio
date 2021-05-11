@@ -2,10 +2,22 @@ import classes from './Projects.module.css';
 import React from 'react';
 import project_list from './project_list.json';
 import Project from './Project/Project';
+import myburger from '../../assets/images/myburger.gif'
+import myappartment from '../../assets/images/myappartment.gif'
+
+
+const map = new Map();
+map.set('MyBurger', myburger);
+map.set('MyAppartment', myappartment);
+
+
+
 
 export default function Projects() {
+
     // Projects list mapping ti li's
     const projects = project_list.map((project, index) => {
+        
         if (index % 2) {
             return (
                 <li key={index}>
@@ -13,7 +25,7 @@ export default function Projects() {
                     <Project
                         projectData={project}
                         colored={true}
-                       
+                        image={map.get(project.name)}
                     />
                     <div className={classes.SkewReverse}></div>
                 </li>
@@ -24,6 +36,7 @@ export default function Projects() {
                     <Project
                         projectData={project}
                         colored={false}
+                        image={map.get(project.name)}
                     />
                 </li>
             );

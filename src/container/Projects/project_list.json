@@ -2,7 +2,7 @@
     {
         "name": "MyBurger",
         "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders.\n Build with: ReactJS, Redux, NodeJS, Express, JWT & MongoDB  \n1.Register/Login\n2.Easily build your burger ingredients\n 3.Fill your address for delivery\n4.Order!\n5. Check your orders history ",
-        "image": "",
+        "image": "myburger.gif",
         "technologies": [
             "nodejs",
             "express",
