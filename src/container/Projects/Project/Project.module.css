@@ -1,5 +1,3 @@
-
-
 .Project {
     display: grid;
     grid-row-gap: 100px;
@@ -51,7 +49,6 @@
     font-family: BebasNeue;
     letter-spacing: 2px;
 }
-
 
 .LiveDemoItem {
     display: flex;
@@ -105,7 +102,7 @@
 .Project img {
     /* outline: white solid 1px; */
     /* outline-offset: -14px; */
-    
+
     display: block;
     padding: 10px;
     max-height: 600px;
@@ -115,13 +112,13 @@
     z-index: 5;
 }
 
-.ImageContainer{
+.ImageContainer {
     position: relative;
     min-width: 400px;
     min-height: 400px;
 }
 
-.Bulb{
+.Bulb {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -217,8 +214,9 @@
         min-height: 100vh;
     }
     .ShowenPicture {
-        height: 100px;
-        width: 100px;
+        max-height: 400px;
+        max-width: 400px;
+        
     }
     .Item:first-child {
         grid-column: 1 / span 1;
@@ -237,14 +235,19 @@
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
     .ProjectTitleFont {
-        
         color: var(--main-mobile-color);
+    }
+    .Project .ImageContainer img {
+        width: 100%;
+        transform: translateY(30%);
         
     }
-    
     .ProjectTitleColored {
         color: white;
+    }
+    .ImageContainer svg{
+        width: 100%;
     }
 }

@@ -83,8 +83,9 @@ export default React.memo(function Project(props) {
 
                 {/* PROJECT IMAGE */}
                 <VisibilitySensor partialVisibility onChange={onChange}>
-                    <div className={classes.ImageContainer}>
+                    <div className={classes.ImageContainer} >
                         <img
+                            style={props.projectData.name ==='MyAppartment' ? {height:'400px',width: 'auto', transform:'translateY(0)'} : null}
                             src={props.image}
                             alt={''}
                             className={
