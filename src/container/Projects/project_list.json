@@ -24,14 +24,7 @@
         "github": "https://github.com/SergeyArenzon/sentimental_analysis_project.git",
         "liveDemo": "https://tweets-sanalysis.herokuapp.com/"
     },
-    {
-        "name": "Camping forum",
-        "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
-        "image": "",
-        "technologies": ["nodejs", "express", "mongodb", "heroku"],
-        "github": "https://github.com/SergeyArenzon/Yelp-Camp.git",
-        "liveDemo": null
-    },
+   
     {
         "name": "MyAppartment",
         "description": "Roommates Android app helping us to manage bills & expenses properly.\n1. Register and create your \"room\" and become your apartment manager\n2. I room is existing, register and join existing room\n3. Get expenses info about yout roomates",
@@ -40,6 +33,7 @@
         "github": "https://github.com/SergeyArenzon/My_Appartment.git",
         "liveDemo": null
     },
+
     {
         "name": "Evil twin attack",
         "description": "Built in cyber security course, Python app for phishing gmail accounts by creating fake AP & fake gmail login page, Apache server, spamming deAuth packets.",
@@ -53,5 +47,12 @@
         ],
         "github": "https://github.com/SergeyArenzon/MITM_ATTACK_TOOL",
         "liveDemo": null
-    }
-]
+    },
+    {
+        "name": "Camping forum",
+        "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
+        "image": "",
+        "technologies": ["nodejs", "express", "mongodb", "heroku"],
+        "github": "https://github.com/SergeyArenzon/Yelp-Camp.git",
+        "liveDemo": null
+    }]
