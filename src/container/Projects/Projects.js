@@ -4,11 +4,13 @@ import project_list from './project_list.json';
 import Project from './Project/Project';
 import myburger from '../../assets/images/myburger.gif'
 import myappartment from '../../assets/images/myappartment.gif'
+import sentimental from '../../assets/images/sentimental.png'
 
 
 const map = new Map();
 map.set('MyBurger', myburger);
 map.set('MyAppartment', myappartment);
+map.set('Sentimental Analysis Web Tool', sentimental);
 
 
 

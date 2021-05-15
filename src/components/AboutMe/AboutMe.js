@@ -1,24 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import classes from "./AboutMe.module.css";
 import Clouds from "../UI/Clouds/Clouds";
 import CvButton from "../UI/CvButton/CvButton";
 import VisibilitySensor from 'react-visibility-sensor';
 
 export default React.memo(function AboutMe() {
-    // const [visible, setVisible] = useState(false);
-
-    // if (!visible && window.scrollY > 600) {
-    //     setVisible(true);
-    // } else {
-    //     // setVisible(false);
-    // }
-
-
-    useEffect(() => {
-      console.log('AboutMe updates');
-    })
-
-
     const [visible, setVisible] = useState(false);
 
     const onChange = (isVisible) => {

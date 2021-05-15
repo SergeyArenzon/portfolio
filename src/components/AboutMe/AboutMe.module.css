@@ -196,7 +196,7 @@
     padding: 0;
     /* padding-top: 30px; */
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'BebasNeue';
     line-height: 2.5rem;
     overflow-x: hidden;
@@ -290,6 +290,7 @@
     }
     .AboutMe .RightSide .TextP {
         width: 85vw;
+        font-size: 1.3rem;
         position: relative;
         text-align: center;
     }
