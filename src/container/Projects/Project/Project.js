@@ -4,6 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import TechIcon from '../../../components/UI/TechIcon/TechIcon';
 import LiveIcon from '../../../components/UI/LiveIcon/LiveIcon';
 import GithubIcon from '../../../components/UI/GithubIcon/GithubIcon';
+import CvButton from '../../../components/UI/CvButton/CvButton';
 
 export default React.memo(function Project(props) {
     const [show, setShow] = useState(false);
@@ -154,14 +155,14 @@ export default React.memo(function Project(props) {
 
                 {/* GITGUB & LIVE DEMOS ITEM */}
                 <div className={`${classes.Item} ${classes.LiveDemoItem}`}>
-                    <div className={classes.LiveDemoItemContainer}>
+                    <div >
                         {/* PROJECT LIVE + GITHUB */}
-                        <GithubIcon url={props.projectData.github} />
+                        <CvButton type={'github'} url={props.projectData.github} colored={projectTitleColored}/>
 
                         {/* PROJECT LIVE DEMO */}
                         {/* CHECK LIVE DEMO LINK EXISTENCE */}
                         {props.projectData.liveDemo ? (
-                            <LiveIcon url={props.projectData.liveDemo} />
+                            <LiveIcon url={props.projectData.liveDemo} colored={projectTitleColored}/>
                         ) : null}
                     </div>
                 </div>

@@ -14,6 +14,17 @@ export default function CvButton(props) {
             </a>
         );
     }
+    if (props.type === "github") {
+        resumeLink = (
+            <a
+                href={props.url}
+                target="_blank"
+                rel="noreferrer"
+            >
+                GitHub
+            </a>
+        );
+    }
 
-    return <button className={classes.btn}>{resumeLink}</button>;
+    return <button className={[classes.btn, props.colored && classes.WhiteBtn].join(' ')}>{resumeLink}</button>;
 }

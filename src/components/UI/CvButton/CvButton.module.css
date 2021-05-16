@@ -15,6 +15,7 @@
     font-weight: bold;
 }
 
+
 .btn:hover {
     color: #fff;
     z-index: 1;
@@ -26,6 +27,7 @@ a:-webkit-any-link {
     text-decoration: underline;
     cursor: pointer;
 }
+
 
 .btn::before {
     content: '';
@@ -59,7 +61,25 @@ a:-webkit-any-link {
     color: inherit;
 }
 
-@media (max-width: 550px) {
+.WhiteBtn{
+    border: 1px solid white;
+    color: white;
+}
+
+.WhiteBtn:hover{
+    color: var(--main-color);
+
+}
+
+.WhiteBtn::before {
+    background: white;
+
+}
+.WhiteBtn a{
+    color: white;
+
+}
+@media (max-width: 550px) {     
     .btn {
         border: 1px solid var(--main-mobile-color);
         color: var(--main-mobile-color);
@@ -71,4 +91,12 @@ a:-webkit-any-link {
         color: var(--main-mobile-color);
         z-index: 1;
     }
+
+    .WhiteBtn{
+        border: 1px solid white;
+        color: white;
+    }
+    .WhiteBtn:hover{
+        color: white;
+    } 
 }

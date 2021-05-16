@@ -216,7 +216,6 @@
     .ShowenPicture {
         max-height: 400px;
         max-width: 400px;
-        
     }
     .Item:first-child {
         grid-column: 1 / span 1;
@@ -236,18 +235,25 @@
 }
 
 @media (max-width: 550px) {
+    .Project {
+        grid-row-gap: 20px;
+    }
+
     .ProjectTitleFont {
         color: var(--main-mobile-color);
+    }
+
+    .Project .ProjectTitleFont {
+        font-size: 3rem;
     }
     .Project .ImageContainer img {
         width: 100%;
         transform: translateY(30%);
-        
     }
     .ProjectTitleColored {
         color: white;
     }
-    .ImageContainer svg{
+    .ImageContainer svg {
         width: 100%;
     }
 }
