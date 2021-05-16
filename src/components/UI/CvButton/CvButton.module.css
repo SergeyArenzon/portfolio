@@ -14,6 +14,12 @@
     padding-left: 0;
     font-weight: bold;
 }
+/* FIX CHROME LINK COLOR */
+a:-webkit-any-link {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 .btn:hover {
@@ -21,12 +27,6 @@
     z-index: 1;
 }
 
-/* FIX CHROME LINK COLOR */
-a:-webkit-any-link {
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 
 .btn::before {
@@ -79,6 +79,7 @@ a:-webkit-any-link {
     color: white;
 
 }
+
 @media (max-width: 550px) {     
     .btn {
         border: 1px solid var(--main-mobile-color);
