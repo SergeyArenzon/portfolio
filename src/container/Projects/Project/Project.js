@@ -3,7 +3,6 @@ import classes from './Project.module.css';
 import VisibilitySensor from 'react-visibility-sensor';
 import TechIcon from '../../../components/UI/TechIcon/TechIcon';
 import LiveIcon from '../../../components/UI/LiveIcon/LiveIcon';
-import GithubIcon from '../../../components/UI/GithubIcon/GithubIcon';
 import CvButton from '../../../components/UI/CvButton/CvButton';
 
 export default React.memo(function Project(props) {
