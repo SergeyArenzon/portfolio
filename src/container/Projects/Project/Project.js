@@ -154,7 +154,7 @@ export default React.memo(function Project(props) {
 
                 {/* GITGUB & LIVE DEMOS ITEM */}
                 <div className={`${classes.Item} ${classes.LiveDemoItem}`}>
-                    <div >
+                    <div className={classes.BtnContainer}>
                         {/* PROJECT LIVE + GITHUB */}
                         <CvButton type={'github'} url={props.projectData.github} colored={projectTitleColored}/>    
 

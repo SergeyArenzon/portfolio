@@ -196,6 +196,15 @@
     transition: all 0.3s ease-in;
 }
 
+
+.BtnContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 230px;
+    max-width: 230px;
+}
+
 @keyframes revealIcon {
     from {
         opacity: 0;
@@ -233,6 +242,7 @@
         grid-column: unset;
     }
 }
+
 
 @media (max-width: 550px) {
     .Project {

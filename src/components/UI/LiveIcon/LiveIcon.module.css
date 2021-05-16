@@ -1,10 +1,21 @@
+
 .LiveIcon {
-    color: black;
     
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: font-size 0.2s linear;
 
-    
 }
+.LiveIcon:hover{
+    font-size: 1.3rem;
+    transition: font-size 0.2s linear;
 
+}
+.WhiteBtn{
+    color: white;
+}
 
 .LiveIcon:active,
 .LiveIcon:focus {
