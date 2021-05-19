@@ -141,7 +141,7 @@ export default React.memo(function Project(props) {
                 >
                     <div>
                         <div className={classes.StackTabContainer}>
-                            <div className={classes.StackTab}>Tech Stack</div>
+                            <div className={[classes.StackTab, !projectTitleColored && classes.StackTabColored].join(' ')}>Tech Stack</div>
                         </div>
 
                         <ul

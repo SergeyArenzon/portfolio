@@ -100,6 +100,9 @@
     background: violet;
 }
 
+.StackTabColored{
+    color: var(--main-color);
+}
 .Project img {
     /* outline: white solid 1px; */
     /* outline-offset: -14px; */
