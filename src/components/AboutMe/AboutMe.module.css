@@ -10,11 +10,9 @@
     top: 0;
     display: flex;
     align-items: center;
-    
+
     overflow-x: hidden;
 }
-
-
 
 .AboutMe .Profile {
     background: url('../../assets/images/profile.jpeg');
@@ -34,7 +32,6 @@
     transform: translateX(0);
 }
 
-
 .AboutMe p {
     padding-top: 200px;
     color: black;
@@ -49,7 +46,6 @@
     align-items: center;
     border-radius: 0 65px 0 0;
     position: relative;
-   
 }
 
 .AboutMe .LeftSide h1 {
@@ -90,7 +86,6 @@
     width: 40%;
     transition: all 0.4s ease-out;
     transform: translateX(0);
-
 }
 
 .AboutMe .LeftSide ul li {
@@ -163,9 +158,8 @@
     transition-delay: 0.4s;
 }
 
-
 .AboutMe .LeftSide .HideLeft {
-    transform: translateX(-100px) ; 
+    transform: translateX(-100px);
     opacity: 0;
 }
 /* RIGHT SIDE */
@@ -212,7 +206,6 @@
     font-family: 'BebasNeue';
     line-height: 2.5rem;
     overflow-x: hidden;
-    
 
     /* margin: auto; */
     /* padding-top: 150px; */
@@ -226,14 +219,13 @@
     color: var(--main-color);
     animation: controller 1s infinite;
 }
-
-
+.Shake {
+    animation: shake 0.5s forwards;
+}
 
 @keyframes controller {
     0% {
         transform: rotate(0deg);
-        
-        
     }
     25% {
         transform: rotate(30deg);
@@ -280,7 +272,7 @@
     }
 
     .AboutMe .LeftSide .MeText {
-        color: rgb(65, 64, 64);
+        color: wheat;
         width: auto;
         position: static;
         text-align: center;
@@ -323,16 +315,12 @@
         color: var(--main-mobile-color);
     }
     .AboutMe .RightSide .TextP strong,
-    .AboutMe .RightSide .TextP i
-    {
+    .AboutMe .RightSide .TextP i {
         color: var(--main-mobile-color);
     }
-    
-}
-
-
-.Shake {
-    animation: shake 0.5s forwards;
+    .Shake {
+        animation: none;
+    }
 }
 
 @keyframes shake {
@@ -341,19 +329,11 @@
     }
     25% {
         transform: rotate(-7deg);
-        
     }
     70% {
         transform: rotate(7deg);
     }
     100% {
         transform: rotate(0);
-
-    }
-}
-
-@media (max-width: 550px){
-    .Shake {
-        animation: none;
     }
 }

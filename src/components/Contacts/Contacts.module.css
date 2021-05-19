@@ -81,10 +81,10 @@
 
 .ContactsContainer a {
     font-size: 1.2rem;
-    background: white;
+    /* background: white; */
     padding: 5px;
     border-radius: 5px;
-    color: var(--second-gray-color);
+    color: white;
     /* font-style: italic; */
     font-family: BebasNeue;
     letter-spacing: 1px;
