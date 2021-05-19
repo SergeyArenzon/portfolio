@@ -22,12 +22,16 @@
 }
 
 /* FIX CHROME LINK COLOR */
-.btn a:-webkit-any-link {
+/* .btn a:-webkit-any-link {
+    color: white;
+} */
+
+.btn a:hover {
     color: white;
 }
-
-.WhiteBtn a:-webkit-any-link{
+.WhiteBtn a:hover{
     color: var(--main-color);
+    z-index: 1;
 }
 
 .btn::before {
