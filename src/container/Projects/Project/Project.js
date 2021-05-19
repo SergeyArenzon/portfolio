@@ -141,7 +141,7 @@ export default React.memo(function Project(props) {
                 >
                     <div>
                         <div className={classes.StackTabContainer}>
-                            <div className={classes.StackTab}>Technologies</div>
+                            <div className={classes.StackTab}>Tech Stack</div>
                         </div>
 
                         <ul

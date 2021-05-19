@@ -37,17 +37,17 @@
     flex-direction: column;
 }
 .StackTab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: grey;
     position: relative;
-    /* border-bottom: 5px cornflowerblue solid; */
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: BebasNeue;
     letter-spacing: 2px;
+    text-decoration: underline;
+    color: white;
+    text-decoration-thickness: 7px;
+    text-decoration-style: dotted;
 }
 
 .LiveDemoItem {
@@ -86,6 +86,7 @@
     list-style: none;
     flex-wrap: wrap;
     height: 100px;
+    padding-top: 10px;
 }
 .TechContainer {
     padding: 0;
