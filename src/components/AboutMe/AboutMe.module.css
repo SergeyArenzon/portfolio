@@ -351,3 +351,9 @@
 
     }
 }
+
+@media (max-width: 550px){
+    .Shake {
+        animation: none;
+    }
+}
