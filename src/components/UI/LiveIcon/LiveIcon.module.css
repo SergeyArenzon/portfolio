@@ -1,4 +1,11 @@
 
+.LiveIconContainer {
+    height: 22px;
+    width: 107px;
+}
+
+
+
 .LiveIcon {
     
     color: var(--main-color);

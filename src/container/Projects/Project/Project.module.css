@@ -201,8 +201,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 230px;
-    max-width: 230px;
+    /* width: 230px;
+    max-width: 230px; */
 }
 
 @keyframes revealIcon {
