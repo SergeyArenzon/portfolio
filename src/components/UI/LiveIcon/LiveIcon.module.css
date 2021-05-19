@@ -23,8 +23,8 @@
 .WhiteBtn{
     color: white;
 }
-
+.LiveIcon:visited,
 .LiveIcon:active,
 .LiveIcon:focus {
-  
+  /* color: white */
 }
