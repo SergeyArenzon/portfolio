@@ -289,6 +289,9 @@
     .AboutMe .LeftSide ul {
         width: 50%;
     }
+   
+    
+
     .AboutMe .RightSide {
         width: 100vw;
         display: flex;
@@ -323,6 +326,16 @@
     }
 }
 
+    .AboutMe .LeftSide ul li a:link,
+    .AboutMe .LeftSide ul li a:visited,
+    .AboutMe .LeftSide ul li a:active {
+        color: white;
+    }
+    .AboutMe .LeftSide ul li a:hover{
+        color: black;
+        transition: all 0.15s linear;
+
+    }
 @keyframes shake {
     0% {
         transform: rotate(0);
