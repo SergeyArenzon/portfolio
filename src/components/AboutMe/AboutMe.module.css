@@ -14,6 +14,8 @@
     overflow-x: hidden;
 }
 
+
+
 .AboutMe .Profile {
     background: url('../../assets/images/profile.jpeg');
     height: 250px;
@@ -29,7 +31,9 @@
     transition: all 0.4s ease-out;
     transition-delay: 0.2s;
     margin-bottom: 30px;
+    transform: translateX(0);
 }
+
 
 .AboutMe p {
     padding-top: 200px;
@@ -55,6 +59,7 @@
     text-align: right;
     padding-right: 20px;
     text-transform: uppercase;
+    transform: translateX(0);
 }
 .AboutMe .LeftSide .Tail {
     position: absolute;
@@ -84,6 +89,8 @@
     padding: 0;
     width: 40%;
     transition: all 0.4s ease-out;
+    transform: translateX(0);
+
 }
 
 .AboutMe .LeftSide ul li {
@@ -156,6 +163,11 @@
     transition-delay: 0.4s;
 }
 
+
+.AboutMe .LeftSide .HideLeft {
+    transform: translateX(-100px) ; 
+    opacity: 0;
+}
 /* RIGHT SIDE */
 
 .AboutMe .RightSide {
@@ -214,6 +226,8 @@
     color: var(--main-color);
     animation: controller 1s infinite;
 }
+
+
 
 @keyframes controller {
     0% {
@@ -316,10 +330,6 @@
     
 }
 
-.HideLeft {
-    transform: translateX(-400px);
-    opacity: 0;
-}
 
 .Shake {
     animation: shake 0.5s forwards;
