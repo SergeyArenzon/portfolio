@@ -100,7 +100,7 @@ export default React.memo(function Project(props) {
                             }
                         />
                         <svg
-                            className={classes.Bulb}
+                            className={`${classes.Bulb} ${projectTitleColored && classes.WhiteBulb}`}
                             id="visual"
                             viewBox="0 0 500 500"
                             width="500"

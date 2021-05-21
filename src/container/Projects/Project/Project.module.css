@@ -274,4 +274,7 @@
     .Bulb path {
         fill: var(--main-mobile-color)
     }
+    .WhiteBulb path{
+        fill: white;
+    }
 }
