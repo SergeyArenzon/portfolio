@@ -55,7 +55,7 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    grid-column: 1 / span 2;
+    /* grid-column: 1 / span 2; */
 }
 .LiveDemoItem .LiveDemoItemContainer {
     background: #e6e6e6;
