@@ -271,4 +271,7 @@
     .StackTabColored{
         color: var(--main-mobile-color);
     }
+    .Bulb path {
+        fill: var(--main-mobile-color)
+    }
 }
