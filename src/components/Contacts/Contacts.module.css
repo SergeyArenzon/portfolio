@@ -136,4 +136,7 @@
     .Line{
         fill:var(--main-mobile-color);
     }
+    .Contacts a {
+        font-size: 1rem;
+    }
 }
