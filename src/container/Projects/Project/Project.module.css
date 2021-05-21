@@ -285,4 +285,7 @@
     .WhiteBulb path {
         fill: white;
     }
+    .ImageContainer{
+        min-width: unset;
+    }
 }
