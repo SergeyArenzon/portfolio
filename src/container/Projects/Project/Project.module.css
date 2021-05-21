@@ -268,4 +268,7 @@
     .ImageContainer svg {
         width: 100%;
     }
+    .StackTabColored{
+        color: var(--main-mobile-color);
+    }
 }

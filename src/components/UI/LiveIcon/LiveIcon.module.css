@@ -23,8 +23,18 @@
 .WhiteBtn{
     color: white;
 }
-.LiveIcon:visited,
-.LiveIcon:active,
-.LiveIcon:focus {
-  /* color: white */
+
+
+@media (max-width: 550px){
+    .LiveIcon {
+        color: var(--main-mobile-color)
+    }
+    .WhiteBtn {
+        color: WHITE;
+    }
+    .LiveIcon a:hover, .LiveIcon a:focus, .LiveIcon a:active {
+        color: var(--main-mobile-color)
+
+    }
+    
 }

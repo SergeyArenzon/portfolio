@@ -89,19 +89,30 @@
         border: 1px solid var(--main-mobile-color);
         color: var(--main-mobile-color);
     }
+    .btn a {
+        color: var(--main-mobile-color);
+
+    }
     .btn::before {
         content: none;
     }
-    .btn:hover {
+    .btn a:hover, .btn a:active, .btn a:focus  {
         color: var(--main-mobile-color);
         z-index: 1;
+        
     }
 
     .WhiteBtn{
         border: 1px solid white;
         color: white;
     }
-    .WhiteBtn:hover{
+
+    .WhiteBtn a{
         color: white;
+
+    }
+    .WhiteBtn a:hover, .WhiteBtn a:active, .WhiteBtn a:focus{
+        color: white;
+        -webkit-tap-highlight-color: white;
     } 
 }
