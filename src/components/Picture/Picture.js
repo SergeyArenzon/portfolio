@@ -6,12 +6,27 @@ import Waves from '../Waves/Waves';
 export default function Picture({ scrollTop }) {
     const [showText, setShowText] = useState(false);
 
-    //  Delaying the seconde typing effect
+    // useEffect(() => {
+    //     window.addEventListener('scroll', onScroll);
+    //     console.log('useEffect');
+    //     return () => window.removeEventListener('scroll', onScroll);
+    //     // eslint-disable-next-line
+    // }, []);
+    //  Delaying the second typing effect
     useEffect(() => {
         setTimeout(function () {
             setShowText(true);
         }, 2000);
     }, []);
+
+
+    useEffect(() => {
+        console.log('Picture')
+    }, )
+
+
+
+
 
     //  ======================
     //  Typing effect controls

@@ -29,7 +29,7 @@ export default function Navbar(props) {
 
     return (
         <nav className={[classes.Navbar, color].join(" ")}>
-            <Logo />
+            <Logo /> 
             <NavLinks showFullscreenLinks={hamburgerClicked} hamburgerClickHandler={hamburgerClickHandler}/>
 
             {/* Hamburger */}

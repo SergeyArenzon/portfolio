@@ -15,6 +15,21 @@
   src: local("BebasNeue"),
     url(./assets/fonts/BebasNeue) format("truetype");
 }
+@font-face {
+  font-family: "SigmarOne";
+  src: local("SigmarOne"),
+    url(./assets/fonts/SigmarOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url(./assets/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Koho";
+  src: local("Koho"),
+    url(./assets/fonts/KoHo-Bold.ttf) format("truetype");
+}
 
 body {
   margin: 0;

@@ -1,25 +1,35 @@
 .Logo {
-    width: 130px;
+    
     height: 100%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
     position: relative;
-    font-family: "HachiMaruPop";
+    font-family: "Koho";
     box-sizing: border-box;
     text-align: left;
-    font-family: "Alegreya-Italic";
     font-weight: bold;
     padding-left: 10px;
+    letter-spacing: 2px;
+    padding-top: 5px;
 }
 
 .Logo span {
-    background: rgb(0, 68, 255);
-    height: 12px;
-    width: 12px;
-    position: relative;
-    display: inline-block;
-    border-radius: 100%;
-    margin-left: 2px;
-    bottom: 0;
-    box-shadow: 1px 1px 3px black;
+    /* font-family: "SigmarOne"; */
+}
+
+.Logo .S{
+    font-family: inherit;
+    color:rgb(161 203 255);
+}
+
+
+
+@media (max-width: 550px){
+    .Logo {
+        font-size: 1rem;
+        /* position: absolute; */
+        flex: none;
+        margin: auto;
+        padding-left: 50px;
+    }
 }
