@@ -1,24 +1,16 @@
 [
     {
         "name": "MyBurger",
-        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders.\n Build with: ReactJS, Redux, NodeJS, Express, JWT & MongoDB  \n1.Register/Login\n2.Easily build your burger ingredients\n 3.Fill your address for delivery\n4.Order!\n5. Check your orders history ",
+        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders.\n1.Register/Login\n2.Easily build your burger ingredients\n 3.Fill your address for delivery\n4.Order!\n5. Check your orders history \n Built with: ReactJS, Redux, NodeJS, Express, JWT & MongoDB",
         "image": "myburger.gif",
-        "technologies": [
-            "nodejs",
-            "express",
-            "react",
-            "mongodb",
-            "redux",
-            "jwt",
-            "heroku"
-        ],
+        "technologies": ["nodejs","express","react","mongodb","redux","jwt","heroku"],
         "github": "https://github.com/SergeyArenzon/MyBurger",
         "liveDemo": "https://my-burger-market.herokuapp.com"
     },
 
     {
         "name": "Sentimental Analysis Web Tool",
-        "description": "Web tool processes recent twitted tweetes data opinion about any subject you like and supplies some interesting information about.\nBuilt with: NodeJS, Express & Twitter API.",
+        "description": "Sentimental Analysis Web Tool helping us to collect some interesting statistics, opinion and opinion polarities from recent global tweets by simple query search. \nBuilt with: NodeJS, Express & Twitter API.",
         "image": "sentimental.png",
         "technologies": ["nodejs", "express", "twitter", "heroku"],
         "github": "https://github.com/SergeyArenzon/sentimental_analysis_project.git",
@@ -27,7 +19,7 @@
    
     {
         "name": "MyAppartment",
-        "description": "Roommates Android app helping us to manage bills & expenses properly.\n1. Register and create your \"room\" and become your apartment manager\n2. I room is existing, register and join existing room\n3. Get expenses info about yout roomates",
+        "description": "MyAppartment is a roommates Android app helping us to manage bills & expenses properly.\n1. Register and create your \"room\" and become your apartment manager\n2. I room is existing, register and join existing room\n3. Get expenses info about yout roomates",
         "image": "",
         "technologies": ["android","java", "firebase"],
         "github": "https://github.com/SergeyArenzon/My_Appartment.git",
@@ -36,24 +28,18 @@
 
     {
         "name": "Evil twin attack",
-        "description": "Built in cyber security course, Python app for phishing gmail accounts by creating fake AP & fake gmail login page, Apache server, spamming deAuth packets.",
+        "description": "Evil Twin Attack tool built during cyber security course, it is Python & Bash app for phishing gmail accounts by deAuth victims WIFI AP and keep it disconnected by sending packets spamming, creating new WIFI AP with similar victims AP name.\nWhen the victim connects to fake AP he will get only html & css fake gmail page by hosting Apache server.\nAny http request will redirect to fake gmail form and the victim will try connect to his gmail account.  ",
         "image": "",
-        "technologies": [
-            "python",
-            "apache"
-            
-            
-            
-        ],
+        "technologies": ["python","apache"],
         "github": "https://github.com/SergeyArenzon/MITM_ATTACK_TOOL",
         "liveDemo": null
     },
     {
         "name": "Camping forum",
-        "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
+        "description": "Web app forum for camping lovers, supplies register, login, rating platform for camp posts create new post, comment & remove posts/comments.",
         "image": "camp.gif",
         "technologies": ["nodejs", "express", "mongodb", "heroku"],
         "github": "https://github.com/SergeyArenzon/Yelp-Camp.git",
-        
         "liveDemo": "https://camp-forum.herokuapp.com/"
-    }]
+    }
+]
