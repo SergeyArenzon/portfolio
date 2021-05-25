@@ -26,10 +26,9 @@
     align-items: center;
     font-size: 2rem;
     white-space: pre-wrap;
-    font-family: Assistant;
+    font-family: 'Oswald';
     padding: 0 30px;
-    font-weight: 600;
-    font-style: italic;
+    /* font-weight: 600; */
 }
 .StackTabContainer {
     display: flex;
