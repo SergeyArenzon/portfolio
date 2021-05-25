@@ -51,7 +51,7 @@
     {
         "name": "Camping forum",
         "description": "Web app forum for camping lovers, functionalities: registration, login, add/remove/edit posts.",
-        "image": "",
+        "image": "camp.gif",
         "technologies": ["nodejs", "express", "mongodb", "heroku"],
         "github": "https://github.com/SergeyArenzon/Yelp-Camp.git",
         

@@ -5,12 +5,14 @@ import Project from './Project/Project';
 import myburger from '../../assets/images/myburger.gif'
 import myappartment from '../../assets/images/myappartment.gif'
 import sentimental from '../../assets/images/sentimental.png'
+import camp from '../../assets/images/camp.gif';
 
 
 const map = new Map();
 map.set('MyBurger', myburger);
 map.set('MyAppartment', myappartment);
 map.set('Sentimental Analysis Web Tool', sentimental);
+map.set('Camping forum', camp);
 
 
 
