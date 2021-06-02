@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import classes from "./AboutMe.module.css";
-import Clouds from "../UI/Clouds/Clouds";
-import CvButton from "../UI/CvButton/CvButton";
+import React, { useState } from 'react';
+import classes from './AboutMe.module.css';
+import Clouds from '../UI/Clouds/Clouds';
+import CvButton from '../UI/CvButton/CvButton';
 import VisibilitySensor from 'react-visibility-sensor';
 
 export default React.memo(function AboutMe() {
@@ -57,59 +57,62 @@ export default React.memo(function AboutMe() {
 
     return (
         <div>
-            
             <div className={classes.AboutMe} id="about">
-            <VisibilitySensor
+                <VisibilitySensor
                     partialVisibility
                     onChange={onChange}
                     minTopValue={350}
                 >
-                <div className={classes.LeftSide}>
-                    <h1
-                    
-                        className={[
-                            classes.AboutText,
-                            visible ? null : classes.HideLeft,
-                        ].join(" ")}
-                    >
-                        About<h1 className={classes.MeText}>ME</h1>
-                    </h1>
+                    <div className={classes.LeftSide}>
+                        <h1
+                            className={[
+                                classes.AboutText,
+                                visible ? null : classes.HideLeft,
+                            ].join(' ')}
+                        >
+                            About<h1 className={classes.MeText}>ME</h1>
+                        </h1>
 
-                    <div
-                        className={[
-                            classes.Profile,
-                            visible ? null : classes.HideLeft,
-                        ].join(" ")}
-                    ></div>
-                    {socialIcons}
+                        <div
+                            className={[
+                                classes.Profile,
+                                visible ? null : classes.HideLeft,
+                            ].join(' ')}
+                        ></div>
+                        {socialIcons}
 
-                    <div className={classes.Tail}>
-                        <div></div>
+                        <div className={classes.Tail}>
+                            <div></div>
+                        </div>
                     </div>
-                </div>
                 </VisibilitySensor>
                 <div
-                    className={[
-                        classes.RightSide,
-                        visible ? classes.Shake : null,
-                    ].join(" ")}
+                    className={
+                        classes.RightSide
+
+                        // visible ? classes.fadeIn : null,
+                    }
                 >
-                    <p className={classes.TextP}  >
-                        I'am BS.c graduate of{" "}
+                    <p
+                        className={`${classes.TextP} ${
+                            visible && classes.fadeIn
+                        } `}
+                    >
+                        I'am BS.c graduate of{' '}
                         <strong>
-                            Computer Science & Mathematics{" "}
+                            Computer Science & Mathematics{' '}
                             <i className="fas fa-graduation-cap"></i>
-                        </strong>{" "}
+                        </strong>{' '}
                         and web fullstack developer course.<br></br> Experienced
-                        with the newest technologies like{" "}
+                        with the newest technologies like{' '}
                         <strong>
                             React, Redux, React Hooks, NodeJS, ExpressJS &
                             MongoDB
                         </strong>
                         .<br></br>
-                        Aquired good knowledge in{" "}
+                        Aquired good knowledge in{' '}
                         <strong>JavaScript & CSS</strong> with very good
-                        interpersonal skills and a part time{" "}
+                        interpersonal skills and a part time{' '}
                         <strong>
                             GAMER <i className="fas fa-gamepad"></i>
                         </strong>
@@ -117,10 +120,8 @@ export default React.memo(function AboutMe() {
                     <CvButton type="resume_link">RESUME</CvButton>
                 </div>
             </div>
-            
+
             <Clouds />
         </div>
-        
     );
-}
-)
+});

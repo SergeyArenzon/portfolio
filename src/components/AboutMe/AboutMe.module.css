@@ -206,6 +206,8 @@
     font-family: 'BebasNeue';
     line-height: 2.5rem;
     overflow-x: hidden;
+    opacity: 0;
+
 
     /* margin: auto; */
     /* padding-top: 150px; */
@@ -221,6 +223,10 @@
 }
 .Shake {
     animation: shake 0.5s forwards;
+}
+.fadeIn {
+    animation: fade 2s forwards;
+    
 }
 
 @keyframes controller {
@@ -348,5 +354,14 @@
     }
     100% {
         transform: rotate(0);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
