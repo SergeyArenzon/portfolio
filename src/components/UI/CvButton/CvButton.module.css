@@ -2,7 +2,8 @@
     border: 1px solid var(--main-color);
     background: none;
     font-size: 20px;
-    font-family: 'montserrat';
+    font-family: 'BebasNeue';
+    letter-spacing: 1px;
     cursor: pointer;
     margin: 10px;
     transition: 0.8s;

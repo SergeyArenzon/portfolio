@@ -13,6 +13,8 @@
     font-weight: bold;
     font-size: 1.2rem;
     transition: font-size 0.2s linear;
+    font-family: 'BebasNeue';
+    letter-spacing: 1px;
 
 }
 .LiveIcon:hover{
