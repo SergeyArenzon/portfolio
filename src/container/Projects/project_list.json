@@ -1,7 +1,7 @@
 [
     {
         "name": "MyBurger",
-        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders.\n1.Register/Login\n2.Easily build your burger ingredients\n 3.Fill your address for delivery\n4.Order!\n5. Check your orders history \n Built with: ReactJS, Redux, NodeJS, Express, JWT & MongoDB",
+        "description": "Responsive burger restaurant React web app, built for managing hamburger ingredients & orders.\nRegister/Login\nEasily build your burger ingredients\n Fill your address for delivery\nOrder!\nCheck your orders history \n Built with: ReactJS, Redux, NodeJS, Express, JWT & MongoDB",
         "image": "myburger.gif",
         "technologies": ["nodejs","express","react","mongodb","redux","jwt","heroku"],
         "github": "https://github.com/SergeyArenzon/MyBurger",
