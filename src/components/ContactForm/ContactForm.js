@@ -17,7 +17,7 @@ export default function ContactForm() {
 
             <label>
                 Your Email: <input type="email" name="email" />
-            </label>
+            </label> 
 
             <label>
                 Message: <textarea name="message"></textarea>

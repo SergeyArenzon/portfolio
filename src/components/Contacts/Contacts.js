@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Contacts.module.css';
 import arrow from './arrow.svg';
 import contacts_svg from './contacts.svg';
-import ContactsForm from '../ContactForm/ContactForm';
+// import ContactsForm from '../ContactForm/ContactForm';
 
 export default React.memo(function Contacts() {
     return (
@@ -84,7 +84,7 @@ export default React.memo(function Contacts() {
                         <img src={contacts_svg} alt="contacts"></img>
                     </div>
                 </div>
-                <ContactsForm/>
+                {/* <ContactsForm/> */}
             </div>
         </div>
     );
