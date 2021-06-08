@@ -6,8 +6,6 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 import Contacts from '../../components/Contacts/Contacts';
 import Projects from '../Projects/Projects';
 import Background from '../../components/Background/Background';
-// import FlyingObject from '../../components/UI/FlyingObject/FlyingObject';
-
 // =========================
 // Main scrolling background
 // =========================

@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Contacts.module.css';
 import arrow from './arrow.svg';
 import contacts_svg from './contacts.svg';
+import ContactsForm from '../ContactForm/ContactForm';
 
 export default React.memo(function Contacts() {
     return (
@@ -14,8 +15,8 @@ export default React.memo(function Contacts() {
                 preserveAspectRatio="none"
             >
                 <g transform="translate(-18.298844,-77.973964)">
-                    <path className={classes.Line}
-                        
+                    <path
+                        className={classes.Line}
                         d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z"
                     />
                     <path
@@ -38,8 +39,11 @@ export default React.memo(function Contacts() {
                         <i
                             className={`fas fa-envelope-square fa-2x ${classes.Icons}`}
                         ></i>
-                        <a href={'mailto:arenzonsergey@gmail.com'} target="_blank"
-                                rel="noreferrer">
+                        <a
+                            href={'mailto:arenzonsergey@gmail.com'}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             arenzonsergey@gmail.com
                         </a>
                     </div>
@@ -59,8 +63,11 @@ export default React.memo(function Contacts() {
                         <i
                             className={`fab fa-linkedin fa-2x ${classes.Icons}`}
                         ></i>
-                        <a href={'https://www.linkedin.com/in/sergeyarenzon'} target="_blank"
-                                rel="noreferrer"> 
+                        <a
+                            href={'https://www.linkedin.com/in/sergeyarenzon'}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             www.linkedin.com/in/sergeyarenzon
                         </a>
                     </div>
@@ -76,13 +83,9 @@ export default React.memo(function Contacts() {
                     <div className={classes.ContactsSvg}>
                         <img src={contacts_svg} alt="contacts"></img>
                     </div>
-                    
                 </div>
-                
-
+                <ContactsForm/>
             </div>
-            
         </div>
     );
-}
-)
+});
