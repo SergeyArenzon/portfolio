@@ -10,8 +10,7 @@ export default function ContactForm() {
         <form
             name="contact"
             method="post"
-            data-netlift="true"
-            onSubmit="submit"
+            
         >
             <input type="hidden" name="form-name" value="contact" />
 
