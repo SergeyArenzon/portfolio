@@ -1,29 +1,21 @@
 import React from 'react';
+import classes from './ContactForm.module.css';
 
 export default function ContactForm() {
-    
     return (
-        <form
-            name="contact"
-            method="post"
-            
-        >
-            <input type="hidden" name="form-name" value="contact" />
+        <form className={classes.ContactForm} name="contact" method="post">
+            <div className={classes.Wrapper}>
+                <input type="hidden" name="form-name" value="contact" />
 
-            <label>
-                Your Name: 
+                <label>Your Name:</label>
                 <input type="text" name="name" />
-            </label>
 
-            <label>
-                Your Email: <input type="email" name="email" />
-            </label> 
-
-            <label>
-                Message: <textarea name="message"></textarea>
-            </label>
-
-            <button type="submit">Send</button>
+                <label>Your Email:</label>
+                <input type="email" name="email" />
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+                <button type="submit">Send</button>
+            </div>
         </form>
     );
 }

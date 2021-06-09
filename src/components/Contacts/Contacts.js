@@ -83,8 +83,9 @@ export default React.memo(function Contacts() {
                     <div className={classes.ContactsSvg}>
                         <img src={contacts_svg} alt="contacts"></img>
                     </div>
+                    {/* <ContactsForm/> */}
                 </div>
-                {/* <ContactsForm/> */}
+                
             </div>
         </div>
     );

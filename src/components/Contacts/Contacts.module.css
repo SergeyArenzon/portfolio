@@ -64,6 +64,8 @@
     padding-top: 50px;
     z-index: 10;
     position: relative;
+
+  
 }
 .ContactsContainer {
     display: flex;
@@ -91,7 +93,6 @@
     transition: color 0.3s linear;
     text-decoration: none;
     margin: auto;
-
 }
 .ContactsContainer div {
     display: flex;
@@ -120,9 +121,8 @@
     letter-spacing: 4px;
 }
 
-
-.Line{
-    fill:var(--main-color);
+.Line {
+    fill: var(--main-color);
 }
 @media (max-width: 550px) {
     .Seperator {
@@ -135,8 +135,8 @@
     .ContactsContainer {
         padding-left: 30px;
     }
-    .Line{
-        fill:var(--main-mobile-color);
+    .Line {
+        fill: var(--main-mobile-color);
     }
     .Contacts a {
         font-size: 0.9rem;
